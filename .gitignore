@@ -1,0 +1,9 @@
+# Never commit the database backup — it holds cardholder fields.
+*.bak
+*.mdf
+*.ldf
+
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
