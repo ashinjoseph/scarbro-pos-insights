@@ -122,10 +122,20 @@ Product movers compare the first 42 days against the last 42.
 
 ## Privacy
 
-`InvoiceInfo` carries cardholder fields (`CardNo`, `CardHolder`, `ApprovalCode`,
-`CardType`). **None were read.** Everything in `data/` is aggregate —
-daily and weekly totals, category and product revenue, tender counts, basket
-buckets. No customer or card data leaves the database.
+**This database holds no cardholder or customer data at all.** `InvoiceInfo`
+declares columns for it — `CardNo`, `CardHolder`, `ApprovalCode`, `CardType`,
+`RefNo`, `TransKey` — and every one is empty on all 17,718 rows. The same goes
+for `CustID`, `Member_ID`, `LoyaltyMemberID`, `CName`, `EmailID` and `AddressX`.
+The columns exist because the product supports integrated payment terminals and
+loyalty; card processing here goes through Clover, so nothing lands in them.
+`CardProcessing` stores amounts only.
+
+(An earlier version of this file described those columns as carrying cardholder
+data that had not been read. That was wrong — profiling the fill rates showed
+they are empty. Corrected, because it changes the risk of holding this backup.)
+
+Everything in `data/` is aggregate — daily and weekly totals, category and
+product revenue, tender counts, basket buckets.
 
 The backup itself is **not in this repository** and must not be committed;
 `.gitignore` excludes `*.bak`. This repository is private and the dashboard is

@@ -1,0 +1,350 @@
+<title>RetailPOS Data Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  color-scheme: light;
+  --bg:#f7f7f4; --card:#ffffff; --card-2:#fbfbf9;
+  --ink:#14171a; --ink-2:#565d63; --ink-3:#858c92;
+  --rule:#e3e5e0; --rule-2:#eceee9;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a;
+  --ok:#1a7f4b; --mid:#9a6100; --no:#b4432c;
+  --warn-bg:#fdf4e3; --warn-rule:#e8d3a4;
+  --acc-bg:#eef4fd; --acc-rule:#c6dcf8;
+  --good-bg:#eaf6ef; --good-rule:#bfe0cd;
+  --mute:#d3d7d1;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#131512; --card:#1c1f1c; --card-2:#191c19;
+    --ink:#f1f3ee; --ink-2:#a9afa5; --ink-3:#7c837a;
+    --rule:#2c302c; --rule-2:#242724;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70;
+    --ok:#4fc48a; --mid:#e5b45c; --no:#e88a72;
+    --warn-bg:#2a2213; --warn-rule:#4d3d1c;
+    --acc-bg:#16202c; --acc-rule:#26384d;
+    --good-bg:#152318; --good-rule:#27412f;
+    --mute:#3d423c;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#131512; --card:#1c1f1c; --card-2:#191c19;
+  --ink:#f1f3ee; --ink-2:#a9afa5; --ink-3:#7c837a;
+  --rule:#2c302c; --rule-2:#242724;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70;
+  --ok:#4fc48a; --mid:#e5b45c; --no:#e88a72;
+  --warn-bg:#2a2213; --warn-rule:#4d3d1c;
+  --acc-bg:#16202c; --acc-rule:#26384d;
+  --good-bg:#152318; --good-rule:#27412f;
+  --mute:#3d423c;
+}
+*{box-sizing:border-box}
+body{margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Source Sans 3",ui-sans-serif,system-ui,sans-serif; font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px; margin:0 auto; padding:38px 24px 80px; display:flex; flex-direction:column; gap:28px}
+h1,h2,h3{font-family:Archivo,ui-sans-serif,system-ui,sans-serif; text-wrap:balance; margin:0}
+header{display:flex; flex-direction:column; gap:9px; border-bottom:2px solid var(--ink); padding-bottom:17px}
+.eyebrow{font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3)}
+h1{font-size:clamp(28px,4vw,40px); font-weight:700; letter-spacing:-.02em; line-height:1.07}
+.sub{color:var(--ink-2); max-width:70ch}
+.meta{display:flex; flex-wrap:wrap; gap:5px 20px; font-size:12.5px; color:var(--ink-3); font-family:"IBM Plex Mono",monospace}
+nav{display:flex; flex-wrap:wrap; gap:6px}
+nav a{font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.05em; text-transform:uppercase;
+  color:var(--ink-2); text-decoration:none; border:1px solid var(--rule); border-radius:2px; padding:5px 10px; background:var(--card)}
+nav a:hover{border-color:var(--ink-3); color:var(--ink)}
+nav a:focus-visible{outline:2px solid var(--s1); outline-offset:2px}
+section.panel{background:var(--card); border:1px solid var(--rule); border-radius:3px; padding:22px 24px;
+  display:flex; flex-direction:column; gap:16px; scroll-margin-top:14px}
+.ph{display:flex; flex-direction:column; gap:3px}
+.ph h2{font-size:19px; font-weight:600; letter-spacing:-.01em}
+.ph h3{font-size:15.5px; font-weight:600}
+.ph .cap{font-size:13.5px; color:var(--ink-2); max-width:78ch}
+.kpis{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:2px;
+  background:var(--rule); border:1px solid var(--rule); border-radius:3px; overflow:hidden}
+.kpi{background:var(--card); padding:15px 17px; display:flex; flex-direction:column; gap:4px}
+.kpi .lab{font-size:11px; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3); font-family:"IBM Plex Mono",monospace}
+.kpi .val{font-family:"IBM Plex Mono",monospace; font-size:25px; font-weight:600; letter-spacing:-.02em; font-variant-numeric:tabular-nums}
+.kpi .note{font-size:12.5px; color:var(--ink-2); line-height:1.4}
+.callout{border-radius:3px; padding:16px 18px; font-size:14px; display:flex; flex-direction:column; gap:8px}
+.callout.acc{background:var(--acc-bg); border:1px solid var(--acc-rule)}
+.callout.warn{background:var(--warn-bg); border:1px solid var(--warn-rule)}
+.callout.good{background:var(--good-bg); border:1px solid var(--good-rule)}
+.callout h4{font-size:14.5px; font-weight:600; margin:0; font-family:Archivo,sans-serif}
+.callout p{margin:0; line-height:1.5}
+table{width:100%; border-collapse:collapse; font-size:13.5px}
+th,td{text-align:left; padding:7px 12px 7px 0; border-bottom:1px solid var(--rule-2); vertical-align:top}
+th{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--ink-3); font-weight:500; border-bottom:1px solid var(--rule)}
+td.n,th.n{text-align:right; font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; padding-right:0}
+tbody tr:hover{background:var(--card-2)}
+code,.mono{font-family:"IBM Plex Mono",monospace; font-size:.9em}
+code{background:var(--rule-2); padding:1px 5px; border-radius:2px}
+.scroll{overflow-x:auto}
+.bar{display:inline-block; height:8px; border-radius:2px; background:var(--mute); min-width:2px; vertical-align:middle}
+.pill{font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.07em; text-transform:uppercase;
+  padding:2px 6px; border-radius:2px; font-weight:600; white-space:nowrap; display:inline-block}
+.pill.ok{background:var(--ok); color:#fff}
+.pill.mid{background:var(--mid); color:#fff}
+.pill.no{background:var(--no); color:#fff}
+.pill.q{background:var(--rule); color:var(--ink-2)}
+.tbl-card{border:1px solid var(--rule); border-radius:3px; overflow:hidden}
+.tbl-head{background:var(--card-2); padding:11px 14px; display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; border-bottom:1px solid var(--rule)}
+.tbl-head .nm{font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:13.5px}
+.tbl-head .rc{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--ink-3)}
+.tbl-head .ds{font-size:12.5px; color:var(--ink-2); flex-basis:100%; line-height:1.4}
+.cols{padding:10px 14px 12px; display:flex; flex-wrap:wrap; gap:5px}
+.col{font-family:"IBM Plex Mono",monospace; font-size:11.5px; padding:2px 7px; border-radius:2px; border:1px solid var(--rule)}
+.col.full{background:var(--good-bg); border-color:var(--good-rule)}
+.col.part{background:var(--warn-bg); border-color:var(--warn-rule)}
+.col.none{color:var(--ink-3); text-decoration:line-through; opacity:.75}
+ul.q{margin:0; padding-left:0; list-style:none; display:flex; flex-direction:column; gap:11px}
+ul.q li{display:grid; grid-template-columns:auto 1fr; gap:11px; align-items:start}
+ul.q .mk{font-family:"IBM Plex Mono",monospace; font-size:14px; line-height:1.3; flex:none}
+ul.q .qt{font-weight:600; font-family:Archivo,sans-serif; font-size:14px}
+ul.q .qd{font-size:13px; color:var(--ink-2); line-height:1.45; margin-top:2px}
+footer{border-top:1px solid var(--rule); padding-top:15px; font-size:12.5px; color:var(--ink-3); display:flex; flex-direction:column; gap:5px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">RetailPOS_DB · SQL Server · backup of 19 Aug 2026</div>
+  <h1>What your POS database actually stores</h1>
+  <p class="sub">A map of every table and column that holds data, and — more usefully — which ones are empty. The POS ships as a full retail ERP; the store uses a narrow slice of it. Knowing which slice tells you exactly which questions are answerable today and which need a settings change first.</p>
+  <div class="meta" id="meta"></div>
+</header>
+
+<nav>
+  <a href="#shape">The shape</a>
+  <a href="#areas">What's stored</a>
+  <a href="#can">Questions you can answer</a>
+  <a href="#blocked">Blocked</a>
+  <a href="#absent">Never recorded</a>
+  <a href="#dict">Full dictionary</a>
+</nav>
+
+<div class="kpis" id="kpis"></div>
+
+<!-- SHAPE -->
+<section class="panel" id="shape">
+  <div class="ph">
+    <h2>The shape of it</h2>
+    <p class="cap">88 tables exist. Only 26 hold any data at all. The other 62 are the parts of the product you don't use — purchasing, suppliers, warehouses, loyalty, expenses, banking, journals, credit customers.</p>
+  </div>
+  <div class="scroll"><div id="cSize"></div></div>
+  <div class="callout acc">
+    <h4>Why this matters more than the column list</h4>
+    <p>A column existing is not the same as a column holding data. Several of the most valuable-sounding fields in this database — cost price, cashier id, customer id, till variance — are present in the schema and empty in practice. The colour coding throughout this page is fill rate, not existence: <span class="pill ok">full</span> is populated on nearly every row, <span class="pill mid">partial</span> on some, and struck-through means <strong>never populated on any row</strong>.</p>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section class="panel" id="areas">
+  <div class="ph">
+    <h2>The 26 tables that hold data</h2>
+    <p class="cap">Grouped by what they're for. Column chips are colour-coded by fill rate — hover any chip for the exact percentage and type.</p>
+  </div>
+  <div id="areaBlocks" style="display:flex;flex-direction:column;gap:22px"></div>
+</section>
+
+<!-- CAN -->
+<section class="panel" id="can">
+  <div class="ph">
+    <h2>Questions this data can answer today</h2>
+    <p class="cap">Everything below is supported by columns that are actually populated. The first four are already built into your dashboard; the rest are available and unused.</p>
+  </div>
+  <ul class="q">
+    <li><span class="mk">✓</span><div><span class="qt">When does the store make money?</span>
+      <div class="qd">Hour, weekday and week-by-week revenue, footfall and basket size. From <code>InvoiceInfo.InvoiceDate</code> + <code>GrandTotal</code>, which are populated on all 17,718 sales. This is the strongest data you have.</div></div></li>
+    <li><span class="mk">✓</span><div><span class="qt">What sells, and what is dying?</span>
+      <div class="qd">Product and category performance over time, velocity, dead stock, first/last sale date. From <code>Invoice_Product</code> joined to <code>Product.Category</code>.</div></div></li>
+    <li><span class="mk">✓</span><div><span class="qt">How do people pay?</span>
+      <div class="qd">Cash, debit, credit split by month. From <code>Invoice_Payment</code>. Remember <code>Amount</code> is cash <em>tendered</em>, so subtract <code>InvoiceInfo.Change</code> before treating it as revenue.</div></div></li>
+    <li><span class="mk">✓</span><div><span class="qt">What is being voided?</span>
+      <div class="qd">1,970 voided bills with timestamps and values, from <code>DeletedInvoices</code>. Enough to spot patterns by hour, day and shift — but not by person (see below).</div></div></li>
+    <li><span class="mk">+</span><div><span class="qt">What does basket composition look like?</span>
+      <div class="qd">Which categories appear together in the same bill, and what a basket containing X is worth versus one without. Fully supported by <code>Invoice_Product</code> and not yet used beyond the lottery attach-rate work.</div></div></li>
+    <li><span class="mk">+</span><div><span class="qt">How much of turnover is tax, and on what?</span>
+      <div class="qd"><code>VAT</code> and <code>VATPer</code> are filled on 48% of lines, and <code>Category.TaxApplicable</code> plus <code>TaxnameX</code> define which categories should be taxed. Comparing the two would find products flagged wrongly at the till.</div></div></li>
+    <li><span class="mk">+</span><div><span class="qt">What does card acceptance cost, and how is the mix moving?</span>
+      <div class="qd"><code>CardProcessing</code> links 658 sales to card transactions by amount. It won't give you the fee (that column is empty), but combined with your Clover statements it sizes the card-fee base.</div></div></li>
+    <li><span class="mk">+</span><div><span class="qt">How often is the drawer opened without a sale?</span>
+      <div class="qd"><code>Logs</code> records 1,742 direct drawer opens and 4,517 new-transaction clicks with timestamps. A no-sale open rate per hour is a standard loss-prevention measure and it is sitting there unused.</div></div></li>
+    <li><span class="mk">+</span><div><span class="qt">Which products get removed from a bill before it completes?</span>
+      <div class="qd"><code>Logs.Operation</code> records line removals by product name and value — a softer signal than a full void, and one nobody is looking at.</div></div></li>
+  </ul>
+</section>
+
+<!-- BLOCKED -->
+<section class="panel" id="blocked">
+  <div class="ph">
+    <h2>Blocked — and what unblocks each one</h2>
+    <p class="cap">These are the questions worth most to a retailer, and each is blocked by one specific empty field rather than by anything structural. The fix in every case is a POS setting or a data-entry habit, not new software.</p>
+  </div>
+  <div class="scroll"><table>
+    <thead><tr><th>Question you can't answer</th><th>Blocked by</th><th class="n">Filled</th><th>What unblocks it</th></tr></thead>
+    <tbody>
+      <tr><td><strong>What do I actually earn on each product?</strong><br><span style="color:var(--ink-2);font-size:12.5px">Margin, and every decision that depends on it — range, pricing, shelf space.</span></td>
+        <td><code>Invoice_Product.PurchaseRate</code><br><code>Product.PurchaseCost</code></td><td class="n">6%<br>19%</td>
+        <td>Enter cost price on the product master. The top 100 sellers cover most of turnover, so this is an afternoon of work, not a project.</td></tr>
+      <tr><td><strong>Who did this?</strong><br><span style="color:var(--ink-2);font-size:12.5px">Voids, discounts, drawer opens, refunds — none can be traced to a person.</span></td>
+        <td><code>InvoiceInfo.UID</code> = "admin" on all 17,718<br><code>Logs.UserID</code> = "admin" on all 28,308<br><code>DeletedInvoices.Operator</code> = "User"</td><td class="n">100%<br>but one<br>value</td>
+        <td>Give every staff member their own POS login. This is the single highest-value change available and it costs nothing.</td></tr>
+      <tr><td><strong>Why was this bill voided?</strong></td>
+        <td><code>DeletedInvoices.Reason</code></td><td class="n">2%</td>
+        <td>Make the reason field mandatory on void, and require a manager code above a threshold.</td></tr>
+      <tr><td><strong>Did the till balance?</strong><br><span style="color:var(--ink-2);font-size:12.5px">The POS has a full cash-count and variance feature.</span></td>
+        <td><code>POS_ClosingCash.ClosingBalance</code><br><code>POS_ClosingCash.DifferInCash</code><br>all denomination columns</td><td class="n">0%</td>
+        <td>Nothing to build — the feature exists and is switched off. This is precisely the gap StoreOps was created to fill in spreadsheets.</td></tr>
+      <tr><td><strong>Who are my repeat customers?</strong></td>
+        <td><code>CustID</code>, <code>Member_ID</code>, <code>LoyaltyMemberID</code>, <code>LP</code></td><td class="n">0%</td>
+        <td>Requires a loyalty scheme. Real work, and only worth it if you'd act on the answer.</td></tr>
+      <tr><td><strong>Am I discounting, and does it work?</strong></td>
+        <td><code>DiscPer</code> / <code>DiscAmt</code> (bill)<br><code>DiscountPer</code> / <code>Discount</code> (line)</td><td class="n">1%<br>0%</td>
+        <td>Nothing — you essentially don't discount. That's an answer in itself.</td></tr>
+      <tr><td><strong>What's expiring, and what's on the shelf right now?</strong></td>
+        <td><code>MfgDate</code>, <code>ExpiryDate</code>; all purchasing and supplier tables</td><td class="n">0%</td>
+        <td>Stock can't be maintained without goods-in. The purchasing module is entirely unused, so live stock is not achievable from this database.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ABSENT -->
+<section class="panel" id="absent">
+  <div class="ph"><h2>What is never recorded at all</h2></div>
+  <div class="callout good">
+    <h4>No cardholder data is stored anywhere — a correction to what I told you earlier</h4>
+    <p>I previously flagged <code>InvoiceInfo</code> as holding cardholder fields and treated it as sensitive. Checking the fill rates properly: <code>CardNo</code>, <code>CardHolder</code>, <code>ApprovalCode</code>, <code>CardType</code>, <code>RefNo</code> and <code>TransKey</code> are populated on <strong>zero of 17,718 rows</strong>. The <code>CardProcessing</code> table holds amounts only. The columns exist because the product supports integrated payment terminals; your card processing goes through Clover, so nothing lands in them. <strong>This database carries no card data, and no customer names, addresses, emails or phone numbers either</strong> — every one of those columns is empty. That materially lowers the risk of holding and sharing this backup.</p>
+  </div>
+  <p style="margin:0;font-size:13.5px;color:var(--ink-2)">Also absent, because the modules are unused: purchase orders and goods receipts, supplier accounts, warehouse and stock transfers, expenses, banking and journals, credit customers, wallets and cashback, loyalty members, and staff clock-out records. 62 empty tables in total, listed at the foot of the dictionary.</p>
+</section>
+
+<!-- DICTIONARY -->
+<section class="panel" id="dict">
+  <div class="ph">
+    <h2>Full data dictionary</h2>
+    <p class="cap">Every populated table, every column, with the share of rows that actually carry a value. Struck-through columns are empty on every row.</p>
+  </div>
+  <div class="scroll" style="max-height:640px"><table id="tDict">
+    <thead><tr><th>Table</th><th>Column</th><th>Type</th><th class="n">Filled</th><th style="width:110px">&nbsp;</th></tr></thead>
+    <tbody></tbody>
+  </table></div>
+  <div class="ph" style="margin-top:6px"><h3>The 62 empty tables</h3>
+    <p class="cap">Present in the schema, zero rows. These are the unused modules.</p></div>
+  <div class="cols" id="emptyList" style="padding:0"></div>
+</section>
+
+<footer>
+  <div>Source: <code>RetailPOS_DB</code>, SQL Server 2008 full backup taken 19 Aug 2026, restored and profiled directly. Fill rate counts a value as present when it is non-null, non-blank for text, and non-zero for numbers.</div>
+  <div>Data spans 15 Apr – 19 Aug 2026: 17,718 sales, 26,451 line items, 1,970 voided bills.</div>
+</footer>
+
+</div>
+
+<script id="payload" type="application/json">{"tables":[{"table":"LedgerBook","rows":35439,"area":"accounting","desc":"Double-entry mirror of sales. Adds nothing beyond InvoiceInfo.","cols":[{"c":"Id","t":"int","pct":100},{"c":"Date","t":"datetime","pct":100},{"c":"Name","t":"nchar","pct":100},{"c":"AccLedger","t":"nchar","pct":100},{"c":"LedgerNo","t":"nchar","pct":100},{"c":"Label","t":"nchar","pct":100},{"c":"Debit","t":"decimal","pct":49},{"c":"Credit","t":"decimal","pct":49},{"c":"PartyID","t":"nchar","pct":0}]},{"table":"Logs","rows":28308,"area":"audit","desc":"POS activity log \u2014 logins, new transactions, drawer opens, line removals.","cols":[{"c":"Id","t":"int","pct":100},{"c":"UserID","t":"nchar","pct":100},{"c":"Operation","t":"nvarchar","pct":100},{"c":"Date","t":"datetime","pct":100}]},{"table":"Invoice_Product","rows":26451,"area":"sales","desc":"One row per line item on a sale \u2014 what was actually in the basket.","cols":[{"c":"IPo_ID","t":"int","pct":100},{"c":"InvoiceID","t":"int","pct":100},{"c":"ProductID","t":"int","pct":100},{"c":"Barcode","t":"nchar","pct":100},{"c":"MfgDate","t":"nchar","pct":0},{"c":"ExpiryDate","t":"nchar","pct":0},{"c":"SalesRate","t":"decimal","pct":100},{"c":"DiscountPer","t":"decimal","pct":0},{"c":"Discount","t":"decimal","pct":0},{"c":"VATPer","t":"decimal","pct":48},{"c":"VAT","t":"decimal","pct":48},{"c":"Qty","t":"float","pct":100},{"c":"TotalAmount","t":"decimal","pct":100},{"c":"PurchaseRate","t":"decimal","pct":6},{"c":"Margin","t":"decimal","pct":100},{"c":"FreeQty","t":"float","pct":0},{"c":"ItemNote","t":"nvarchar","pct":0},{"c":"ORate","t":"decimal","pct":100},{"c":"TPSPer","t":"decimal","pct":0},{"c":"TPSAmt","t":"decimal","pct":0},{"c":"TVQPer","t":"decimal","pct":0},{"c":"TVQAmt","t":"decimal","pct":0},{"c":"BDX","t":"decimal","pct":17}]},{"table":"Product","rows":23567,"area":"catalogue","desc":"Product master. Category holds the category NAME, not an id.","cols":[{"c":"PID","t":"int","pct":100},{"c":"ProductCode","t":"nchar","pct":100},{"c":"ProductName","t":"nvarchar","pct":100},{"c":"Alias","t":"nchar","pct":18},{"c":"Description","t":"nvarchar","pct":11},{"c":"Barcode","t":"nchar","pct":100},{"c":"Category","t":"nchar","pct":100},{"c":"PurchaseUnit","t":"nchar","pct":100},{"c":"SalesUnit","t":"nchar","pct":100},{"c":"PurchaseCost","t":"decimal","pct":19},{"c":"SalesCost","t":"decimal","pct":100},{"c":"ReorderPoint","t":"int","pct":43},{"c":"AddedDate","t":"datetime","pct":100},{"c":"MarginPer","t":"decimal","pct":95},{"c":"ShowPS","t":"nchar","pct":3},{"c":"ButtonUIColor","t":"int","pct":100},{"c":"IsValueN","t":"nchar","pct":100},{"c":"ImagePath","t":"nvarchar","pct":3},{"c":"BD","t":"decimal","pct":1},{"c":"PromoCost","t":"decimal","pct":3}]},{"table":"Temp_Stock_Company","rows":23567,"area":"stock","desc":"Working stock figures per product.","cols":[{"c":"Id","t":"int","pct":100},{"c":"ProductID","t":"int","pct":100},{"c":"Barcode","t":"nchar","pct":100},{"c":"PurchaseRate","t":"decimal","pct":19},{"c":"SalesRate","t":"decimal","pct":100},{"c":"ManufacturingDate","t":"nchar","pct":0},{"c":"ExpiryDate","t":"nchar","pct":0},{"c":"Qty","t":"decimal","pct":16}]},{"table":"Product_OpeningStock","rows":23177,"area":"stock","desc":"Opening stock snapshot per product.","cols":[{"c":"PS_ID","t":"int","pct":100},{"c":"ProductID","t":"int","pct":100},{"c":"StorageType","t":"nchar","pct":100},{"c":"Warehouse_Store","t":"nchar","pct":100},{"c":"Qty","t":"decimal","pct":13},{"c":"ExpiryDate","t":"nchar","pct":0},{"c":"ManufacturingDate","t":"nchar","pct":0}]},{"table":"Invoice_Payment","rows":17922,"area":"sales","desc":"How each sale was tendered. Amount is cash TENDERED, not applied.","cols":[{"c":"IP_ID","t":"int","pct":100},{"c":"InvoiceID","t":"int","pct":100},{"c":"PaymentMode","t":"nchar","pct":100},{"c":"Amount","t":"decimal","pct":98}]},{"table":"InvoiceInfo","rows":17718,"area":"sales","desc":"One row per completed sale. The spine of every revenue figure.","cols":[{"c":"Inv_ID","t":"int","pct":100},{"c":"InvoiceNo","t":"nchar","pct":100},{"c":"InvoiceDate","t":"datetime","pct":100},{"c":"OpenID","t":"int","pct":100},{"c":"CurrencyCode","t":"nchar","pct":100},{"c":"ExchangeRate","t":"decimal","pct":100},{"c":"DiscPer","t":"decimal","pct":1},{"c":"DiscAmt","t":"decimal","pct":1},{"c":"GrandTotal","t":"decimal","pct":98},{"c":"TaxType","t":"nchar","pct":100},{"c":"Member_ID","t":"nchar","pct":0},{"c":"SalesmanID","t":"int","pct":0},{"c":"Cash","t":"decimal","pct":98},{"c":"Change","t":"decimal","pct":22},{"c":"CustID","t":"int","pct":0},{"c":"LoyaltyMemberID","t":"int","pct":0},{"c":"LP","t":"int","pct":0},{"c":"LotoAmt","t":"decimal","pct":0},{"c":"OrderNo","t":"int","pct":100},{"c":"BillNote","t":"nvarchar","pct":0},{"c":"CName","t":"nchar","pct":0},{"c":"CN","t":"nchar","pct":0},{"c":"EmailID","t":"nchar","pct":0},{"c":"RoundOff","t":"decimal","pct":18},{"c":"UID","t":"nchar","pct":100},{"c":"AddressX","t":"nvarchar","pct":0},{"c":"SFPer","t":"decimal","pct":0},{"c":"SF","t":"decimal","pct":0},{"c":"DateTimeX","t":"datetime","pct":100},{"c":"ApprovalCode","t":"nchar","pct":0},{"c":"CardNo","t":"nchar","pct":0},{"c":"CardHolder","t":"nchar","pct":0},{"c":"CardType","t":"nchar","pct":0},{"c":"EntryType","t":"nchar","pct":0},{"c":"RefNo","t":"nchar","pct":0},{"c":"ISOCode","t":"nchar","pct":0},{"c":"AL","t":"nchar","pct":0},{"c":"TransKey","t":"nchar","pct":0},{"c":"GiftCardID","t":"nchar","pct":0},{"c":"GiftCardAmount","t":"decimal","pct":0}]},{"table":"Salesman_Commission","rows":17718,"area":"accounting","desc":"One row per sale, but SalesmanID is 0 everywhere.","cols":[{"c":"ID","t":"int","pct":100},{"c":"InvoiceID","t":"int","pct":100},{"c":"CommissionPer","t":"decimal","pct":0},{"c":"Commission","t":"decimal","pct":0}]},{"table":"DeletedInvoices","rows":1970,"area":"sales","desc":"Voided and deleted bills. 11% of transaction count.","cols":[{"c":"Id","t":"int","pct":100},{"c":"BillNo","t":"nchar","pct":4},{"c":"BillDate","t":"datetime","pct":100},{"c":"GrandTotal","t":"decimal","pct":100},{"c":"Operator","t":"nchar","pct":100},{"c":"PaymentMode","t":"nchar","pct":0},{"c":"Reason","t":"nchar","pct":2},{"c":"DeletedDate","t":"datetime","pct":100},{"c":"BillType","t":"nchar","pct":100},{"c":"Canceled_Deleted","t":"nchar","pct":100}]},{"table":"CardProcessing","rows":658,"area":"accounting","desc":"Card transactions \u2014 amount only, no card details.","cols":[{"c":"CP_ID","t":"int","pct":100},{"c":"InvoiceID","t":"int","pct":100},{"c":"PF","t":"decimal","pct":0},{"c":"Amount","t":"decimal","pct":0},{"c":"InvoiceAmount","t":"decimal","pct":100}]},{"table":"POS_ClosingCash","rows":232,"area":"cash","desc":"Till close records. Variance columns exist and are entirely empty.","cols":[{"c":"ClosingID","t":"int","pct":100},{"c":"OpenID","t":"int","pct":100},{"c":"ClosingDate","t":"datetime","pct":100},{"c":"CQ1","t":"int","pct":0},{"c":"CQ5","t":"int","pct":0},{"c":"CQ10","t":"int","pct":0},{"c":"CQ20","t":"int","pct":0},{"c":"CQ50","t":"int","pct":0},{"c":"CQ100","t":"int","pct":0},{"c":"CLP","t":"int","pct":0},{"c":"CLN","t":"int","pct":0},{"c":"CLD","t":"int","pct":0},{"c":"CLQ","t":"int","pct":0},{"c":"CLHD","t":"int","pct":0},{"c":"CLDC","t":"int","pct":0},{"c":"CRP","t":"int","pct":0},{"c":"CRN","t":"int","pct":0},{"c":"CRD","t":"int","pct":0},{"c":"CRQ","t":"int","pct":0},{"c":"CRHD","t":"int","pct":0},{"c":"CRDC","t":"int","pct":0},{"c":"CTotalCashN","t":"decimal","pct":0},{"c":"CTotalCashL","t":"decimal","pct":0},{"c":"CTotalCashR","t":"decimal","pct":0},{"c":"ClosingBalance","t":"decimal","pct":0},{"c":"ActualCashSales","t":"decimal","pct":93},{"c":"DifferInCash","t":"decimal","pct":0},{"c":"U_ID","t":"nchar","pct":100}]},{"table":"POS_OpeningCash","rows":201,"area":"cash","desc":"Till open records, with a denomination breakdown that is unused.","cols":[{"c":"OpenID","t":"int","pct":100},{"c":"TillDetails","t":"nchar","pct":100},{"c":"UserID","t":"nchar","pct":100},{"c":"OpeningDate","t":"datetime","pct":100},{"c":"Closed","t":"int","pct":100},{"c":"Q1","t":"int","pct":0},{"c":"A1","t":"decimal","pct":0},{"c":"Q5","t":"int","pct":1},{"c":"A5","t":"decimal","pct":1},{"c":"Q10","t":"int","pct":1},{"c":"A10","t":"decimal","pct":1},{"c":"Q20","t":"int","pct":0},{"c":"A20","t":"decimal","pct":0},{"c":"Q50","t":"int","pct":0},{"c":"A50","t":"decimal","pct":0},{"c":"Q100","t":"int","pct":0},{"c":"A100","t":"decimal","pct":0},{"c":"LP","t":"int","pct":0},{"c":"LN","t":"int","pct":0},{"c":"LD","t":"int","pct":0},{"c":"LQ","t":"int","pct":0},{"c":"LHD","t":"int","pct":0},{"c":"LDC","t":"int","pct":0},{"c":"RP","t":"int","pct":0},{"c":"RN","t":"int","pct":0},{"c":"RD","t":"int","pct":0},{"c":"RQ","t":"int","pct":0},{"c":"RHD","t":"int","pct":0},{"c":"RDC","t":"int","pct":0},{"c":"TotalCashN","t":"decimal","pct":1},{"c":"TotalCashL","t":"decimal","pct":0},{"c":"TotalCashR","t":"decimal","pct":0},{"c":"OpeningCash","t":"decimal","pct":1}]},{"table":"Category","rows":108,"area":"catalogue","desc":"108 categories, with per-category tax flags and time-of-day visibility.","cols":[{"c":"CategoryName","t":"nchar","pct":100},{"c":"CAT_ID","t":"int","pct":100},{"c":"ShowCAT","t":"nchar","pct":100},{"c":"C1X1","t":"nchar","pct":100},{"c":"BackColorX1","t":"int","pct":100},{"c":"TimeSpecificCAT","t":"nchar","pct":100},{"c":"TimeFrom","t":"datetime","pct":100},{"c":"TimeTo","t":"datetime","pct":100},{"c":"TaxApplicable","t":"nchar","pct":100},{"c":"TaxnameX","t":"nchar","pct":100},{"c":"CatDiscount","t":"decimal","pct":0}]},{"table":"UserRights","rows":34,"area":"audit","desc":"Permission matrix \u2014 all rows belong to the single \"admin\" role.","cols":[{"c":"ID","t":"int","pct":100},{"c":"ModuleName","t":"nchar","pct":100},{"c":"UR_Save","t":"bit","pct":85},{"c":"UR_Update","t":"bit","pct":74},{"c":"UR_Delete","t":"bit","pct":82},{"c":"UR_View","t":"bit","pct":88},{"c":"UserID","t":"nchar","pct":100}]},{"table":"TaxMaster","rows":3,"area":"config","desc":"","cols":[{"c":"TaxName","t":"nchar","pct":100},{"c":"TaxType","t":"nchar","pct":100},{"c":"Percentage","t":"decimal","pct":67},{"c":"AdditionalPercentage","t":"decimal","pct":0},{"c":"TVQ","t":"decimal","pct":0}]},{"table":"TaxType","rows":3,"area":"config","desc":"","cols":[{"c":"Type","t":"nchar","pct":100}]},{"table":"Activation","rows":1,"area":"config","desc":"","cols":[{"c":"Id","t":"int","pct":100},{"c":"HardwareID","t":"nchar","pct":100},{"c":"ActivationID","t":"nchar","pct":100}]},{"table":"ClockIN","rows":1,"area":"other","desc":"","cols":[{"c":"ID","t":"int","pct":100},{"c":"UserID","t":"nchar","pct":100},{"c":"ClockINDate","t":"datetime","pct":100}]},{"table":"Company","rows":1,"area":"config","desc":"Store identity: name, address, tax number, receipt footer.","cols":[{"c":"Id","t":"int","pct":100},{"c":"CompanyName","t":"nvarchar","pct":100},{"c":"MailingName","t":"nvarchar","pct":100},{"c":"Country","t":"nvarchar","pct":100},{"c":"Address","t":"nvarchar","pct":100},{"c":"City","t":"nchar","pct":100},{"c":"State","t":"nchar","pct":100},{"c":"PinCode","t":"nchar","pct":0},{"c":"ContactNo","t":"nchar","pct":100},{"c":"Fax","t":"nchar","pct":0},{"c":"Email","t":"nchar","pct":100},{"c":"Website","t":"nvarchar","pct":100},{"c":"TIN","t":"nchar","pct":100},{"c":"LicenseNo","t":"nchar","pct":100},{"c":"ServiceTaxNo","t":"nvarchar","pct":100},{"c":"CST","t":"nchar","pct":100},{"c":"PAN","t":"nchar","pct":100},{"c":"CurrencyCode","t":"nchar","pct":100},{"c":"Currency","t":"nchar","pct":100},{"c":"Logo","t":"image","pct":100},{"c":"ShowLogo","t":"nchar","pct":100},{"c":"CapitalAccount","t":"decimal","pct":0}]},{"table":"EmailSetting","rows":1,"area":"config","desc":"","cols":[{"c":"Id","t":"int","pct":100},{"c":"ServerName","t":"nchar","pct":100},{"c":"SMTPAddress","t":"nvarchar","pct":100},{"c":"Username","t":"nchar","pct":100},{"c":"Password","t":"nchar","pct":100},{"c":"Port","t":"int","pct":100},{"c":"TLS_SSL_Required","t":"nchar","pct":100},{"c":"IsDefault","t":"nchar","pct":100},{"c":"IsActive","t":"nchar","pct":100}]},{"table":"GiftCard","rows":1,"area":"other","desc":"","cols":[{"c":"ID","t":"nchar","pct":100},{"c":"Amount","t":"decimal","pct":100},{"c":"CustomerName","t":"nchar","pct":100},{"c":"EntryDate","t":"datetime","pct":100}]},{"table":"PosPrinterSetting","rows":1,"area":"config","desc":"","cols":[{"c":"Id","t":"int","pct":100},{"c":"PrinterName","t":"nvarchar","pct":100},{"c":"IsEnabled","t":"nchar","pct":100},{"c":"TillID","t":"nchar","pct":100},{"c":"CashDrawer","t":"nchar","pct":100},{"c":"CustomerDisplay","t":"nchar","pct":100},{"c":"CDPort","t":"nchar","pct":100},{"c":"WS","t":"nchar","pct":100},{"c":"WSPortNo","t":"nchar","pct":100},{"c":"PT","t":"nchar","pct":100},{"c":"PTipAddress","t":"nchar","pct":0},{"c":"PTPortNo","t":"nchar","pct":0},{"c":"CCD","t":"nchar","pct":100},{"c":"AMII","t":"nchar","pct":100},{"c":"isOS","t":"nchar","pct":100},{"c":"WSType","t":"nchar","pct":100},{"c":"BarcodePrinter","t":"nchar","pct":0},{"c":"PGType","t":"nchar","pct":100},{"c":"CloverClientID","t":"nvarchar","pct":0},{"c":"CloverClientSecret","t":"nvarchar","pct":0},{"c":"CloverAuthURL","t":"nvarchar","pct":100},{"c":"CloverTokenURL","t":"nvarchar","pct":100},{"c":"CloverRedirectURL","t":"nvarchar","pct":100},{"c":"CloverDeviceID","t":"nvarchar","pct":0},{"c":"AppName","t":"nvarchar","pct":0},{"c":"RAID","t":"nvarchar","pct":0},{"c":"DBBackupLocation","t":"nvarchar","pct":100},{"c":"DeleteHoldDataWhileCloseShift","t":"bit","pct":100}]},{"table":"Registration","rows":1,"area":"config","desc":"","cols":[{"c":"UserID","t":"nchar","pct":100},{"c":"UserType","t":"nchar","pct":100},{"c":"Password","t":"nchar","pct":100},{"c":"Name","t":"nchar","pct":100},{"c":"ContactNo","t":"nchar","pct":100},{"c":"SSN","t":"nchar","pct":0},{"c":"EmailID","t":"nchar","pct":100},{"c":"JoiningDate","t":"datetime","pct":100},{"c":"Active","t":"nchar","pct":100},{"c":"PayrollType","t":"nchar","pct":100}]},{"table":"StockAdjustment_Store","rows":1,"area":"stock","desc":"","cols":[{"c":"SA_ID","t":"int","pct":100},{"c":"ProductID","t":"int","pct":100},{"c":"Barcode","t":"nchar","pct":100},{"c":"Date","t":"datetime","pct":100},{"c":"AdjustmentType","t":"nchar","pct":100},{"c":"Qty","t":"decimal","pct":100},{"c":"Reason","t":"nchar","pct":100}]},{"table":"UnitMaster","rows":1,"area":"config","desc":"","cols":[{"c":"Unit","t":"nchar","pct":100}]}],"empty":["Bank","BankAccountLedger","BankAccountRegistration","BankBranch","CashBack","ClockOUT","CreditCustomer","CreditCustomerLedger","CreditCustomerPayment","Currency","CustomerMaster","Expense","ExpenseType","FundDeposit","FundTransfer","Journal","LotoIn","LotoOut","LoyaltyMember","LoyaltyMemberLedgerBook","LoyaltySetting","POSGrouping","POS_HoldBill","POS_HoldBillItems","Party","Payment","Payment_Withdraw","Payroll","Payroll_MB","ProductLocation","Product_Import_Stage","Promotion","Purchase","PurchaseOrder","PurchaseOrder_Join","PurchaseReturn","PurchaseReturn_Join","Purchase_Join","Racking","SMSSetting","Sales","SalesMan","SalesReturn","SalesReturn_Join","Sales_Product","Setting","StockAdjustment_Warehouse","StockTransfer","StockTransfer_Join","StockTransfer_Join_S2W","StockTransfer_Join_W2W","StockTransfer_S2W","StockTransfer_W2W","Supplier","SupplierLedgerBook","Temp_Stock","Voucher","Voucher_OtherDetails","Wallet","Warehouse","WarehouseType","tblOrderNo"],"totals":{"all":88,"used":26,"empty":62,"cols":306}}</script>
+<script>
+(function(){
+"use strict";
+var D=JSON.parse(document.getElementById('payload').textContent);
+var T=D.totals;
+function el(t,a,k){var e=document.createElementNS('http://www.w3.org/2000/svg',t);
+  for(var x in a)e.setAttribute(x,a[x]);(k||[]).forEach(function(c){e.appendChild(c);});return e;}
+
+document.getElementById('meta').innerHTML=
+  ['15 Apr – 19 Aug 2026','88 tables','306 profiled columns','17,718 sales']
+  .map(function(s){return '<span>'+s+'</span>';}).join('');
+
+document.getElementById('kpis').innerHTML=[
+  {l:'Tables in schema', v:T.all, n:'What the product ships with.'},
+  {l:'Tables with data', v:T.used, n:'What this store actually uses.', c:'var(--ok)'},
+  {l:'Tables always empty', v:T.empty, n:'Unused modules — purchasing, loyalty, banking.', c:'var(--no)'},
+  {l:'Columns profiled', v:T.cols, n:'Across the 26 populated tables.'}
+].map(function(k){
+  return '<div class="kpi"><div class="lab">'+k.l+'</div><div class="val"'+(k.c?' style="color:'+k.c+'"':'')+
+    '>'+k.v+'</div><div class="note">'+k.n+'</div></div>';
+}).join('');
+
+/* size chart */
+(function(){
+  var rows=D.tables.filter(function(t){return t.rows>=100;});
+  var w=980,rowH=26,lw=190,bw=w-lw-96,H=rows.length*rowH+8;
+  var mx=Math.max.apply(null,rows.map(function(t){return t.rows;}));
+  var svg=el('svg',{viewBox:'0 0 '+w+' '+H,width:w,height:H,role:'img','aria-label':'Row counts of the populated tables'});
+  rows.forEach(function(t,i){
+    var y=i*rowH+5,bh=15;
+    var lb=el('text',{x:0,y:y+bh-3,'font-size':11.5,fill:'var(--ink-2)','font-family':'IBM Plex Mono, monospace'});
+    lb.textContent=t.table; svg.appendChild(lb);
+    var ww=Math.max(2,Math.sqrt(t.rows/mx)*bw);
+    svg.appendChild(el('rect',{x:lw,y:y,width:ww,height:bh,rx:3,fill:'var(--s1)',opacity:.88}));
+    var v=el('text',{x:lw+ww+8,y:y+bh-3,'font-size':11,fill:'var(--ink-3)','font-family':'IBM Plex Mono, monospace'});
+    v.textContent=t.rows.toLocaleString(); svg.appendChild(v);
+  });
+  var note=el('text',{x:lw,y:H-1,'font-size':10.5,fill:'var(--ink-3)','font-family':'IBM Plex Mono, monospace'});
+  note.textContent='bar length is square-root scaled'; svg.appendChild(note);
+  document.getElementById('cSize').appendChild(svg);
+})();
+
+/* area blocks */
+(function(){
+  var AREAS=[
+    ['sales','Sales — the spine','Everything revenue, basket and void related.'],
+    ['catalogue','Catalogue','What the store sells and how it is grouped.'],
+    ['stock','Stock','Opening snapshots only — no goods-in, so not maintainable.'],
+    ['cash','Till and cash','The variance feature exists and is switched off.'],
+    ['audit','Audit and access','Activity log and the permission matrix.'],
+    ['accounting','Accounting','A mirror of sales, plus card amounts.'],
+    ['config','Setup','Store identity, tax, printer, licence.'],
+    ['other','Other','']
+  ];
+  var host=document.getElementById('areaBlocks');
+  AREAS.forEach(function(a){
+    var ts=D.tables.filter(function(t){return t.area===a[0];});
+    if(!ts.length) return;
+    var wrap=document.createElement('div');
+    wrap.innerHTML='<div class="ph" style="margin-bottom:9px"><h3>'+a[1]+'</h3>'+
+      (a[2]?'<p class="cap">'+a[2]+'</p>':'')+'</div>';
+    var inner=document.createElement('div');
+    inner.style.cssText='display:flex;flex-direction:column;gap:10px';
+    ts.forEach(function(t){
+      var chips=t.cols.map(function(c){
+        var cls = c.pct>=90?'full':(c.pct>0?'part':'none');
+        return '<span class="col '+cls+'" title="'+c.t+' · filled on '+c.pct+'% of rows">'+c.c+
+          (c.pct>0&&c.pct<90?' <span style="opacity:.7">'+c.pct+'%</span>':'')+'</span>';
+      }).join('');
+      var d=document.createElement('div');
+      d.className='tbl-card';
+      d.innerHTML='<div class="tbl-head"><span class="nm">'+t.table+'</span>'+
+        '<span class="rc">'+t.rows.toLocaleString()+' rows · '+t.cols.length+' cols</span>'+
+        (t.desc?'<span class="ds">'+t.desc+'</span>':'')+'</div><div class="cols">'+chips+'</div>';
+      inner.appendChild(d);
+    });
+    wrap.appendChild(inner); host.appendChild(wrap);
+  });
+})();
+
+/* dictionary */
+(function(){
+  var out=[];
+  D.tables.forEach(function(t){
+    t.cols.forEach(function(c,i){
+      var cls=c.pct>=90?'ok':(c.pct>0?'mid':'no');
+      var barw=Math.max(2,c.pct)*1.0;
+      out.push('<tr><td class="mono" style="color:var(--ink-3)">'+(i===0?t.table:'')+'</td>'+
+        '<td class="mono"'+(c.pct===0?' style="text-decoration:line-through;opacity:.7"':'')+'>'+c.c+'</td>'+
+        '<td class="mono" style="color:var(--ink-3)">'+c.t+'</td>'+
+        '<td class="n">'+c.pct+'%</td>'+
+        '<td><span class="bar" style="width:'+barw+'px;background:var(--'+(cls==='ok'?'ok':cls==='mid'?'mid':'mute')+')"></span></td></tr>');
+    });
+  });
+  document.querySelector('#tDict tbody').innerHTML=out.join('');
+  document.getElementById('emptyList').innerHTML=D.empty.map(function(t){
+    return '<span class="col none" style="text-decoration:none;opacity:.85">'+t+'</span>';
+  }).join('');
+})();
+})();
+</script>
