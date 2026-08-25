@@ -1,0 +1,543 @@
+<meta charset="utf-8">
+<title>Scarbro Mart POS Review</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+@page { size: A4; margin: 17mm 16mm 16mm 16mm; }
+:root{
+  --ink:#14171a; --ink2:#4b5258; --ink3:#7b8288;
+  --rule:#d9dcd7; --rule2:#eceee9; --panel:#f7f7f4;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a;
+  --up:#1a7f4b; --down:#b4432c;
+  --warnbg:#fdf4e3; --warnrule:#e5cf9f;
+  --accbg:#eef4fd; --accrule:#c2d9f6;
+  --goodbg:#eaf6ef; --goodrule:#bcdfca;
+}
+*{box-sizing:border-box}
+body{margin:0; color:var(--ink); background:#fff;
+  font-family:"Source Sans 3",system-ui,sans-serif; font-size:9.6pt; line-height:1.5;
+  -webkit-print-color-adjust:exact; print-color-adjust:exact}
+h1,h2,h3,h4{font-family:Archivo,system-ui,sans-serif; margin:0; text-wrap:balance}
+.mono,code{font-family:"IBM Plex Mono",monospace}
+code{font-size:.9em; background:var(--rule2); padding:.5pt 3pt; border-radius:2px}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---- cover ---- */
+.cover{height:252mm; display:flex; flex-direction:column; justify-content:space-between; page-break-after:always}
+.cover .top{border-top:3pt solid var(--ink); padding-top:9mm}
+.cover .eyebrow{font-family:"IBM Plex Mono",monospace; font-size:8pt; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--ink3); margin-bottom:6mm}
+.cover h1{font-size:34pt; line-height:1.03; letter-spacing:-.02em; font-weight:700; max-width:150mm}
+.cover .lede{margin-top:7mm; font-size:12pt; line-height:1.5; color:var(--ink2); max-width:135mm}
+.cover .facts{display:grid; grid-template-columns:repeat(4,1fr); gap:0; border-top:1pt solid var(--rule); margin-top:10mm}
+.cover .fact{padding:5mm 4mm 0 0}
+.cover .fact .v{font-family:"IBM Plex Mono",monospace; font-size:17pt; font-weight:600; letter-spacing:-.02em}
+.cover .fact .l{font-size:8pt; color:var(--ink3); text-transform:uppercase; letter-spacing:.09em;
+  font-family:"IBM Plex Mono",monospace; margin-top:1.5mm}
+.cover .foot{border-top:1pt solid var(--rule); padding-top:4mm; font-size:8.5pt; color:var(--ink3);
+  display:flex; justify-content:space-between; gap:8mm}
+
+/* ---- structure ---- */
+section{page-break-inside:auto}
+.sec{page-break-before:always}
+h2{font-size:17pt; letter-spacing:-.015em; font-weight:700; padding-bottom:2.5mm;
+  border-bottom:2pt solid var(--ink); margin-bottom:5mm}
+h2 .n{font-family:"IBM Plex Mono",monospace; font-size:9pt; color:var(--ink3); font-weight:500;
+  display:block; letter-spacing:.12em; margin-bottom:1.5mm}
+h3{font-size:11.5pt; font-weight:600; margin:6mm 0 2mm}
+h3:first-child{margin-top:0}
+h4{font-size:9.8pt; font-weight:600; margin:0 0 1.5mm}
+p{margin:0 0 3mm}
+.lead{font-size:10.6pt; color:var(--ink2); margin-bottom:5mm; max-width:150mm}
+ul{margin:0 0 3mm; padding-left:5mm}
+li{margin-bottom:1.5mm}
+strong{font-weight:600}
+
+/* ---- components ---- */
+.stats{display:grid; grid-template-columns:repeat(4,1fr); gap:2.5mm; margin:0 0 5mm}
+.stat{border:.75pt solid var(--rule); border-radius:2pt; padding:3mm 3.5mm; background:var(--panel)}
+.stat .v{font-family:"IBM Plex Mono",monospace; font-size:14pt; font-weight:600; letter-spacing:-.02em}
+.stat .l{font-size:7.5pt; color:var(--ink3); text-transform:uppercase; letter-spacing:.08em;
+  font-family:"IBM Plex Mono",monospace; margin-top:1mm}
+.stat .d{font-size:8.2pt; color:var(--ink2); margin-top:1.5mm; line-height:1.35}
+.box{border-radius:2pt; padding:3.5mm 4mm; margin:0 0 4mm; page-break-inside:avoid; font-size:9.3pt}
+.box.acc{background:var(--accbg); border:.75pt solid var(--accrule)}
+.box.warn{background:var(--warnbg); border:.75pt solid var(--warnrule)}
+.box.good{background:var(--goodbg); border:.75pt solid var(--goodrule)}
+.box p:last-child{margin-bottom:0}
+table{width:100%; border-collapse:collapse; font-size:8.8pt; margin:0 0 4mm; page-break-inside:avoid}
+th,td{text-align:left; padding:1.8mm 4mm 1.8mm 0; border-bottom:.5pt solid var(--rule2); vertical-align:top}
+th:last-child,td:last-child{padding-right:0}
+th{font-family:"IBM Plex Mono",monospace; font-size:7.5pt; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--ink3); font-weight:500; border-bottom:.75pt solid var(--rule)}
+td.n,th.n{text-align:right; font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums}
+.up{color:var(--up); font-weight:600} .down{color:var(--down); font-weight:600}
+.tag{font-family:"IBM Plex Mono",monospace; font-size:7.2pt; padding:.6mm 1.6mm; border-radius:2px;
+  text-transform:uppercase; letter-spacing:.06em; font-weight:600; white-space:nowrap}
+.tag.sig{background:var(--up); color:#fff}
+.tag.ns{background:var(--rule); color:var(--ink2)}
+.tag.warn{background:#9a6100; color:#fff}
+.tag.bad{background:var(--down); color:#fff}
+figure{margin:0 0 5mm; page-break-inside:avoid}
+figcaption{font-size:8.2pt; color:var(--ink3); margin-top:1.5mm}
+svg{display:block; width:100%; height:auto}
+.two{display:grid; grid-template-columns:1fr 1fr; gap:6mm}
+.rec{display:grid; grid-template-columns:7mm 1fr; gap:3mm; margin-bottom:4mm; page-break-inside:avoid}
+.rec .n{font-family:"IBM Plex Mono",monospace; font-size:8.5pt; font-weight:600; color:#fff;
+  background:var(--ink); border-radius:2px; width:6mm; height:6mm; display:flex;
+  align-items:center; justify-content:center; margin-top:.4mm}
+.rec p{margin:1mm 0 0; color:var(--ink2); font-size:9.2pt}
+.toc{border-top:1pt solid var(--rule); border-bottom:1pt solid var(--rule); padding:4mm 0; margin-bottom:6mm}
+.toc ol{margin:0; padding-left:6mm; columns:2; column-gap:8mm; font-size:9.4pt}
+.toc li{margin-bottom:1.5mm}
+</style>
+
+<!-- ============ COVER ============ -->
+<div class="cover">
+  <div class="top">
+    <div class="eyebrow">Scarbro Mart &middot; 1744 Lawrence Ave E, Scarborough</div>
+    <h1>Point-of-sale review</h1>
+    <p class="lede">Four months of transaction data from <span class="mono">RetailPOS_DB</span>, read for what it says about where the business is going &mdash; and for what the system is and isn't recording.</p>
+    <div class="facts">
+      <div class="fact"><div class="v">$237,720</div><div class="l">Total sales</div></div>
+      <div class="fact"><div class="v">17,718</div><div class="l">Transactions</div></div>
+      <div class="fact"><div class="v">127</div><div class="l">Trading days</div></div>
+      <div class="fact"><div class="v">842</div><div class="l">Products sold</div></div>
+    </div>
+  </div>
+  <div class="foot">
+    <span>Source: RetailPOS_DB full backup, 19 August 2026</span>
+    <span>Period: 15 Apr &ndash; 19 Aug 2026</span>
+  </div>
+</div>
+
+<!-- ============ SUMMARY ============ -->
+<section class="sec">
+  <h2><span class="n">01</span>Executive summary</h2>
+
+  <p class="lead">Sales look flat. They are not flat &mdash; they are two significant, opposing movements that happen to cancel. Everything else in this report follows from that.</p>
+
+  <div class="box acc">
+    <h4>The finding that matters</h4>
+    <p>Total sales trend <strong>+1.1% across the window at p&nbsp;=&nbsp;0.91</strong> &mdash; statistically no trend at all. Underneath, <strong>customer visits rose 14.6%</strong> (p&nbsp;=&nbsp;0.015) while <strong>the average basket fell 11.5%</strong> (p&nbsp;=&nbsp;0.045). Both clear significance; the total does not, because they very nearly cancel. More people are coming in and each is spending less. <strong>Traffic is not the constraint &mdash; what happens at the counter is.</strong></p>
+  </div>
+
+  <h3>Six things worth acting on</h3>
+  <table>
+    <thead><tr><th style="width:38%">Finding</th><th>Detail</th><th class="n">Size</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Basket is shrinking</strong></td><td>The only significant negative in the data, cancelling real growth in footfall.</td><td class="n down">&minus;11.5%</td></tr>
+      <tr><td><strong>Lottery earns almost nothing</strong></td><td>40% of the sales line; nearly all remitted to OLG. Commission is the real income.</td><td class="n">≈$7,584</td></tr>
+      <tr><td><strong>Lottery customers buy nothing else</strong></td><td>7,491 visits &mdash; 42% of all transactions &mdash; bought a ticket and left.</td><td class="n">15.7% attach</td></tr>
+      <tr><td><strong>Void rate is very high</strong></td><td>1,970 voided bills, 98.5% with no reason recorded.</td><td class="n">11.1% of bills</td></tr>
+      <tr><td><strong>Nothing is traceable to a person</strong></td><td>One shared POS login across every sale, void and drawer open.</td><td class="n">1 account</td></tr>
+      <tr><td><strong>Profit cannot be calculated</strong></td><td>Cost price present on 102 of 842 products sold.</td><td class="n">6.8% of revenue</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box warn">
+    <h4>One limitation that shapes every conclusion</h4>
+    <p>The window runs mid-April to mid-August &mdash; straight into summer. Four months cannot separate a growth trend from a seasonal one. Where a category's rise would be explained by warm weather, this report marks it <em>unproven</em> rather than reporting it as growth. Re-running this against a backup covering autumn would settle it.</p>
+  </div>
+
+  <div class="toc">
+    <ol>
+      <li>Executive summary</li>
+      <li>Data, repairs and method</li>
+      <li>Is the trend positive?</li>
+      <li>Category performance</li>
+      <li>Lottery</li>
+      <li>Trading rhythm</li>
+      <li>Voids and cash control</li>
+      <li>Catalogue health</li>
+      <li>Case study: Electronics &mdash; My Top Gift</li>
+      <li>Recommendations</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ DATA ============ -->
+<section class="sec">
+  <h2><span class="n">02</span>Data, repairs and method</h2>
+
+  <p class="lead">What was analysed, what had to be fixed first, and how the statistics were run.</p>
+
+  <h3>The source</h3>
+  <p>A SQL Server full backup of <code>RetailPOS_DB</code> taken 19 August 2026 on <code>DESKTOP-VDRD582\SQLEXPRESS</code>. Despite the <code>.bak</code> extension being described as MySQL, it is a Microsoft SQL Server backup (MTF container, engine version 10, compatibility level 100). It was restored on SQL Server 2022 and queried directly. Figures come from <code>InvoiceInfo</code>, <code>Invoice_Product</code> and <code>Invoice_Payment</code>.</p>
+
+  <h3>A repair was required before any cash figure could be trusted</h3>
+  <p>Three invoices carried mis-keyed <em>cash tendered</em> amounts, the worst being <strong>$804,906,004,014.00 against a $20.00 sale</strong>. Together they pushed reported cash to $886.9 billion and made every payment report meaningless.</p>
+  <table>
+    <thead><tr><th>Invoice</th><th class="n">Cash entered</th><th class="n">Actual sale</th><th>Date</th></tr></thead>
+    <tbody>
+      <tr><td class="mono">13424</td><td class="n">$804,906,004,014.00</td><td class="n">$20.00</td><td>21 Jul 2026</td></tr>
+      <tr><td class="mono">6795</td><td class="n">$82,000,796,855.00</td><td class="n">$10.26</td><td>5 Jun 2026</td></tr>
+      <tr><td class="mono">17</td><td class="n">$5,660,300.00</td><td class="n">$30.51</td><td>15 Apr 2026</td></tr>
+    </tbody>
+  </table>
+  <p>The error sat only in the tender field. <code>GrandTotal</code> was correct on all three, so sales figures were never affected &mdash; only cash reporting. Tendered has been set equal to the sale amount, and reported cash falls from $886.9&nbsp;billion to <strong>$170,730.74</strong>. The repair script selects rows by rule rather than by hardcoded ID, runs inside a transaction with a post-check, and is safe to re-run.</p>
+
+  <h3>How trends were fitted</h3>
+  <p>Ordinary least squares on <strong>whole Sunday&ndash;Saturday weeks only</strong>. The extract begins on a Wednesday and ends on a Wednesday; including those part-weeks would read as a collapse at both ends. Seventeen whole weeks qualify. Every trend is reported with R&sup2; and a two-sided p-value, and "significant" means p&nbsp;&lt;&nbsp;0.05.</p>
+  <p>Seventeen weeks is enough to detect a strong trend and not enough to detect a weak one. <strong>A "not significant" result here means <em>not proven</em>, not <em>proven flat</em>.</strong></p>
+
+  <h3>Three independent totals agree</h3>
+  <table>
+    <thead><tr><th>Basis</th><th class="n">Total</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td>Invoice headers (<code>GrandTotal</code>)</td><td class="n">$237,425.99</td><td>The figure used throughout</td></tr>
+      <tr><td>Tender less change given</td><td class="n">$237,456.76</td><td>+0.01%</td></tr>
+      <tr><td>Line items summed</td><td class="n">$237,659.70</td><td>+0.10%</td></tr>
+    </tbody>
+  </table>
+  <p>The spread is invoice-level discounts and round-off. Agreement to within 0.1% across three independent paths means the data is internally consistent.</p>
+
+  <div class="box good">
+    <h4>No customer or cardholder data exists in this database</h4>
+    <p><code>InvoiceInfo</code> declares columns for card and customer detail &mdash; <code>CardNo</code>, <code>CardHolder</code>, <code>ApprovalCode</code>, <code>CardType</code>, <code>CustID</code>, <code>EmailID</code>, <code>AddressX</code> &mdash; and every one is empty on all 17,718 rows. Card processing runs through Clover, so nothing lands in them. Every figure in this report is an aggregate.</p>
+  </div>
+</section>
+
+<!-- ============ TREND ============ -->
+<section class="sec">
+  <h2><span class="n">03</span>Is the trend positive?</h2>
+  <p class="lead">Fitted on 17 whole weeks, 19 April to 15 August 2026.</p>
+
+  <table>
+    <thead><tr><th style="width:30%">Measure</th><th class="n">Change</th><th class="n">R&sup2;</th><th class="n">p</th><th>Verdict</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Total sales</strong></td><td class="n">+1.1%</td><td class="n">0.001</td><td class="n">0.909</td><td><span class="tag ns">not significant</span></td></tr>
+      <tr><td><strong>Customer visits</strong></td><td class="n up">+14.6%</td><td class="n">0.337</td><td class="n">0.015</td><td><span class="tag sig">significant</span></td></tr>
+      <tr><td><strong>Average basket</strong></td><td class="n down">&minus;11.5%</td><td class="n">0.242</td><td class="n">0.045</td><td><span class="tag sig">significant</span></td></tr>
+      <tr><td>Retail only</td><td class="n">+15.9%</td><td class="n">0.190</td><td class="n">0.080</td><td><span class="tag ns">not significant</span></td></tr>
+      <tr><td>Lottery net</td><td class="n">&minus;18.0%</td><td class="n">0.084</td><td class="n">0.260</td><td><span class="tag ns">not significant</span></td></tr>
+    </tbody>
+  </table>
+
+  <figure>
+    <div id="cDecomp"></div>
+    <figcaption>Visits and average basket, both indexed to 100 at the first whole week. The widening gap is the whole story: footfall climbing, spend per visit falling.</figcaption>
+  </figure>
+
+  <p>The store is running to stand still. A second, weaker signal points the same way: retail is up 15.9% while lottery is down 18.0% &mdash; a shift toward the side of the shop that actually earns a margin &mdash; though neither clears significance on its own.</p>
+
+  <div class="box acc">
+    <h4>What this means practically</h4>
+    <p>Spending effort on driving footfall would be spending it on the thing that is already working. The constraint is conversion and basket size at the counter. The clearest single opportunity is in section 05: <strong>7,491 visits bought a lottery ticket and nothing else.</strong></p>
+  </div>
+</section>
+
+<!-- ============ CATEGORY ============ -->
+<section class="sec">
+  <h2><span class="n">04</span>Category performance</h2>
+  <p class="lead">Weekly revenue by category, first half of the window against the second.</p>
+
+  <table>
+    <thead><tr><th style="width:26%">Category</th><th class="n">Revenue</th><th class="n">Change</th><th class="n">p</th><th>Verdict</th></tr></thead>
+    <tbody>
+      <tr><td>Lottery</td><td class="n">$95,109</td><td class="n down">&minus;8.8%</td><td class="n">0.260</td><td><span class="tag ns">not significant</span></td></tr>
+      <tr><td>Tobacco</td><td class="n">$48,472</td><td class="n">+1.3%</td><td class="n">0.922</td><td><span class="tag ns">flat</span></td></tr>
+      <tr><td>Beer</td><td class="n">$39,221</td><td class="n up">+17.2%</td><td class="n">0.076</td><td><span class="tag ns">not significant</span></td></tr>
+      <tr><td>Grocery (no tax)</td><td class="n">$12,128</td><td class="n up">+33.7%</td><td class="n">0.017</td><td><span class="tag sig">significant</span></td></tr>
+      <tr><td>Drinks</td><td class="n">$12,084</td><td class="n up">+49.5%</td><td class="n">&lt;0.001</td><td><span class="tag sig">significant</span></td></tr>
+      <tr><td>Alcohol</td><td class="n">$3,852</td><td class="n up">+26.9%</td><td class="n">0.158</td><td><span class="tag ns">not significant</span></td></tr>
+      <tr><td>General items</td><td class="n">$2,677</td><td class="n">+3.4%</td><td class="n">0.578</td><td><span class="tag ns">flat</span></td></tr>
+      <tr><td>Ready-to-drink</td><td class="n">$2,527</td><td class="n up">+246.1%</td><td class="n">&lt;0.001</td><td><span class="tag sig">significant</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="box warn">
+    <h4>Read the drinks growth with care</h4>
+    <p>Drinks, ready-to-drink and beer are the three categories summer inflates, and they rise over exactly the stretch that runs into summer. Four months cannot tell growth from season. Expanding facings now is reasonable; treating the growth as permanent is not. <strong>Book the decision for review in October.</strong></p>
+  </div>
+
+  <h3>The more reliable signal is tobacco</h3>
+  <p>Tobacco is flat in dollars (+1.3%) and has given up <strong>2.35 points of retail share</strong> &mdash; from 35.4% to 33.0% &mdash; while the shop around it grew. It remains the largest retail category, so this is not urgent, but in a nationally declining category the share number is the one to track, and it argues for planning the replacement of that shelf space rather than defending it.</p>
+
+  <h3>Share of retail, first half against second</h3>
+  <table>
+    <thead><tr><th>Category</th><th class="n">First half</th><th class="n">Second half</th><th class="n">Drift</th></tr></thead>
+    <tbody>
+      <tr><td>Tobacco</td><td class="n">35.4%</td><td class="n">33.0%</td><td class="n down">&minus;2.35pp</td></tr>
+      <tr><td>Drinks</td><td class="n">7.2%</td><td class="n">9.5%</td><td class="n up">+2.34pp</td></tr>
+      <tr><td>Beer</td><td class="n">26.7%</td><td class="n">28.5%</td><td class="n up">+1.84pp</td></tr>
+      <tr><td>Ready-to-drink</td><td class="n">0.8%</td><td class="n">2.6%</td><td class="n up">+1.71pp</td></tr>
+      <tr><td>Grocery (no tax)</td><td class="n">7.7%</td><td class="n">8.9%</td><td class="n up">+1.18pp</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============ LOTTERY ============ -->
+<section class="sec">
+  <h2><span class="n">05</span>Lottery</h2>
+  <p class="lead">Counted inside sales, as the store books it, and separated here because it behaves nothing like the rest of the shop.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="v">$151,681</div><div class="l">Ticket sales</div><div class="d">Face value taken across the counter.</div></div>
+    <div class="stat"><div class="v">$56,572</div><div class="l">Prizes paid</div><div class="d">37.3% paid back out.</div></div>
+    <div class="stat"><div class="v">$95,109</div><div class="l">Net held</div><div class="d">Owed to OLG, not earned.</div></div>
+    <div class="stat"><div class="v">≈$7,584</div><div class="l">Est. commission</div><div class="d">At 5% &mdash; confirm on statements.</div></div>
+  </div>
+
+  <div class="box warn">
+    <h4>Lottery is a commission business, not a revenue one</h4>
+    <p>The $95,109 held is not income; nearly all of it is remitted to OLG. At a 5% retailer rate the store earns roughly <strong>$7,584</strong> on $151,681 of tickets. So lottery contributes about <strong>5% of what the business actually takes in</strong>, while occupying <strong>40% of the sales line</strong> and <strong>50% of all counter time</strong>. The commission rate used here is indicative &mdash; check it against your OLG statements before relying on the figure.</p>
+  </div>
+
+  <h3>The largest single opportunity in this data</h3>
+  <table>
+    <thead><tr><th>Basket type</th><th class="n">Transactions</th><th class="n">Share of all</th><th class="n">Avg retail basket</th></tr></thead>
+    <tbody>
+      <tr><td>Lottery only &mdash; bought no goods</td><td class="n">7,491</td><td class="n">42.3%</td><td class="n">&mdash;</td></tr>
+      <tr><td>Lottery and goods</td><td class="n">1,400</td><td class="n">7.9%</td><td class="n">$16.11</td></tr>
+      <tr><td>Goods only</td><td class="n">8,827</td><td class="n">49.8%</td><td class="n">$13.60</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box acc">
+    <h4>Only 15.7% of lottery customers buy anything else</h4>
+    <p>7,491 visits &mdash; 42% of every transaction in four months &mdash; bought a ticket and nothing more. The ones who do add goods spend <strong>$16.11</strong>, <em>more</em> than the $13.60 of a customer who never touches lottery. <strong>This is not a low-value crowd; it is an unserved one.</strong> Converting one in twenty at the ordinary basket would add roughly <strong>$5,100</strong> over a comparable period. The queue is already there, and it is currently worth far less per minute than the rest of the shop.</p>
+  </div>
+</section>
+
+<!-- ============ RHYTHM ============ -->
+<section class="sec">
+  <h2><span class="n">06</span>Trading rhythm</h2>
+  <p class="lead">When the store actually makes money &mdash; the basis for staffing decisions.</p>
+
+  <figure>
+    <div id="cHeat"></div>
+    <figcaption>Retail revenue by hour and weekday across the whole period. Darker is more money through the till. Peak is Friday at 6pm.</figcaption>
+  </figure>
+
+  <h3>By weekday</h3>
+  <table>
+    <thead><tr><th>Day</th><th class="n">Sales per trading day</th><th class="n">Retail</th><th class="n">Lottery</th></tr></thead>
+    <tbody>
+      <tr><td>Friday</td><td class="n">$2,339</td><td class="n">$1,288</td><td class="n">$1,051</td></tr>
+      <tr><td>Saturday</td><td class="n">$2,077</td><td class="n">$1,160</td><td class="n">$918</td></tr>
+      <tr><td>Tuesday</td><td class="n">$1,919</td><td class="n">$1,160</td><td class="n">$760</td></tr>
+      <tr><td>Wednesday</td><td class="n">$1,819</td><td class="n">$1,116</td><td class="n">$703</td></tr>
+      <tr><td>Thursday</td><td class="n">$1,679</td><td class="n">$1,055</td><td class="n">$623</td></tr>
+      <tr><td>Monday</td><td class="n">$1,644</td><td class="n">$1,027</td><td class="n">$617</td></tr>
+      <tr><td>Sunday</td><td class="n">$1,628</td><td class="n">$1,055</td><td class="n">$573</td></tr>
+    </tbody>
+  </table>
+  <p>The pattern is consistent week to week, which makes cover a planning decision rather than a guess. Friday and Saturday evenings carry roughly 40% more than a Monday.</p>
+
+  <h3>Late trade is the growth story within beer</h3>
+  <p>Beer sold from 9pm onward rose from <strong>8.8% to 18.1%</strong> of beer revenue across the window (+0.36 points per week, p&nbsp;=&nbsp;0.030). In dollars the gap is starker: <strong>late beer grew 89%</strong> (p&nbsp;=&nbsp;0.002) against +31% for beer overall. The late trade is taking share within a growing category.</p>
+  <p>Average unit price falls from <strong>$7.39 before 9pm to $5.88 after</strong> &mdash; the late trade buys singles, not packs. That is a well-defined place to test a multi-buy offer on 473ml cans, and it speaks directly to the shrinking-basket problem in section 03.</p>
+</section>
+
+<!-- ============ VOIDS ============ -->
+<section class="sec">
+  <h2><span class="n">07</span>Voids and cash control</h2>
+  <p class="lead">The largest control weakness found, and it is not about any individual.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="v">1,970</div><div class="l">Voided bills</div><div class="d">11.1% of all transactions.</div></div>
+    <div class="stat"><div class="v">$43,394</div><div class="l">Voided value</div><div class="d">18.3% of gross.</div></div>
+    <div class="stat"><div class="v">98.5%</div><div class="l">No reason given</div><div class="d">1,940 of 1,970 blank.</div></div>
+    <div class="stat"><div class="v">1,742</div><div class="l">No-sale drawer opens</div><div class="d">Recorded in the POS log.</div></div>
+  </div>
+
+  <p>A void rate above 11% of transactions is very high for convenience retail, and with no reason recorded on 98.5% of them, nothing is auditable after the fact. <strong>The largest single void is $5,600</strong> &mdash; against a largest-ever completed sale of $450. The top 20 voids alone account for 35% of all voided value.</p>
+
+  <div class="box warn">
+    <h4>The POS cannot attribute any of this to a person</h4>
+    <p>Every attribution field holds a single shared value: <code>InvoiceInfo.UID</code> is "admin" on all 17,718 sales, <code>Logs.UserID</code> is "admin" on all 28,308 log entries, and <code>DeletedInvoices.Operator</code> is only ever "User" or "admin". Nothing distinguishes one member of staff from another.</p>
+  </div>
+
+  <h3>Correlating voids with the StoreOps shift roster</h3>
+  <p>Matching each void to whoever held the till at that moment is the only route available. It attributes 68% of voids (the rest fall before StoreOps records begin), and till sessions never overlap, so where a session exists the match is unambiguous. It still says <em>who was on shift</em>, never <em>who pressed void</em>.</p>
+
+  <table>
+    <thead><tr><th>Staff</th><th>Role</th><th class="n">Sales</th><th class="n">Voids</th><th class="n">Void rate</th><th class="n">Value voided</th><th class="n">% of their $</th></tr></thead>
+    <tbody>
+      <tr><td>Ashin</td><td>admin</td><td class="n">933</td><td class="n">167</td><td class="n">17.90%</td><td class="n">$2,823</td><td class="n">20.5%</td></tr>
+      <tr><td>Jaigy</td><td>payroll admin</td><td class="n">461</td><td class="n">69</td><td class="n">14.97%</td><td class="n">$1,039</td><td class="n">16.2%</td></tr>
+      <tr><td>Abijith</td><td>employee</td><td class="n">5,435</td><td class="n">575</td><td class="n">10.58%</td><td class="n">$11,992</td><td class="n">17.1%</td></tr>
+      <tr><td>Blesson</td><td>manager</td><td class="n">5,581</td><td class="n">519</td><td class="n">9.30%</td><td class="n">$12,803</td><td class="n">17.5%</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box acc">
+    <h4>This does not point at anyone</h4>
+    <p>The differences are beyond chance (&chi;&sup2;, p&nbsp;=&nbsp;2.8&times;10&#8315;&sup1;&#8309;), but the highest rate on the list belongs to the owner, and the two highest belong to the two admin accounts with by far the smallest samples &mdash; consistent with void rate tracking <em>corrections and admin work</em> rather than misconduct. Measured by <strong>value</strong>, everyone sits in a tight 16.2&ndash;20.5% band. <strong>The control gap is the finding, not any individual.</strong></p>
+  </div>
+
+  <h3>The till-variance feature exists and is switched off</h3>
+  <p>Of the 28 columns in <code>POS_ClosingCash</code>, 23 are empty on every row &mdash; including the denomination breakdown, <code>ClosingBalance</code> and <code>DifferInCash</code>. The POS has a complete cash-count and variance function that is not in use. This is precisely the gap StoreOps was built to fill in spreadsheets; turning it on would give a second, independent count to reconcile against.</p>
+</section>
+
+<!-- ============ CATALOGUE ============ -->
+<section class="sec">
+  <h2><span class="n">08</span>Catalogue health</h2>
+  <p class="lead">What is in the product master, and how little of it matters.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="v">23,567</div><div class="l">Products on file</div><div class="d">In the product master.</div></div>
+    <div class="stat"><div class="v">842</div><div class="l">Ever sold</div><div class="d">3.6% of the catalogue.</div></div>
+    <div class="stat"><div class="v">2</div><div class="l">Products = 50% of revenue</div><div class="d">Both lottery.</div></div>
+    <div class="stat"><div class="v">34</div><div class="l">Products = 90%</div><div class="d">The list that matters.</div></div>
+  </div>
+
+  <p><strong>22,725 products &mdash; 96.4% of the catalogue &mdash; have never been scanned once.</strong> And the concentration among those that do sell is extreme: two products (<code>LOTTO IN</code> and <code>INSTANT</code>) are half of all revenue, twenty are 80%, thirty-four are 90%.</p>
+
+  <div class="box acc">
+    <h4>This makes the cost-price problem small</h4>
+    <p>Cost is missing on 94% of what sells, which sounds like a large project. It is not. <strong>Entering purchase cost on 34 products would enable real margin reporting on 90% of turnover.</strong> That is an hour of work, and it is the single highest-return task available &mdash; because margin, not revenue, is what tells you whether beer or tobacco earns its shelf space.</p>
+  </div>
+
+  <h3>Hygiene</h3>
+  <p>Genuinely clean: every sold product carries a barcode, and no barcode is shared between two products. Two problems do need attention:</p>
+  <ul>
+    <li><strong>18 groups of duplicate product names</strong> &mdash; the same item entered two or three times as separate records, splitting its sales history. <code>CASH BACK</code> exists twice, <code>Tide</code> three times, <code>Van Dens Earphones</code> three times. Each duplicate makes a product look weaker than it is.</li>
+    <li><strong>Categories drift.</strong> Roughly $4,624 of beer sits under Drinks and Deli rather than Beer, which understates the beer category by about 12% and inflates the Drinks growth figure in section 04.</li>
+  </ul>
+  <p>Only 49 of 108 defined categories are in use. Drinks holds 146 products for $12,084 &mdash; $83 per product &mdash; against Tobacco's 90 products for $48,472, or $539 each. Drinks is where the clutter lives.</p>
+</section>
+
+<!-- ============ CASE STUDY ============ -->
+<section class="sec">
+  <h2><span class="n">09</span>Case study: Electronics &mdash; My Top Gift</h2>
+  <p class="lead">A 46-product phone-accessory range loaded on 19 June 2026. A useful worked example of how to judge a range.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="v">$578.30</div><div class="l">Revenue</div><div class="d">61 days on shelf.</div></div>
+    <div class="stat"><div class="v">26</div><div class="l">Units sold</div><div class="d">0.43 a day.</div></div>
+    <div class="stat"><div class="v">16 / 46</div><div class="l">SKUs that sold</div><div class="d">30 have never sold.</div></div>
+    <div class="stat"><div class="v">$786.70</div><div class="l">Dead stock at retail</div><div class="d">72% of range value.</div></div>
+  </div>
+
+  <h3>What sells</h3>
+  <table>
+    <thead><tr><th>Product</th><th class="n">Shelf price</th><th class="n">Units</th><th class="n">Revenue</th></tr></thead>
+    <tbody>
+      <tr><td>Ven Dens Power Bank</td><td class="n">$34.99</td><td class="n">3</td><td class="n">$118.62</td></tr>
+      <tr><td>Van Dens Earphones</td><td class="n">$15.99</td><td class="n">6</td><td class="n">$101.64</td></tr>
+      <tr><td>Ven Dens Adapter</td><td class="n">$17.99&ndash;20.99</td><td class="n">4</td><td class="n">$91.49</td></tr>
+      <tr><td>Borofone Headphones</td><td class="n">$49.99</td><td class="n">1</td><td class="n">$56.49</td></tr>
+      <tr><td>Hoco Charger</td><td class="n">$15.99</td><td class="n">2</td><td class="n">$36.14</td></tr>
+    </tbody>
+  </table>
+
+  <h3>What doesn't &mdash; and the pattern is clear</h3>
+  <p>Everything above roughly $25 is dead, with the single exception of the power bank and one headphone sale. Stuck items include a <strong>$60.99 Hoco BT speaker</strong>, a <strong>$51.99 headset</strong>, <strong>two $49.99 Borofone headphones</strong> and a <strong>$49.99 Hoco hair clipper</strong> &mdash; five items holding $263 of retail value with zero movement in two months. The hair clipper is not a phone accessory at all.</p>
+  <p>The range is also duplicated: 13 of the 30 dead items are cables, chargers or car holders that already have a selling twin at a different price. <code>Ven dens cable</code> appears three times at $12.99, none sold.</p>
+
+  <div class="box good">
+    <h4>The category does earn its place &mdash; at a narrower width</h4>
+    <p>14 of the 23 bills containing a gift item (61%) also contained other shopping, worth $483.60 in total bill value. These items pull incremental spend rather than standing alone. Keep the sub-$20 earphones, cables and chargers plus the $34.99 power bank; clear the high-ticket tail and merge the duplicate SKUs.</p>
+  </div>
+  <p style="font-size:8.6pt;color:var(--ink3)">Purchase cost is $0.00 on all 46 items, so margin and the true cost of the dead stock cannot be calculated from this data.</p>
+</section>
+
+<!-- ============ RECOMMENDATIONS ============ -->
+<section class="sec">
+  <h2><span class="n">10</span>Recommendations</h2>
+  <p class="lead">Ordered by return on effort.</p>
+
+  <div class="rec"><div class="n">1</div><div>
+    <h4>Enter cost price on the top 34 products</h4>
+    <p>An hour of work that unlocks margin reporting on 90% of turnover. Everything else in this report is revenue and volume; only margin tells you what is worth the shelf. This is the highest-return single task available.</p></div></div>
+
+  <div class="rec"><div class="n">2</div><div>
+    <h4>Give every staff member their own POS login</h4>
+    <p>Costs nothing and turns every question about voids, discounts and drawer opens from circumstantial into definitive. Without it, no loss-prevention question can be answered properly.</p></div></div>
+
+  <div class="rec"><div class="n">3</div><div>
+    <h4>Work the lottery queue</h4>
+    <p>7,491 visits bought a ticket and nothing else, and lottery customers who do add goods spend more than everyone else. Put impulse lines where the lottery queue actually stands. Converting one in twenty is worth roughly $5,100 per four months.</p></div></div>
+
+  <div class="rec"><div class="n">4</div><div>
+    <h4>Make the void reason mandatory, and require a manager code above $50</h4>
+    <p>98.5% of voids carry no reason. A threshold approval would have caught the $5,600 void. Also add a till-side sanity check rejecting any tender more than $500 above the sale total, which prevents a repeat of the mis-keyed cash entries.</p></div></div>
+
+  <div class="rec"><div class="n">5</div><div>
+    <h4>Treat the shrinking basket as the problem to solve</h4>
+    <p>It is the only significant negative in the data and it is cancelling genuine growth in footfall. Start with the $2&ndash;$10 band and the 9pm&ndash;11pm singles trade, where one added item changes the basket materially.</p></div></div>
+
+  <div class="rec"><div class="n">6</div><div>
+    <h4>Clean the catalogue</h4>
+    <p>Merge the 18 duplicate product groups, move the misfiled beer out of Drinks and Deli, and archive &mdash; not delete &mdash; the 22,725 items that have never sold, so lookups and future analysis stop carrying 96% noise.</p></div></div>
+
+  <div class="rec"><div class="n">7</div><div>
+    <h4>Turn on the POS till-variance feature</h4>
+    <p>It already exists and is switched off. It would give a second independent cash count to reconcile against StoreOps, which is exactly what you want for cash control.</p></div></div>
+
+  <div class="rec"><div class="n">8</div><div>
+    <h4>Re-run this analysis after autumn</h4>
+    <p>The drinks, RTD and beer growth cannot be separated from summer on four months of data. A backup covering September to November would settle which of them is real, and would make the trend figures in section 03 considerably more reliable.</p></div></div>
+</section>
+
+<script id="payload" type="application/json">{"weekly":[{"week":"2026-04-19","sales":11138.39,"retail":6379.79,"lot_net":4758.6,"txns":875,"basket":13.29},{"week":"2026-04-26","sales":13746.96,"retail":7725.86,"lot_net":6021.1,"txns":898,"basket":17.21},{"week":"2026-05-03","sales":15360.85,"retail":8019.85,"lot_net":7341.0,"txns":988,"basket":15.51},{"week":"2026-05-10","sales":12038.74,"retail":6745.34,"lot_net":5293.4,"txns":900,"basket":14.14},{"week":"2026-05-17","sales":11643.1,"retail":7179.8,"lot_net":4463.3,"txns":927,"basket":13.37},{"week":"2026-05-24","sales":13494.08,"retail":6921.38,"lot_net":6572.7,"txns":921,"basket":13.62},{"week":"2026-05-31","sales":14416.9,"retail":8800.5,"lot_net":5616.4,"txns":963,"basket":14.57},{"week":"2026-06-07","sales":11874.35,"retail":7963.45,"lot_net":3910.9,"txns":988,"basket":14.48},{"week":"2026-06-14","sales":13158.55,"retail":8831.05,"lot_net":4327.5,"txns":1047,"basket":13.97},{"week":"2026-06-21","sales":13812.05,"retail":8754.85,"lot_net":5057.2,"txns":985,"basket":14.1},{"week":"2026-06-28","sales":15179.76,"retail":9446.56,"lot_net":5733.2,"txns":1157,"basket":14.1},{"week":"2026-07-05","sales":13163.05,"retail":7966.75,"lot_net":5196.3,"txns":1033,"basket":12.87},{"week":"2026-07-12","sales":12625.57,"retail":8125.77,"lot_net":4499.8,"txns":963,"basket":13.96},{"week":"2026-07-19","sales":12718.28,"retail":7339.68,"lot_net":5378.6,"txns":943,"basket":13.18},{"week":"2026-07-26","sales":11396.52,"retail":8018.62,"lot_net":3377.9,"txns":1065,"basket":12.67},{"week":"2026-08-02","sales":15958.93,"retail":8889.83,"lot_net":7069.1,"txns":1059,"basket":14.6},{"week":"2026-08-09","sales":11399.56,"retail":7584.06,"lot_net":3815.5,"txns":968,"basket":13.01}],"hour_dow":[{"dow":1,"hour":10,"txns":135,"retail":1068.98,"lottery":1407.0},{"dow":1,"hour":11,"txns":137,"retail":1560.77,"lottery":284.8},{"dow":1,"hour":12,"txns":161,"retail":1700.4,"lottery":987.8},{"dow":1,"hour":13,"txns":208,"retail":1894.21,"lottery":1107.5},{"dow":1,"hour":14,"txns":135,"retail":1314.07,"lottery":537.0},{"dow":1,"hour":15,"txns":130,"retail":1529.08,"lottery":353.6},{"dow":1,"hour":16,"txns":181,"retail":1340.45,"lottery":760.0},{"dow":1,"hour":17,"txns":199,"retail":1715.05,"lottery":1166.9},{"dow":1,"hour":18,"txns":186,"retail":1478.83,"lottery":951.0},{"dow":1,"hour":19,"txns":197,"retail":1465.61,"lottery":1197.0},{"dow":1,"hour":20,"txns":166,"retail":1213.22,"lottery":221.0},{"dow":1,"hour":21,"txns":133,"retail":1029.08,"lottery":661.0},{"dow":1,"hour":22,"txns":100,"retail":1134.67,"lottery":97.0},{"dow":1,"hour":23,"txns":7,"retail":94.57,"lottery":30.0},{"dow":1,"hour":9,"txns":69,"retail":453.85,"lottery":551.4},{"dow":2,"hour":10,"txns":114,"retail":768.43,"lottery":550.3},{"dow":2,"hour":11,"txns":144,"retail":1064.27,"lottery":491.2},{"dow":2,"hour":12,"txns":181,"retail":1682.2,"lottery":760.0},{"dow":2,"hour":13,"txns":198,"retail":1567.91,"lottery":1394.2},{"dow":2,"hour":14,"txns":151,"retail":1468.71,"lottery":764.0},{"dow":2,"hour":15,"txns":161,"retail":1502.26,"lottery":730.0},{"dow":2,"hour":16,"txns":208,"retail":1567.61,"lottery":1259.0},{"dow":2,"hour":17,"txns":182,"retail":2083.16,"lottery":1068.0},{"dow":2,"hour":18,"txns":223,"retail":1709.7,"lottery":1551.8},{"dow":2,"hour":19,"txns":189,"retail":1293.18,"lottery":1091.0},{"dow":2,"hour":20,"txns":164,"retail":1012.23,"lottery":499.7},{"dow":2,"hour":21,"txns":148,"retail":1223.08,"lottery":190.0},{"dow":2,"hour":22,"txns":86,"retail":836.6,"lottery":154.0},{"dow":2,"hour":23,"txns":1,"retail":10.87,"lottery":0.0},{"dow":2,"hour":8,"txns":2,"retail":13.75,"lottery":10.0},{"dow":2,"hour":9,"txns":91,"retail":676.18,"lottery":591.0},{"dow":3,"hour":10,"txns":133,"retail":974.58,"lottery":633.0},{"dow":3,"hour":11,"txns":140,"retail":1245.02,"lottery":445.2},{"dow":3,"hour":12,"txns":206,"retail":1749.05,"lottery":1042.5},{"dow":3,"hour":13,"txns":203,"retail":1615.99,"lottery":1865.0},{"dow":3,"hour":14,"txns":161,"retail":1684.6,"lottery":1104.0},{"dow":3,"hour":15,"txns":192,"retail":1701.02,"lottery":771.0},{"dow":3,"hour":16,"txns":211,"retail":1720.85,"lottery":1177.0},{"dow":3,"hour":17,"txns":240,"retail":1764.49,"lottery":1827.0},{"dow":3,"hour":18,"txns":241,"retail":1997.15,"lottery":1366.0},{"dow":3,"hour":19,"txns":207,"retail":1703.78,"lottery":885.3},{"dow":3,"hour":20,"txns":237,"retail":1299.84,"lottery":1284.0},{"dow":3,"hour":21,"txns":184,"retail":1457.36,"lottery":498.0},{"dow":3,"hour":22,"txns":92,"retail":996.38,"lottery":363.0},{"dow":3,"hour":23,"txns":4,"retail":39.61,"lottery":0.0},{"dow":3,"hour":8,"txns":1,"retail":18.0,"lottery":10.0},{"dow":3,"hour":9,"txns":88,"retail":908.2,"lottery":401.0},{"dow":4,"hour":10,"txns":109,"retail":989.49,"lottery":-11.5},{"dow":4,"hour":11,"txns":162,"retail":1390.33,"lottery":296.5},{"dow":4,"hour":12,"txns":230,"retail":1975.11,"lottery":1216.4},{"dow":4,"hour":13,"txns":252,"retail":1950.46,"lottery":2200.0},{"dow":4,"hour":14,"txns":195,"retail":1386.56,"lottery":594.0},{"dow":4,"hour":15,"txns":195,"retail":1488.11,"lottery":279.0},{"dow":4,"hour":16,"txns":241,"retail":1760.55,"lottery":1506.0},{"dow":4,"hour":17,"txns":240,"retail":2032.52,"lottery":957.0},{"dow":4,"hour":18,"txns":234,"retail":2018.81,"lottery":1078.0},{"dow":4,"hour":19,"txns":221,"retail":1613.15,"lottery":1900.0},{"dow":4,"hour":20,"txns":222,"retail":1331.53,"lottery":492.0},{"dow":4,"hour":21,"txns":182,"retail":1313.94,"lottery":1446.0},{"dow":4,"hour":22,"txns":107,"retail":908.8,"lottery":661.0},{"dow":4,"hour":23,"txns":9,"retail":137.18,"lottery":0.0},{"dow":4,"hour":9,"txns":104,"retail":909.24,"lottery":744.0},{"dow":5,"hour":10,"txns":129,"retail":826.07,"lottery":149.8},{"dow":5,"hour":11,"txns":165,"retail":1135.43,"lottery":221.3},{"dow":5,"hour":12,"txns":194,"retail":1431.0,"lottery":890.8},{"dow":5,"hour":13,"txns":233,"retail":1709.71,"lottery":1815.4},{"dow":5,"hour":14,"txns":161,"retail":1439.0,"lottery":574.0},{"dow":5,"hour":15,"txns":173,"retail":1519.5,"lottery":1017.0},{"dow":5,"hour":16,"txns":156,"retail":1547.25,"lottery":831.0},{"dow":5,"hour":17,"txns":192,"retail":2084.31,"lottery":801.3},{"dow":5,"hour":18,"txns":200,"retail":1835.89,"lottery":1291.0},{"dow":5,"hour":19,"txns":193,"retail":1508.4,"lottery":1718.9},{"dow":5,"hour":20,"txns":178,"retail":1033.22,"lottery":537.0},{"dow":5,"hour":21,"txns":154,"retail":1183.88,"lottery":229.0},{"dow":5,"hour":22,"txns":101,"retail":935.36,"lottery":408.0},{"dow":5,"hour":23,"txns":5,"retail":69.47,"lottery":0.0},{"dow":5,"hour":9,"txns":102,"retail":739.59,"lottery":738.0},{"dow":6,"hour":10,"txns":130,"retail":876.23,"lottery":690.8},{"dow":6,"hour":11,"txns":153,"retail":1377.78,"lottery":-40.5},{"dow":6,"hour":12,"txns":260,"retail":1893.13,"lottery":1521.7},{"dow":6,"hour":13,"txns":268,"retail":2129.31,"lottery":2061.4},{"dow":6,"hour":14,"txns":173,"retail":1421.31,"lottery":814.5},{"dow":6,"hour":15,"txns":159,"retail":1222.02,"lottery":1754.0},{"dow":6,"hour":16,"txns":210,"retail":1935.09,"lottery":1657.0},{"dow":6,"hour":17,"txns":249,"retail":2048.63,"lottery":1582.0},{"dow":6,"hour":18,"txns":279,"retail":2238.07,"lottery":2040.2},{"dow":6,"hour":19,"txns":303,"retail":2218.27,"lottery":2211.7},{"dow":6,"hour":20,"txns":284,"retail":2114.42,"lottery":2051.0},{"dow":6,"hour":21,"txns":224,"retail":1356.3,"lottery":1592.0},{"dow":6,"hour":22,"txns":139,"retail":1354.31,"lottery":490.0},{"dow":6,"hour":23,"txns":8,"retail":39.81,"lottery":0.0},{"dow":6,"hour":9,"txns":127,"retail":959.04,"lottery":496.5},{"dow":7,"hour":10,"txns":160,"retail":946.27,"lottery":954.8},{"dow":7,"hour":11,"txns":191,"retail":1646.52,"lottery":1410.9},{"dow":7,"hour":12,"txns":191,"retail":1152.39,"lottery":1426.7},{"dow":7,"hour":13,"txns":254,"retail":1827.65,"lottery":1854.2},{"dow":7,"hour":14,"txns":174,"retail":1211.73,"lottery":1153.0},{"dow":7,"hour":15,"txns":201,"retail":1862.1,"lottery":1129.2},{"dow":7,"hour":16,"txns":213,"retail":1685.36,"lottery":1523.1},{"dow":7,"hour":17,"txns":236,"retail":1654.89,"lottery":1724.3},{"dow":7,"hour":18,"txns":246,"retail":2068.47,"lottery":2015.0},{"dow":7,"hour":19,"txns":256,"retail":2057.58,"lottery":1937.5},{"dow":7,"hour":20,"txns":234,"retail":1248.89,"lottery":-738.5},{"dow":7,"hour":21,"txns":205,"retail":1234.24,"lottery":1013.0},{"dow":7,"hour":22,"txns":135,"retail":1366.94,"lottery":495.4},{"dow":7,"hour":23,"txns":3,"retail":76.17,"lottery":0.0},{"dow":7,"hour":8,"txns":2,"retail":18.01,"lottery":0.0},{"dow":7,"hour":9,"txns":85,"retail":817.78,"lottery":618.0}]}</script>
+<script>
+(function(){
+var D=JSON.parse(document.getElementById('payload').textContent);
+function el(t,a,k){var e=document.createElementNS('http://www.w3.org/2000/svg',t);
+  for(var x in a)e.setAttribute(x,a[x]);(k||[]).forEach(function(c){e.appendChild(c);});return e;}
+
+/* decomposition line chart */
+(function(){
+  var W=D.weekly, w=1000,H=290,m={t:14,r:96,b:36,l:46},iw=w-m.l-m.r,ih=H-m.t-m.b;
+  var t0=W[0].txns,b0=W[0].basket;
+  var ti=W.map(function(d){return d.txns/t0*100;}), bi=W.map(function(d){return d.basket/b0*100;});
+  var all=ti.concat(bi), lo=Math.min.apply(null,all)-6, hi=Math.max.apply(null,all)+6;
+  var x=function(i){return m.l+(i/(W.length-1))*iw;}, y=function(v){return m.t+ih-((v-lo)/(hi-lo))*ih;};
+  var svg=el('svg',{viewBox:'0 0 '+w+' '+H,role:'img','aria-label':'Visits versus basket, indexed'});
+  [80,90,100,110,120].forEach(function(v){
+    if(v<lo||v>hi)return; var yy=y(v);
+    svg.appendChild(el('line',{x1:m.l,x2:w-m.r,y1:yy,y2:yy,stroke:v===100?'#c9ccc7':'#eceee9','stroke-width':1}));
+    var t=el('text',{x:m.l-8,y:yy+4,'font-size':11,fill:'#7b8288','text-anchor':'end','font-family':'IBM Plex Mono, monospace'});
+    t.textContent=v; svg.appendChild(t);
+  });
+  [{d:ti,c:'#2a78d6',n:'Visits'},{d:bi,c:'#eb6834',n:'Basket'}].forEach(function(s){
+    svg.appendChild(el('polyline',{points:s.d.map(function(v,i){return x(i)+','+y(v);}).join(' '),
+      fill:'none',stroke:s.c,'stroke-width':2.6,'stroke-linejoin':'round','stroke-linecap':'round'}));
+    var lb=el('text',{x:w-m.r+8,y:y(s.d[s.d.length-1])+4,'font-size':11.5,fill:s.c,
+      'font-family':'IBM Plex Mono, monospace','font-weight':600});
+    lb.textContent=s.n+' '+Math.round(s.d[s.d.length-1]); svg.appendChild(lb);
+  });
+  W.forEach(function(d,i){
+    if(i%3===0||i===W.length-1){
+      var t=el('text',{x:x(i),y:H-12,'font-size':10.5,fill:'#7b8288','text-anchor':'middle','font-family':'IBM Plex Mono, monospace'});
+      t.textContent=new Date(d.week+'T12:00:00').toLocaleDateString('en-CA',{month:'short',day:'numeric'});
+      svg.appendChild(t);
+    }
+  });
+  document.getElementById('cDecomp').appendChild(svg);
+})();
+
+/* heatmap */
+(function(){
+  var dows=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'], hrs=[], hs={}, look={};
+  D.hour_dow.forEach(function(d){ hs[d.hour]=1; look[d.dow+'_'+d.hour]=d; });
+  Object.keys(hs).map(Number).sort(function(a,b){return a-b;}).forEach(function(h){ if(h>=9&&h<=22) hrs.push(h); });
+  var mx=Math.max.apply(null,D.hour_dow.map(function(d){return d.retail;}));
+  var cw=62, rh=30, lw=44, w=lw+hrs.length*cw, H=24+dows.length*rh;
+  var svg=el('svg',{viewBox:'0 0 '+w+' '+H,role:'img','aria-label':'Retail revenue by hour and weekday'});
+  hrs.forEach(function(h,i){
+    var t=el('text',{x:lw+i*cw+cw/2,y:14,'font-size':11,fill:'#7b8288','text-anchor':'middle','font-family':'IBM Plex Mono, monospace'});
+    t.textContent=(h%12===0?12:h%12)+(h<12?'a':'p'); svg.appendChild(t);
+  });
+  dows.forEach(function(nm,di){
+    var yy=24+di*rh;
+    var lb=el('text',{x:0,y:yy+rh/2+4,'font-size':11,fill:'#4b5258','font-family':'IBM Plex Mono, monospace'});
+    lb.textContent=nm; svg.appendChild(lb);
+    hrs.forEach(function(h,i){
+      var d=look[(di+1)+'_'+h], v=d?d.retail:0, t=mx>0?v/mx:0;
+      var r=Math.round(42+(255-42)*(1-t)), g=Math.round(120+(255-120)*(1-t)), b=Math.round(214+(255-214)*(1-t));
+      svg.appendChild(el('rect',{x:lw+i*cw+1.5,y:yy+1.5,width:cw-3,height:rh-3,rx:2.5,
+        fill:'rgb('+r+','+g+','+b+')'}));
+      if(t>0.26){
+        var tx=el('text',{x:lw+i*cw+cw/2,y:yy+rh/2+4,'font-size':10.5,'text-anchor':'middle',
+          'font-family':'IBM Plex Mono, monospace',fill:t>0.55?'#fff':'#14171a'});
+        tx.textContent=Math.round(v); svg.appendChild(tx);
+      }
+    });
+  });
+  document.getElementById('cHeat').appendChild(svg);
+})();
+})();
+</script>
