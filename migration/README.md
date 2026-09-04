@@ -176,7 +176,7 @@ Ten are 5-digit in-store PLU codes in the 24xxx range, used for counter
 services (`KEY CUT`, `PHOTO`, `DEBIT CARD FEES`) — those are
 legitimate, not errors.
 
-**640 barcodes begin with a zero.** Opening this file in Excel will
+**643 barcodes begin with a zero.** Opening this file in Excel will
 strip those zeros and corrupt them. Import the CSV directly, or set the
 column to Text on the import step.
 
