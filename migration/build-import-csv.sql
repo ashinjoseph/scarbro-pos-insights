@@ -11,6 +11,7 @@ base AS (
                   LTRIM(RTRIM(p.ProductName))), 128)        AS PDesc,
     CAST(ISNULL(p.PurchaseCost, 0) AS decimal(12,2))        AS CostPrice,
     CAST(ISNULL(p.SalesCost, 0)    AS decimal(12,2))        AS NetPrice,
+    CAST(ISNULL(p.BD, 0)           AS decimal(12,2))        AS Deposit,
     CASE WHEN RTRIM(c.TaxApplicable) = 'No' THEN CAST(0 AS decimal(9,3))
          ELSE ISNULL(tm.Percentage, 0) END                  AS TaxPct,
     LEFT(LTRIM(RTRIM(p.Category)), 40)                      AS CatName
@@ -23,7 +24,7 @@ SELECT
   '"' + REPLACE(PName, '"', '""') + '","'
       + REPLACE(PDesc, '"', '""') + '",'
   + CONVERT(varchar(20), CostPrice) + ','
-  + CONVERT(varchar(20), CAST(ROUND(NetPrice * (1 + TaxPct / 100.0), 2) AS decimal(12,2))) + ','
+  + CONVERT(varchar(20), CAST(ROUND(NetPrice * (1 + TaxPct / 100.0), 2) + Deposit AS decimal(12,2))) + ','
   + CONVERT(varchar(20), CAST(TaxPct AS decimal(9,2))) + ',"'
   + REPLACE(CatName, '"', '""') + '"'
 FROM base

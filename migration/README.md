@@ -70,7 +70,7 @@ implementation team asked for (992 built, 18 removed on review):
 | Product Name | `Product.ProductName` | 40 |
 | Product Description | `Product.Description`, falling back to the name | 128 |
 | Cost Price | `Product.PurchaseCost` (tax-exclusive) | |
-| Selling Price | `Product.SalesCost` x (1 + tax) | |
+| Selling Price | `Product.SalesCost` x (1 + tax) + bottle deposit | |
 | Tax Percentage | from the product's category | |
 | Category Name | `Product.Category` | 40 |
 
@@ -88,6 +88,36 @@ Tax is a **category** attribute (`Category.TaxApplicable` /
 `Category.TaxnameX`), not a product one. Across the 992: 841 at 13% HST,
 151 at 0%. The 8% GST rate defined in `TaxMaster` is not used by any
 product and never appears on an invoice line.
+
+## Bottle deposit is folded into the selling price
+
+Deposit is a separate field (`Product.BD`) that the till adds after tax,
+so it is invisible in the shelf price. Reconstructed from
+`Invoice_Product`, every one of the 29,588 lines satisfies
+
+    TotalAmount = SalesRate x Qty - Discount + VAT + BD x Qty
+
+and `VAT` never includes the deposit (5,060 of 5,060 deposit-bearing
+taxed lines). Selling Price is therefore `SalesCost x (1 + tax) + BD` —
+checked against real single-unit invoice lines, which it reproduces to
+the cent.
+
+102 of the 974 products carry a deposit: 66 at $0.10, 20 at $0.60,
+12 at $0.20, 4 at $0.40. Sixty are in `Beer`, 22 in `R.T.D.`, 11 in
+`Wine`, and seven sit in `DRINKS` and `DELI` — those seven (Pabst,
+Carling, Coors, Laker, Steam Whistle) are beer filed under the wrong
+category, which is why the deposit is applied on the field rather than
+on the category name.
+
+## Ten alcohol products have no deposit recorded
+
+See `pos-import-missing-deposit.csv`. Their selling price in
+`pos-import.csv` is therefore short by the deposit. The file proposes a
+rate for eight of them from the container size in the product name, and
+marks two as ambiguous (`james ready 6 473 ml`, whose name says six-pack
+but whose price is a single; `Twisted Tea Part Pack`, whose count is not
+stated). **The proposals are inferred, not read from the data — confirm
+them before use.**
 
 ## Cost Price is mostly absent
 
@@ -119,17 +149,21 @@ configured as open keys rather than imported as $0.00 products:
 `CREDIT CARD FEE`, `SUPPLIER PAYOUT`. The other two, `HEM 3IN1` and
 `HEM GULAB`, have never sold and have no price.
 
+## `pos-import-with-barcode.csv`
+
+The same 974 rows with the barcode as a leading seventh column. Every
+field matches the six-column file exactly. Barcodes are unique across
+all 974, so this variant makes the duplicate names below unambiguous —
+the six-column format cannot, because it carries nothing that
+distinguishes them.
+
 ## Duplicate names — `pos-import-duplicate-names.csv`
 
 **33 groups covering 84 rows** once case is ignored — 28 groups collide
 exactly, and 5 more only collide case-insensitively, which most
 importers will treat as the same product.
 
-The dangerous ones differ in price as well as case. `Michelob Ultra` at
-$24.39 and `michelob ultra` at $3.94 are a case and a single can; merged
-on name, one of those prices wins and the other is lost. `Allens Apple
-Juice` is $4.51 against $1.01.
-
-With only six columns there is no barcode to separate them.
-`3-product-migration-list.csv` carries the barcodes and per-product
-sales history needed to resolve each group.
+These are intended — a six-pack and a single of the same beer, and so
+on. They are kept, and the barcode is what tells them apart, so the
+import needs `pos-import-with-barcode.csv` rather than the six-column
+file for them to survive.
