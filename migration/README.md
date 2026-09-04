@@ -62,8 +62,8 @@ in post-processing.
 
 # POS import format
 
-`pos-import.csv` — the same 992 products in the six columns the
-implementation team asked for:
+`pos-import.csv` — 974 products in the six columns the
+implementation team asked for (992 built, 18 removed on review):
 
 | Column | Source | Limit |
 |--------|--------|-------|
@@ -97,22 +97,39 @@ recovers 5 of them, so it is not a usable fallback. The zeros are what
 the source actually holds; they are not a computation error. Margin
 reporting in the new POS will be meaningless until costs are entered.
 
-## Zero selling price — see `pos-import-zero-price.csv`
+## Rows removed on review — `pos-import-removed.csv`
 
-29 products carry no price. They split three ways:
+18 rows were dropped from the 992 after the owner reviewed them:
 
-- **17 open-price / service keys** — `LOTTO IN` ($115,416),
-  `INSTANT` ($40,649), `LOTTO PAY OUT`, `INSTANT PAY OUT`, `CASH BACK`,
-  `GROCERY TAX`, `MISCELLANEOUS` and similar. The cashier types the
-  amount, so a zero price is correct. These must be configured as open
-  keys in the new POS, not imported as $0.00 products.
-- **10 real products** that sold but have no shelf price
-  (`Sapporo 500ml`, `Guinness 440ml`, `Takis`, …). These need a price.
-- **2 never sold and priced at zero.**
+- **10 real products with no shelf price** (`Sapporo 500ml`,
+  `Guinness 440ml`, `Takis`, …) — not worth pricing for the migration.
+- **7 open-price / service keys** — `LOTTO IN`, `INSTANT`,
+  `LOTTO PAY OUT`, `INSTANT PAY OUT`, `CASH BACK` (two rows) and
+  `ATM DEPOSIT`. These are being set up directly in the new POS
+  instead of imported.
+- **1 duplicate** — the $20.80 `Maria christina`, keeping the $21.81 row.
 
-## Duplicate names
+## Still zero-priced — `pos-import-zero-price.csv`
 
-29 names appear on more than one row (68 rows). With only these six
-columns there is no barcode to tell them apart, so an importer may
-merge or reject them. `3-product-migration-list.csv` carries the
-barcodes and per-product sales history needed to resolve each pair.
+12 rows remain at $0.00. Ten are open-price / service keys where the
+cashier types the amount, so zero is correct but they must be
+configured as open keys rather than imported as $0.00 products:
+`GROCERY NO TAX` ($4,034), `GROCERY TAX` ($3,306), `ALCOHOL` ($2,117),
+`TOBACCO ACCESSORIES`, `MISCELLANEOUS`, `PRINT OUT`, `DHL`, `CIGARS`,
+`CREDIT CARD FEE`, `SUPPLIER PAYOUT`. The other two, `HEM 3IN1` and
+`HEM GULAB`, have never sold and have no price.
+
+## Duplicate names — `pos-import-duplicate-names.csv`
+
+**33 groups covering 84 rows** once case is ignored — 28 groups collide
+exactly, and 5 more only collide case-insensitively, which most
+importers will treat as the same product.
+
+The dangerous ones differ in price as well as case. `Michelob Ultra` at
+$24.39 and `michelob ultra` at $3.94 are a case and a single can; merged
+on name, one of those prices wins and the other is lost. `Allens Apple
+Juice` is $4.51 against $1.01.
+
+With only six columns there is no barcode to separate them.
+`3-product-migration-list.csv` carries the barcodes and per-product
+sales history needed to resolve each group.

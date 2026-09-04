@@ -1,0 +1,19 @@
+Product Name,Product Description,Cost Price,Selling Price,Tax Percentage,Category Name,Reason removed
+Guinness 440ml,Guinness 440ml,0.00,0.00,13.00,Beer,no shelf price - real product
+Sapporo 500ml,Sapporo 500ml,0.00,0.00,13.00,Beer,no shelf price - real product
+CASH BACK,CASH BACK,0.00,0.00,0.00,Cashback,open-price / service key - deferred
+CASH BACK,CASH BACK,0.00,0.00,0.00,Cashback,open-price / service key - deferred
+bbq,bbq,0.00,0.00,13.00,CHIPS,no shelf price - real product
+Jalapeno CHIPS & SNACKS,Jalapeno CHIPS & SNACKS,0.00,0.00,13.00,CHIPS & SNACKS,no shelf price - real product
+Shrimp Crackers,Shrimp Crackers,0.00,0.00,13.00,CHIPS & SNACKS,no shelf price - real product
+Takis,Takis,0.00,0.00,13.00,CHIPS & SNACKS,no shelf price - real product
+Oreo fam size,Oreo fam size,0.00,0.00,13.00,COOKIES,no shelf price - real product
+ATM DEPOSIT,ATM DEPOSIT,0.00,0.00,0.00,GENERAL NO TAX,open-price / service key - deferred
+Rumi cup noodles,Rumi cup noodles,2.75,0.00,13.00,GROCERY,no shelf price - real product
+Big Daddy 100g,Big Daddy 100g,0.00,0.00,0.00,GROCERY NO TAX,no shelf price - real product
+Natural springwater 500ml,Natural springwater 500ml,0.00,0.00,0.00,GROCERY NO TAX,no shelf price - real product
+INSTANT,INSTANT,0.00,0.00,0.00,LOTTERY,open-price / service key - deferred
+INSTANT PAY OUT,INSTANT PAY OUT,0.00,0.00,0.00,LOTTERY,open-price / service key - deferred
+LOTTO IN,LOTTO IN,0.00,0.00,0.00,LOTTERY,open-price / service key - deferred
+LOTTO PAY OUT,LOTTO PAY OUT,0.00,0.00,0.00,LOTTERY,open-price / service key - deferred
+Maria christina,Maria christina,0.00,20.80,13.00,Wine,duplicate - kept the $21.81 row

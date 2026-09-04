@@ -1,0 +1,85 @@
+Group,Product Name,Selling Price,Tax Percentage,Category Name,Cost Price
+DUP-01,allens apple juice,4.51,13.00,DRINKS,0.00
+DUP-01,Allens Apple Juice,1.01,13.00,JUICE,0.00
+DUP-02,Bandage,3.38,13.00,GENERAL ITEMS,0.00
+DUP-02,Bandage,3.38,13.00,GENERAL ITEMS,0.00
+DUP-03,Bodacious smooth red,14.10,13.00,Wine,0.00
+DUP-03,Bodacious Smooth Red,14.10,13.00,Wine,1.00
+DUP-04,Borofone Headphones,56.49,13.00,Electronics - My top gift,0.00
+DUP-04,Borofone Headphones,56.49,13.00,Electronics - My top gift,0.00
+DUP-04,Borofone Headphones,56.49,13.00,Electronics - My top gift,0.00
+DUP-05,Bubly Cherry,3.38,13.00,DRINK/SLUSHY,0.00
+DUP-05,Bubly Cherry,1.85,13.00,DRINKS,0.00
+DUP-06,Cable,6.77,13.00,Electronics - My top gift,0.00
+DUP-06,CABLE,6.77,13.00,PARTY STUFF,0.00
+DUP-07,Captain Black,2.51,13.00,TOBACCO Accessories,0.00
+DUP-07,Captain Black,2.51,13.00,TOBACCO Accessories,0.00
+DUP-08,Clorox,6.77,13.00,GENERAL ITEMS,0.00
+DUP-08,Clorox,6.77,13.00,GROCERY,0.00
+DUP-09,Cutlery,4.51,13.00,GENERAL ITEMS,0.00
+DUP-09,Cutlery,4.51,13.00,GENERAL ITEMS,0.00
+DUP-10,Gatorade,3.50,13.00,DRINKS,0.00
+DUP-10,Gatorade,3.50,13.00,ENERGY DRINK,0.00
+DUP-11,Haagen Dazs,10.16,13.00,Ice cream,0.00
+DUP-11,Haagen Dazs,10.16,13.00,Ice cream,0.00
+DUP-12,hip flask,11.29,13.00,OTHER,0.00
+DUP-12,hip flask,11.29,13.00,OTHER,0.00
+DUP-13,Hoco BT Speaker,33.89,13.00,Electronics - My top gift,0.00
+DUP-13,Hoco BT Speaker,68.92,13.00,Electronics - My top gift,0.00
+DUP-14,Hoco Charger,18.07,13.00,Electronics - My top gift,0.00
+DUP-14,Hoco Charger,18.07,13.00,Electronics - My top gift,0.00
+DUP-14,Hoco Charger,18.07,13.00,Electronics - My top gift,0.00
+DUP-15,Hoco Headset,40.67,13.00,Electronics - My top gift,0.00
+DUP-15,Hoco Headset,58.75,13.00,Electronics - My top gift,0.00
+DUP-16,Hoco Headset with case,42.93,13.00,Electronics - My top gift,0.00
+DUP-16,Hoco Headset with case,40.67,13.00,Electronics - My top gift,0.00
+DUP-17,michelob ultra,3.94,13.00,ALCOHOL,0.00
+DUP-17,Michelob Ultra,24.39,13.00,Beer,0.00
+DUP-18,Nivea men Shower Gel,10.16,13.00,HEALTH & BEAUTY,0.00
+DUP-18,Nivea Men Shower Gel,10.16,13.00,HEALTH & BEAUTY,0.00
+DUP-19,Noorani Hanna,6.77,13.00,HEALTH & BEAUTY,0.00
+DUP-19,Noorani Hanna,6.77,13.00,HEALTH & BEAUTY,0.00
+DUP-20,Old dutch,8.92,13.00,GENERAL ITEMS,0.00
+DUP-20,Old dutch,5.64,13.00,GROCERY,0.00
+DUP-21,Peel Pop,3.38,13.00,"CANDY,GUMS & CHOCOLATES",0.00
+DUP-21,Peel pop,3.38,13.00,"CANDY,GUMS & CHOCOLATES",0.00
+DUP-21,Peel Pop,3.38,13.00,"CANDY,GUMS & CHOCOLATES",0.00
+DUP-21,Peel pop,3.38,13.00,"CANDY,GUMS & CHOCOLATES",0.00
+DUP-21,Peel Pop,3.38,13.00,"CANDY,GUMS & CHOCOLATES",0.00
+DUP-22,Pur-est liquid soap,4.51,13.00,HEALTH & BEAUTY,0.00
+DUP-22,Pur-est liquid soap,4.51,13.00,HEALTH & BEAUTY,0.00
+DUP-23,Pure air,7.35,13.00,GENERAL ITEMS,0.00
+DUP-23,Pure Air,7.35,13.00,GENERAL ITEMS,0.00
+DUP-23,Pure air,3.38,13.00,GROCERY,0.00
+DUP-23,Pure air,3.38,13.00,GROCERY,0.00
+DUP-24,RXBAR,2.50,13.00,"CANDY,GUMS & CHOCOLATES",0.00
+DUP-24,RXBAR,2.50,13.00,"CANDY,GUMS & CHOCOLATES",0.00
+DUP-24,RXBAR,2.50,13.00,"CANDY,GUMS & CHOCOLATES",0.00
+DUP-24,RXBAR,2.50,13.00,"CANDY,GUMS & CHOCOLATES",0.00
+DUP-25,Solid Vibe,4.51,13.00,ENERGY DRINK,0.00
+DUP-25,Solid Vibe,4.51,13.00,ENERGY DRINK,0.00
+DUP-25,Solid Vibe,4.51,13.00,ENERGY DRINK,0.00
+DUP-26,Tide,9.03,13.00,GENERAL ITMES,0.00
+DUP-26,Tide,9.03,13.00,GROCERY,0.00
+DUP-26,Tide,7.90,13.00,GROCERY,0.00
+DUP-27,Tide detergent,9.03,13.00,GROCERY,0.00
+DUP-27,Tide detergent,4.51,13.00,GROCERY,0.00
+DUP-28,Van Dens Earphones,18.07,13.00,Electronics - My top gift,0.00
+DUP-28,Van dens earphones,14.68,13.00,Electronics - My top gift,0.00
+DUP-28,Van Dens Earphones,11.29,13.00,Electronics - My top gift,0.00
+DUP-28,Van Dens Earphones,10.16,13.00,Electronics - My top gift,0.00
+DUP-29,Van dens Power bank,25.98,13.00,Electronics - My top gift,0.00
+DUP-29,Van Dens Power bank,31.63,13.00,Electronics - My top gift,0.00
+DUP-30,Ven Dens Adapter,20.33,13.00,Electronics - My top gift,0.00
+DUP-30,Ven Dens Adapter,23.72,13.00,Electronics - My top gift,0.00
+DUP-30,Ven Dens Adapter,42.93,13.00,Electronics - My top gift,0.00
+DUP-31,Ven Dens cable,12.42,13.00,Electronics - My top gift,0.00
+DUP-31,Ven Dens Cable,14.68,13.00,Electronics - My top gift,0.00
+DUP-31,Ven dens cable,14.68,13.00,Electronics - My top gift,0.00
+DUP-31,Ven dens cable,14.68,13.00,Electronics - My top gift,0.00
+DUP-32,Ven Dens Car holder,18.07,13.00,Electronics - My top gift,0.00
+DUP-32,Ven dens car holder,7.90,13.00,Electronics - My top gift,0.00
+DUP-32,Ven Dens Car Holder,14.68,13.00,Electronics - My top gift,0.00
+DUP-32,Ven Dens Car Holder,13.55,13.00,Electronics - My top gift,0.00
+DUP-33,Wild pard shoe polish,3.38,13.00,GROCERY,0.00
+DUP-33,Wild pard shoe polish,4.51,13.00,GROCERY,0.00
