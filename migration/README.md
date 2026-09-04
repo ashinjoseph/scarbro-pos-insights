@@ -62,8 +62,8 @@ in post-processing.
 
 # POS import format
 
-`pos-import.csv` — 973 products in the six columns the
-implementation team asked for (992 built, 19 removed on review):
+`pos-import.csv` — 964 products in the six columns the
+implementation team asked for (992 built, 28 removed on review):
 
 | Column | Source | Limit |
 |--------|--------|-------|
@@ -102,7 +102,7 @@ taxed lines). Selling Price is therefore `SalesCost x (1 + tax) + BD` —
 checked against real single-unit invoice lines, which it reproduces to
 the cent.
 
-102 of the 973 products carry a deposit: 66 at $0.10, 20 at $0.60,
+102 of the 964 products carry a deposit: 66 at $0.10, 20 at $0.60,
 12 at $0.20, 4 at $0.40. Sixty are in `Beer`, 22 in `R.T.D.`, 11 in
 `Wine`, and seven sit in `DRINKS` and `DELI` — those seven (Pabst,
 Carling, Coors, Laker, Steam Whistle) are beer filed under the wrong
@@ -132,32 +132,39 @@ reporting in the new POS will be meaningless until costs are entered.
 
 ## Rows removed on review — `pos-import-removed.csv`
 
-19 rows were dropped from the 992 after the owner reviewed them:
+28 rows were dropped from the 992 after the owner reviewed them:
 
 - **10 real products with no shelf price** (`Sapporo 500ml`,
   `Guinness 440ml`, `Takis`, …) — not worth pricing for the migration.
-- **8 open-price / service keys** — `LOTTO IN`, `INSTANT`,
-  `LOTTO PAY OUT`, `INSTANT PAY OUT`, `CASH BACK` (two rows),
-  `ATM DEPOSIT` and `ALCOHOL`. These are being set up directly in the
-  new POS instead of imported. The `ALCOHOL` *category* is untouched —
-  its three real products (Corona, Michelob Ultra, Stella Artois) stay.
+- **17 open-price / service keys** — every product where the cashier
+  types the amount rather than the till reading a price: `LOTTO IN`,
+  `INSTANT`, `LOTTO PAY OUT`, `INSTANT PAY OUT`, `CASH BACK` (two rows),
+  `ATM DEPOSIT`, `ALCOHOL`, `GROCERY TAX`, `GROCERY NO TAX`,
+  `TOBACCO ACCESSORIES`, `MISCELLANEOUS`, `PRINT OUT`, `DHL`, `CIGARS`,
+  `CREDIT CARD FEE` and `SUPPLIER PAYOUT`. These are being set up
+  directly in the new POS instead of imported. Category names are
+  untouched — only the keys themselves went, so the three real products
+  in `ALCOHOL` (Corona, Michelob Ultra, Stella Artois) stay.
+
+  Together they carried **$171,362 of inflow against $64,664 of payouts,
+  netting $106,699** — most of it lottery. None of it is merchandise
+  revenue, but it does mean the imported catalogue accounts for far less
+  than the store's total takings, and that the payout keys must exist in
+  the new POS before the tills can balance.
 - **1 duplicate** — the $20.80 `Maria christina`, keeping the $21.81 row.
 
 ## Still zero-priced — `pos-import-zero-price.csv`
 
-11 rows remain at $0.00. Nine are open-price / service keys where the
-cashier types the amount, so zero is correct but they must be
-configured as open keys rather than imported as $0.00 products:
-`GROCERY NO TAX` ($4,034), `GROCERY TAX` ($3,306),
-`TOBACCO ACCESSORIES`, `MISCELLANEOUS`, `PRINT OUT`, `DHL`, `CIGARS`,
-`CREDIT CARD FEE`, `SUPPLIER PAYOUT`. The other two, `HEM 3IN1` and
-`HEM GULAB`, have never sold and have no price.
+Two rows remain at $0.00: `HEM 3IN1` and `HEM GULAB`. Neither has ever
+sold and neither has a price, so they are not open keys — they are
+simply unpriced. They will import as free products unless a price is
+set or they are dropped.
 
 ## `pos-import-with-barcode.csv`
 
-The same 973 rows with the barcode as a leading seventh column. Every
+The same 964 rows with the barcode as a leading seventh column. Every
 field matches the six-column file exactly. Barcodes are unique across
-all 973, so this variant makes the duplicate names below unambiguous —
+all 964, so this variant makes the duplicate names below unambiguous —
 the six-column format cannot, because it carries nothing that
 distinguishes them.
 

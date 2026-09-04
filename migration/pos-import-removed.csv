@@ -18,3 +18,12 @@ LOTTO IN,LOTTO IN,0.00,0.00,0.00,LOTTERY,open-price / service key - deferred
 LOTTO PAY OUT,LOTTO PAY OUT,0.00,0.00,0.00,LOTTERY,open-price / service key - deferred
 Maria christina,Maria christina,0.00,20.80,13.00,Wine,duplicate - kept the $21.81 row
 ALCOHOL,ALCOHOL,0.00,0.00,13.00,ALCOHOL,open-price / service key - deferred
+GROCERY TAX,GROCERY TAX,0.00,0.00,13.00,ALL,open-price / service key - deferred
+MISCELLANEOUS,MISCELLANEOUS,0.00,0.00,13.00,GENERAL ITEMS,open-price / service key - deferred
+CREDIT CARD FEE,CREDIT CARD FEE,0.00,0.00,0.00,GENERAL NO TAX,open-price / service key - deferred
+DHL,DHL,0.00,0.00,0.00,GENERAL NO TAX,open-price / service key - deferred
+PRINT OUT,PRINT OUT,0.00,0.00,0.00,GENERAL NO TAX,open-price / service key - deferred
+SUPPLIER PAYOUT,SUPPLIER PAYOUT,0.00,0.00,0.00,GENERAL NO TAX,open-price / service key - deferred
+GROCERY NO TAX,GROCERY NO TAX,0.00,0.00,0.00,GROCERY NO TAX,open-price / service key - deferred
+CIGARS,CIGARS,0.00,0.00,13.00,TOBACCO,open-price / service key - deferred
+TOBACCO ACCESSORIES,TOBACCO ACCESSORIES,0.00,0.00,13.00,TOBACCO Accessories,open-price / service key - deferred

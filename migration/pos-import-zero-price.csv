@@ -1,12 +1,3 @@
 Product Name,Category Name,Barcode,Transactions,Revenue,DistinctPricesCharged,Issue
-GROCERY NO TAX,GROCERY NO TAX,10001237,472,4034.18,80,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
-GROCERY TAX,ALL,10001236,554,3306.22,94,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
-TOBACCO ACCESSORIES,TOBACCO Accessories,24336,33,1631.04,25,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
-MISCELLANEOUS,GENERAL ITEMS,24337,127,831.15,42,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
-PRINT OUT,GENERAL NO TAX,24335,81,350.50,18,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
-DHL,GENERAL NO TAX,24371,1,283.16,1,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
-CIGARS,TOBACCO,24334,67,254.83,5,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
-CREDIT CARD FEE,GENERAL NO TAX,24189,138,82.80,5,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
 HEM GULAB,GROCERY,8901810000018,0,0.00,0,"NEVER SOLD, NO PRICE - set a price or drop from the import"
 HEM 3IN1,GROCERY,8901810000056,0,0.00,0,"NEVER SOLD, NO PRICE - set a price or drop from the import"
-SUPPLIER PAYOUT,GENERAL NO TAX,24344,0,0.00,0,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
