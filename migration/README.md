@@ -111,13 +111,16 @@ on the category name.
 
 ## Ten alcohol products have no deposit recorded
 
-See `pos-import-missing-deposit.csv`. Their selling price in
-`pos-import.csv` is therefore short by the deposit. The file proposes a
-rate for eight of them from the container size in the product name, and
-marks two as ambiguous (`james ready 6 473 ml`, whose name says six-pack
-but whose price is a single; `Twisted Tea Part Pack`, whose count is not
-stated). **The proposals are inferred, not read from the data — confirm
-them before use.**
+See `pos-import-missing-deposit.csv`. **Decision: left as they are.**
+Their selling price in `pos-import.csv` carries no deposit, matching
+what the old till charges today.
+
+The file proposes a rate for eight of them from the container size in
+the product name, and marks two as ambiguous (`james ready 6 473 ml`,
+whose name says six-pack but whose price is a single; `Twisted Tea Part
+Pack`, whose count is not stated). Those proposals are inferred, not
+read from the data, and are **not applied** — the file is a record of
+the gap, not a patch to run.
 
 ## Cost Price is mostly absent
 
