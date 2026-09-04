@@ -62,8 +62,8 @@ in post-processing.
 
 # POS import format
 
-`pos-import.csv` — 962 products in the six columns the
-implementation team asked for (992 built, 30 removed on review):
+`pos-import.csv` — 959 products in the six columns the
+implementation team asked for (992 built, 33 removed on review):
 
 | Column | Source | Limit |
 |--------|--------|-------|
@@ -103,7 +103,7 @@ taxed lines). Selling Price is therefore `SalesCost x (1 + tax) + BD` —
 checked against real single-unit invoice lines, which it reproduces to
 the cent.
 
-102 of the 962 products carry a deposit: 66 at $0.10, 20 at $0.60,
+102 of the 959 products carry a deposit: 66 at $0.10, 20 at $0.60,
 12 at $0.20, 4 at $0.40. Sixty are in `Beer`, 22 in `R.T.D.`, 11 in
 `Wine`, and seven sit in `DRINKS` and `DELI` — those seven (Pabst,
 Carling, Coors, Laker, Steam Whistle) are beer filed under the wrong
@@ -125,7 +125,7 @@ the gap, not a patch to run.
 
 ## Cost Price is mostly absent
 
-`PurchaseCost` is 0 for **859 of the 962 products** — the old POS was not
+`PurchaseCost` is 0 for **856 of the 959 products** — the old POS was not
 used for cost tracking. Historical `Invoice_Product.PurchaseRate` only
 recovers 5 of them, so it is not a usable fallback. The zeros are what
 the source actually holds; they are not a computation error. Margin
@@ -133,7 +133,7 @@ reporting in the new POS will be meaningless until costs are entered.
 
 ## Rows removed on review — `pos-import-removed.csv`
 
-30 rows were dropped from the 992 after the owner reviewed them:
+33 rows were dropped from the 992 after the owner reviewed them:
 
 - **10 real products with no shelf price** (`Sapporo 500ml`,
   `Guinness 440ml`, `Takis`, …) — not worth pricing for the migration.
@@ -154,34 +154,31 @@ reporting in the new POS will be meaningless until costs are entered.
   the new POS before the tills can balance.
 - **2 unpriced products** — `HEM 3IN1` and `HEM GULAB`, neither ever
   sold.
+- **3 unusable barcodes** — `Cable` (a product name in the barcode
+  field), `Bubly Peach` (a QR-code URL) and `Nivea men shower` (two
+  codes run together). Each has a correctly barcoded near-twin that
+  stays, so no product is actually lost.
 - **1 duplicate** — the $20.80 `Maria christina`, keeping the $21.81 row.
 
 ## Nothing is left unpriced
 
-Every one of the 962 rows now carries a real selling price. No field is
+Every one of the 959 rows now carries a real selling price. No field is
 blank, none exceeds its character limit, tax is either 13% or 0%, and
-all 962 barcodes are distinct.
+all 959 barcodes are distinct.
 
 ## Barcodes
 
-The barcode leads every row. All 962 are present and distinct, which is
-what keeps the duplicate names below unambiguous.
+The barcode leads every row. All 959 are present, distinct and entirely
+numeric, which is what keeps the duplicate names below unambiguous.
 
 884 are ordinary 12- or 13-digit UPC/EAN codes and 59 are 8-digit EAN-8.
-Ten are 5-digit in-store PLU codes in the 24xxx range, used for
-counter services (`KEY CUT`, `PHOTO`, `DEBIT CARD FEES`) — those are
+Ten are 5-digit in-store PLU codes in the 24xxx range, used for counter
+services (`KEY CUT`, `PHOTO`, `DEBIT CARD FEES`) — those are
 legitimate, not errors.
 
-**643 barcodes begin with a zero.** Opening this file in Excel will
+**640 barcodes begin with a zero.** Opening this file in Excel will
 strip those zeros and corrupt them. Import the CSV directly, or set the
 column to Text on the import step.
-
-Three barcodes are not usable and are listed in
-`pos-import-bad-barcodes.csv`: a product name typed into the barcode
-field (`Cable`), a URL captured from a QR code (`Bubly Peach`), and 25
-digits that look like two codes run together (`Nivea men shower`). They
-are unique, so nothing breaks on import, but those three will not scan
-until they are rescanned at the till.
 
 ## Duplicate names — `pos-import-duplicate-names.csv`
 
