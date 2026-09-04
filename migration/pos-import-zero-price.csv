@@ -1,0 +1,30 @@
+Product Name,Category Name,Barcode,Transactions,Revenue,DistinctPricesCharged,Issue
+LOTTO IN,LOTTERY,24181,6731,115416.30,147,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+INSTANT,LOTTERY,23183,2599,40649.00,71,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+GROCERY NO TAX,GROCERY NO TAX,10001237,472,4034.18,80,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+GROCERY TAX,ALL,10001236,554,3306.22,94,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+ALCOHOL,ALCOHOL,24347,149,2116.93,55,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+CASH BACK,Cashback,210780,25,2063.00,10,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+TOBACCO ACCESSORIES,TOBACCO Accessories,24336,33,1631.04,25,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+MISCELLANEOUS,GENERAL ITEMS,24337,127,831.15,42,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+PRINT OUT,GENERAL NO TAX,24335,81,350.50,18,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+CASH BACK,Cashback,24216,2,343.00,2,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+DHL,GENERAL NO TAX,24371,1,283.16,1,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+CIGARS,TOBACCO,24334,67,254.83,5,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+Sapporo 500ml,Beer,056910605002,18,148.38,1,MISSING SHELF PRICE - real product that sold; needs a price before import
+Guinness 440ml,Beer,5000213002834,13,98.02,2,MISSING SHELF PRICE - real product that sold; needs a price before import
+CREDIT CARD FEE,GENERAL NO TAX,24189,138,82.80,5,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+bbq,CHIPS,060410079416,13,73.32,1,MISSING SHELF PRICE - real product that sold; needs a price before import
+Jalapeno CHIPS & SNACKS,CHIPS & SNACKS,060410046753,6,37.32,1,MISSING SHELF PRICE - real product that sold; needs a price before import
+Natural springwater 500ml,GROCERY NO TAX,060383653293,21,28.00,1,MISSING SHELF PRICE - real product that sold; needs a price before import
+Big Daddy 100g,GROCERY NO TAX,626233227023,9,22.50,1,MISSING SHELF PRICE - real product that sold; needs a price before import
+Oreo fam size,COOKIES,066721030054,2,13.54,1,MISSING SHELF PRICE - real product that sold; needs a price before import
+Rumi cup noodles,GROCERY,8801043057318,2,6.22,1,MISSING SHELF PRICE - real product that sold; needs a price before import
+Shrimp Crackers,CHIPS & SNACKS,031146058549,2,5.18,1,MISSING SHELF PRICE - real product that sold; needs a price before import
+Takis,CHIPS & SNACKS,757528052942,1,4.51,1,MISSING SHELF PRICE - real product that sold; needs a price before import
+HEM GULAB,GROCERY,8901810000018,0,0.00,0,"NEVER SOLD, NO PRICE - set a price or drop from the import"
+HEM 3IN1,GROCERY,8901810000056,0,0.00,0,"NEVER SOLD, NO PRICE - set a price or drop from the import"
+SUPPLIER PAYOUT,GENERAL NO TAX,24344,0,0.00,0,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+ATM DEPOSIT,GENERAL NO TAX,24345,1,-400.00,1,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+INSTANT PAY OUT,LOTTERY,23184,1030,-28294.20,92,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
+LOTTO PAY OUT,LOTTERY,23182,1004,-35969.40,162,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
