@@ -1,7 +1,6 @@
 Product Name,Category Name,Barcode,Transactions,Revenue,DistinctPricesCharged,Issue
 GROCERY NO TAX,GROCERY NO TAX,10001237,472,4034.18,80,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
 GROCERY TAX,ALL,10001236,554,3306.22,94,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
-ALCOHOL,ALCOHOL,24347,149,2116.93,55,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
 TOBACCO ACCESSORIES,TOBACCO Accessories,24336,33,1631.04,25,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
 MISCELLANEOUS,GENERAL ITEMS,24337,127,831.15,42,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
 PRINT OUT,GENERAL NO TAX,24335,81,350.50,18,"OPEN-PRICE / SERVICE KEY - cashier types the amount; configure as an open key, not a fixed-price product"
