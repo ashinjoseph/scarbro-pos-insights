@@ -27,3 +27,5 @@ SUPPLIER PAYOUT,SUPPLIER PAYOUT,0.00,0.00,0.00,GENERAL NO TAX,open-price / servi
 GROCERY NO TAX,GROCERY NO TAX,0.00,0.00,0.00,GROCERY NO TAX,open-price / service key - deferred
 CIGARS,CIGARS,0.00,0.00,13.00,TOBACCO,open-price / service key - deferred
 TOBACCO ACCESSORIES,TOBACCO ACCESSORIES,0.00,0.00,13.00,TOBACCO Accessories,open-price / service key - deferred
+HEM 3IN1,HEM 3IN1,0.00,0.00,13.00,GROCERY,never sold and no price - dropped
+HEM GULAB,HEM GULAB,0.00,0.00,13.00,GROCERY,never sold and no price - dropped

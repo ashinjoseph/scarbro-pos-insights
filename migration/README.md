@@ -62,8 +62,8 @@ in post-processing.
 
 # POS import format
 
-`pos-import.csv` — 964 products in the six columns the
-implementation team asked for (992 built, 28 removed on review):
+`pos-import.csv` — 962 products in the six columns the
+implementation team asked for (992 built, 30 removed on review):
 
 | Column | Source | Limit |
 |--------|--------|-------|
@@ -102,7 +102,7 @@ taxed lines). Selling Price is therefore `SalesCost x (1 + tax) + BD` —
 checked against real single-unit invoice lines, which it reproduces to
 the cent.
 
-102 of the 964 products carry a deposit: 66 at $0.10, 20 at $0.60,
+102 of the 962 products carry a deposit: 66 at $0.10, 20 at $0.60,
 12 at $0.20, 4 at $0.40. Sixty are in `Beer`, 22 in `R.T.D.`, 11 in
 `Wine`, and seven sit in `DRINKS` and `DELI` — those seven (Pabst,
 Carling, Coors, Laker, Steam Whistle) are beer filed under the wrong
@@ -124,7 +124,7 @@ the gap, not a patch to run.
 
 ## Cost Price is mostly absent
 
-`PurchaseCost` is 0 for **888 of 992 products** — the old POS was not
+`PurchaseCost` is 0 for **859 of the 962 products** — the old POS was not
 used for cost tracking. Historical `Invoice_Product.PurchaseRate` only
 recovers 5 of them, so it is not a usable fallback. The zeros are what
 the source actually holds; they are not a computation error. Margin
@@ -132,7 +132,7 @@ reporting in the new POS will be meaningless until costs are entered.
 
 ## Rows removed on review — `pos-import-removed.csv`
 
-28 rows were dropped from the 992 after the owner reviewed them:
+30 rows were dropped from the 992 after the owner reviewed them:
 
 - **10 real products with no shelf price** (`Sapporo 500ml`,
   `Guinness 440ml`, `Takis`, …) — not worth pricing for the migration.
@@ -151,20 +151,21 @@ reporting in the new POS will be meaningless until costs are entered.
   revenue, but it does mean the imported catalogue accounts for far less
   than the store's total takings, and that the payout keys must exist in
   the new POS before the tills can balance.
+- **2 unpriced products** — `HEM 3IN1` and `HEM GULAB`, neither ever
+  sold.
 - **1 duplicate** — the $20.80 `Maria christina`, keeping the $21.81 row.
 
-## Still zero-priced — `pos-import-zero-price.csv`
+## Nothing is left unpriced
 
-Two rows remain at $0.00: `HEM 3IN1` and `HEM GULAB`. Neither has ever
-sold and neither has a price, so they are not open keys — they are
-simply unpriced. They will import as free products unless a price is
-set or they are dropped.
+Every one of the 962 rows now carries a real selling price. No field is
+blank, none exceeds its character limit, tax is either 13% or 0%, and
+all 962 barcodes are distinct.
 
 ## `pos-import-with-barcode.csv`
 
-The same 964 rows with the barcode as a leading seventh column. Every
+The same 962 rows with the barcode as a leading seventh column. Every
 field matches the six-column file exactly. Barcodes are unique across
-all 964, so this variant makes the duplicate names below unambiguous —
+all 962, so this variant makes the duplicate names below unambiguous —
 the six-column format cannot, because it carries nothing that
 distinguishes them.
 
