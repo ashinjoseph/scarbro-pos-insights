@@ -1,0 +1,486 @@
+Barcode,Product Name,Category,Epos PriceExTax,Epos PriceIncTax,Correct PriceExTax,Correct PriceIncTax,Difference,Issue
+086428230502,Tiger Lager 500 ml,Beer,3.99,4.51,3.69,4.16,0.30,price landed on the wrong product
+030772121191,Tide Original 1L,GROCERY,2.75,3.11,10.99,12.42,-8.24,price landed on the wrong product
+030772121207,tide og 1 litre,HEALTH & BEAUTY,2.43,2.75,10.99,12.42,-8.56,price landed on the wrong product
+4987176179906,Tide Matic,GENERAL ITEMS,15.99,18.07,7.99,9.03,8.00,price landed on the wrong product
+6903148078884,Tide detergent,GROCERY,3.69,4.17,3.99,4.51,-0.30,price landed on the wrong product
+030772176344,Tide detergent,GROCERY,10.99,12.42,7.99,9.03,3.00,price landed on the wrong product
+030772188460,Tide,GROCERY,10.99,12.42,6.99,7.90,4.00,price landed on the wrong product
+030772176368,Tide,GENERAL ITMES,3.99,4.51,7.99,9.03,-4.00,price landed on the wrong product
+062020005649,tic tac fruit,"CANDY,GUMS & CHOCOLATES",7.99,9.03,2.66,3.01,5.33,price landed on the wrong product
+062020005618,tic tac freshmint,"CANDY,GUMS & CHOCOLATES",6.99,7.90,2.25,2.54,4.74,price landed on the wrong product
+071603529007,TWEEZERS,HEALTH & BEAUTY,3.55,4.01,3.09,3.49,0.46,price landed on the wrong product
+055966994436,TUFF GUYY 40 STRONG GARBAGE BAGS,HEALTH & BEAUTY,3.55,4.01,7.99,9.03,-4.44,price landed on the wrong product
+061700930509,Trojan classic,HEALTH & BEAUTY,2.50,2.83,3.99,4.51,-1.49,price landed on the wrong product
+031146056262,Tonkotsu,GROCERY,3.09,3.49,4.00,4.52,-0.91,price landed on the wrong product
+613008771300,TONIC WATERMELON,DRINKS,7.99,9.03,3.31,3.74,4.68,price landed on the wrong product
+060100045325,TOBACCO CAMEL ORIGINAL 25,TOBACCO,3.99,4.51,16.40,18.53,-12.41,price landed on the wrong product
+059212971448,Titan Freezer Bags,GENERAL ITEMS,4.00,4.52,2.75,3.11,1.25,price landed on the wrong product
+858629001065,ting sparkling grape fruit,DRINKS,3.31,3.74,2.43,2.75,0.88,price landed on the wrong product
+069237012408,Venice shot glass,GROCERY,1.00,1.13,3.99,4.51,-2.99,price landed on the wrong product
+5060674508948,Ven Dens Wireless charger,Electronics - My top gift,18.58,21.00,17.99,20.33,0.59,price landed on the wrong product
+5060674508887,Ven Dens Power Bank,Electronics - My top gift,2.49,2.81,34.99,39.54,-32.50,price landed on the wrong product
+5060674507743,Ven Dens Mini Car Charger,Electronics - My top gift,9.00,10.17,9.99,11.29,-0.99,price landed on the wrong product
+5056594195597,Ven Dens Gaming Head Phones,Electronics - My top gift,3.99,4.51,26.99,30.50,-23.00,price landed on the wrong product
+5060674508603,Ven dens data cable,Electronics - My top gift,17.99,20.33,9.99,11.29,8.00,price landed on the wrong product
+5060674508108,Ven dens car mp3 player,Electronics - My top gift,34.99,39.54,19.99,22.59,15.00,price landed on the wrong product
+5056594114666,Ven Dens Car Holder,Electronics - My top gift,9.99,11.29,11.99,13.55,-2.00,price landed on the wrong product
+5056594152323,Ven Dens Car Holder,Electronics - My top gift,26.99,30.50,12.99,14.68,14.00,price landed on the wrong product
+5056594152354,Ven dens car holder,Electronics - My top gift,9.99,11.29,6.99,7.90,3.00,price landed on the wrong product
+5056594115175,Ven Dens Car holder,Electronics - My top gift,19.99,22.59,15.99,18.07,4.00,price landed on the wrong product
+5060674507460,Ven dens cable,Electronics - My top gift,11.99,13.55,12.99,14.68,-1.00,price landed on the wrong product
+058496352776,TWIX,"CANDY,GUMS & CHOCOLATES",26.99,30.50,1.99,2.25,25.00,price landed on the wrong product
+087692018551,Twisted tea pineapple,Beer,9.99,11.29,3.55,4.00,6.44,price landed on the wrong product
+087692023425,Twisted Tea Part Pack,R.T.D.,7.99,9.03,29.99,33.89,-22.00,price landed on the wrong product
+087692007470,Twisted tea original 473,Beer,6.00,6.78,3.59,4.04,2.41,price landed on the wrong product
+087692024224,Twisted Tea Extreme Lemon,R.T.D.,1.99,2.25,3.55,4.00,-1.56,price landed on the wrong product
+087692011248,Twisted Tea,DRINKS,29.99,33.89,3.99,4.51,26.00,price landed on the wrong product
+848819001654,White Claw surge,R.T.D.,6.99,7.90,3.89,4.38,3.10,price landed on the wrong product
+848819000947,white claw passion fruit,Beer,5.99,6.77,3.89,4.38,2.10,price landed on the wrong product
+848819000015,White Claw Mango 473ML,Beer,3.99,4.51,3.59,4.04,0.40,price landed on the wrong product
+848819000022,White claw lime 473ml,R.T.D.,2.99,3.38,3.59,4.04,-0.60,price landed on the wrong product
+848819000008,White Claw Hard Seltzer Black Cherry 473,R.T.D.,3.89,4.40,3.59,4.04,0.30,price landed on the wrong product
+848819000985,White Claw Blackberry 473ML,R.T.D.,3.89,4.40,3.59,4.04,0.30,price landed on the wrong product
+058496433215,Whiskas Seafood 670g,PET FOOD,3.59,4.06,7.99,9.03,-4.40,price landed on the wrong product
+063252385554,Wellson painters tape,GROCERY,3.59,4.06,2.99,3.38,0.60,price landed on the wrong product
+063252385462,Wellson insulation tape,GROCERY,3.59,4.06,2.99,3.38,0.60,price landed on the wrong product
+063252385387,Wellson duct tape,GROCERY,3.59,4.06,2.99,3.38,0.60,price landed on the wrong product
+061536012721,WD-40,GROCERY,7.99,9.03,9.99,11.29,-2.00,price landed on the wrong product
+698931001427,Wild pard shoe polish,GROCERY,3.29,3.72,3.99,4.51,-0.70,price landed on the wrong product
+059300063345,Vogue,TOBACCO,2.99,3.38,18.58,21.00,-15.59,price landed on the wrong product
+898999000022,Vita coconut waster 330ml,DRINKS,2.99,3.38,2.49,2.81,0.50,price landed on the wrong product
+059200807704,WINDEX ORIGINAL,HEALTH & BEAUTY,1.99,2.25,6.99,7.90,-5.00,price landed on the wrong product
+060100037641,LD BOLD KS 25,TOBACCO,12.17,13.75,14.82,16.75,-2.65,price landed on the wrong product
+060410047040,LAYS WAVY ORIGINAL 235G,CHIPS & SNACKS,3.00,3.39,5.39,6.09,-2.39,price landed on the wrong product
+041689301224,ZIPPO FLUID 355ML,HEALTH & BEAUTY,13.55,15.31,11.99,13.55,1.56,price landed on the wrong product
+041689200657,Zippo Flints,VAPE & CIGAR,3.01,3.40,2.66,3.01,0.35,price landed on the wrong product
+008660100306,Zigzag Green,VAPE & CIGAR,3.01,3.40,2.66,3.01,0.35,price landed on the wrong product
+008660100108,ZIG ZAG WHITE,TOBACCO,3.50,3.96,3.10,3.50,0.40,price landed on the wrong product
+008660100405,ZIG ZAG SILVER,TOBACCO,11.99,13.55,3.10,3.50,8.89,price landed on the wrong product
+829515324629,ZESTY RANCH,CHIPS,2.66,3.01,4.99,5.64,-2.33,price landed on the wrong product
+839743000028,Yellowtail chardonnay,Wine,3.10,3.50,15.06,16.99,-11.96,price landed on the wrong product
+621139639024,Xtricity light bulb clear 60 watts,HEALTH & BEAUTY,3.10,3.50,2.99,3.38,0.11,price landed on the wrong product
+877318001353,Xlite lighter,LIGHTER,2.66,3.01,1.99,2.25,0.67,price landed on the wrong product
+877318100063,X-LITE,VAPE & CIGAR,4.99,5.64,2.66,3.01,2.33,price landed on the wrong product
+064900409677,WRIGLEYS DOUBLE MINT,"CANDY,GUMS & CHOCOLATES",15.06,17.02,3.29,3.72,11.77,price landed on the wrong product
+8901063136250,Little Hearts,SNACK,30.00,33.90,1.99,2.25,28.01,price landed on the wrong product
+04138891,Lip Medex,HEALTH & BEAUTY,50.00,56.50,3.99,4.51,46.01,price landed on the wrong product
+062823450493,LETS PARTY 24,HEALTH & BEAUTY,1.99,2.25,2.49,2.81,-0.50,price landed on the wrong product
+061541046056,Lesalon nail clipper,HEALTH & BEAUTY,3.99,4.51,2.99,3.38,1.00,price landed on the wrong product
+061541478116,Lesalon Cosmetic pads,HEALTH & BEAUTY,2.49,2.81,2.25,2.54,0.24,price landed on the wrong product
+060100038600,LD Standard Bold KS 20,TOBACCO,2.99,3.38,12.17,13.75,-9.18,price landed on the wrong product
+060100038631,LD STANDARD BOLD,TOBACCO,2.25,2.54,14.82,16.75,-12.57,price landed on the wrong product
+060100038037,LD SMOOTH KS 25,TOBACCO,12.17,13.75,14.82,16.75,-2.65,price landed on the wrong product
+060100037795,LD MEDIUM KS 20,TOBACCO,14.82,16.75,12.17,13.75,2.65,price landed on the wrong product
+3057068029709,OCB Regular,GENERAL ITEMS,2.59,2.93,2.99,3.38,-0.40,price landed on the wrong product
+30052765,"OCB premium Black1 1/4""",VAPE & CIGAR,4.99,5.64,1.77,2.00,3.22,price landed on the wrong product
+30065505,OCB KS,TOBACCO,7.89,8.92,2.50,2.83,5.39,price landed on the wrong product
+067311241218,Oasis Red Grape,GROCERY,5.99,6.77,1.77,2.00,4.22,price landed on the wrong product
+067311020110,OASIS ORANGE 300 ML,DRINKS,2.99,3.38,1.77,2.00,1.22,price landed on the wrong product
+628055589181,nutrl lemon 473 ml,R.T.D.,1.77,2.00,3.59,4.04,-1.82,price landed on the wrong product
+062067392771,Nutrl Grape,R.T.D.,2.50,2.83,3.59,4.04,-1.09,price landed on the wrong product
+062067423697,Nutrl Blackberry,R.T.D.,1.77,2.00,3.89,4.38,-2.12,price landed on the wrong product
+062020050526,Nutella Bread Sticks,"CANDY,GUMS & CHOCOLATES",1.77,2.00,3.49,3.94,-1.72,price landed on the wrong product
+813107000022,Noorani Hanna,HEALTH & BEAUTY,3.59,4.06,5.99,6.77,-2.40,price landed on the wrong product
+813107000015,Noorani Hanna,HEALTH & BEAUTY,3.59,4.06,5.99,6.77,-2.40,price landed on the wrong product
+031146250301,Nongshim Spicy Chicken Bowl GENERAL ITEM,GROCERY,3.89,4.40,2.49,2.81,1.40,price landed on the wrong product
+056594008632,Nivea Men Shower Gel,HEALTH & BEAUTY,3.49,3.94,8.99,10.16,-5.50,price landed on the wrong product
+056594010130,Nivea men Shower Gel,HEALTH & BEAUTY,5.99,6.77,8.99,10.16,-3.00,price landed on the wrong product
+056594018679,Nivea Men Boost Shower Gel,HEALTH & BEAUTY,5.99,6.77,8.99,10.16,-3.00,price landed on the wrong product
+094922863485,nic outt,VAPE & CIGAR,2.49,2.81,2.99,3.38,-0.50,price landed on the wrong product
+061740110121,NIBO BUTANE 162G,HEALTH & BEAUTY,8.99,10.16,4.99,5.64,4.00,price landed on the wrong product
+061900106919,Next Xtra Tobacco,TOBACCO,8.99,10.16,31.00,35.03,-22.01,price landed on the wrong product
+061900107046,Next Xtra KS 25,TOBACCO,8.99,10.16,15.93,18.00,-6.94,price landed on the wrong product
+061900107022,Next XTRA KS 20,TOBACCO,2.99,3.38,12.83,14.50,-9.84,price landed on the wrong product
+061900107374,Next SMOOTH KS 25,TOBACCO,4.99,5.64,15.93,18.00,-10.94,price landed on the wrong product
+061900107138,Next original RG 25,TOBACCO,31.00,35.03,15.93,18.00,15.07,price landed on the wrong product
+061900007056,Next Original KS 25 carton,TOBACCO,15.93,18.00,123.89,140.00,-107.96,price landed on the wrong product
+061900107053,Next original KS 25,TOBACCO,12.83,14.50,15.93,18.00,-3.10,price landed on the wrong product
+061900007001,Next Original KS 20 carton,TOBACCO,15.93,18.00,119.46,134.99,-103.53,price landed on the wrong product
+061900107008,Next ORIGINAL KS 20,TOBACCO,15.93,18.00,12.83,14.50,3.10,price landed on the wrong product
+061900007025,Next Extra KS 20 Carton,TOBACCO,15.93,18.00,119.47,135.00,-103.54,price landed on the wrong product
+061700912208,Magnum,HEALTH & BEAUTY,13.72,15.50,3.99,4.51,9.73,price landed on the wrong product
+628669010101,Mad Tom IPA,Beer,19.50,22.04,4.09,4.61,15.41,price landed on the wrong product
+060100035180,MACDONALD ORIGINAL 25 KS,TOBACCO,5.00,5.65,15.93,18.00,-10.93,price landed on the wrong product
+060100035159,MACDONALD ORIGINAL 20 KS,TOBACCO,1.99,2.25,13.27,15.00,-11.28,price landed on the wrong product
+040000497523,M&M MILK CHOC 87.9G,"CANDY,GUMS & CHOCOLATES",3.99,4.51,2.99,3.38,1.00,price landed on the wrong product
+058496812324,M & M PEANUT 49G,"CANDY,GUMS & CHOCOLATES",4.09,4.62,2.49,2.81,1.60,price landed on the wrong product
+058496812317,"M & M CANDY,GUMS & CHOCOLATES 48G","CANDY,GUMS & CHOCOLATES",15.93,18.00,2.49,2.81,13.44,price landed on the wrong product
+814724020141,Lsta mint chill,HEALTH & BEAUTY,2.99,3.38,2.21,2.50,0.78,price landed on the wrong product
+062067423246,Lowenbrau 6tc,Beer,2.49,2.81,15.50,17.44,-13.01,price landed on the wrong product
+059338134666,Lovu cotton swabs,HEALTH & BEAUTY,2.49,2.81,3.99,4.51,-1.50,price landed on the wrong product
+056910401345,old milwaukee 6PK,Beer,4.99,5.64,13.35,15.01,-8.36,price landed on the wrong product
+056910402540,Old Milwaukee 6 pack,Beer,5.50,6.22,13.35,15.01,-7.85,price landed on the wrong product
+056910402502,old milwaukee blue 473 ml,Beer,5.49,6.20,2.59,2.91,2.90,price landed on the wrong product
+056910401338,old milwaukee 473 ml,Beer,4.50,5.09,2.59,2.91,1.91,price landed on the wrong product
+063474104179,Old dutch,GROCERY,13.35,15.09,4.99,5.64,8.36,price landed on the wrong product
+063474313496,Old dutch,GENERAL ITEMS,13.35,15.09,7.89,8.92,5.46,price landed on the wrong product
+060410046678,original CHIPS & SNACKS,CHIPS & SNACKS,15.51,17.53,5.49,6.20,10.02,price landed on the wrong product
+056910414734,Pabst Blue Ribbon 6 pk,Beer,119.50,135.04,15.51,17.45,103.99,price landed on the wrong product
+056910406418,Pabst,DELI,14.50,16.39,2.59,2.91,11.91,price landed on the wrong product
+059300527786,Pall Mall Bold cart.,TOBACCO,14.50,16.39,119.50,135.04,-105.00,price landed on the wrong product
+059300062751,PALL MALLSP XL FULL KS,TOBACCO,2.99,3.38,15.04,17.00,-12.05,price landed on the wrong product
+05506101,Parlour Juice Pop,Ice cream,3.10,3.50,1.55,1.75,1.55,price landed on the wrong product
+080878044481,Pantene,HEALTH & BEAUTY,2.22,2.51,7.99,9.03,-5.77,price landed on the wrong product
+073096500273,Panasonic AAA4,HEALTH & BEAUTY,2.49,2.81,2.99,3.38,-0.50,price landed on the wrong product
+073096500235,Panasonic AA4,HEALTH & BEAUTY,1.55,1.75,2.99,3.38,-1.44,price landed on the wrong product
+035000463036,PAMOLIVE 828UNI,HEALTH & BEAUTY,1.55,1.75,3.99,4.51,-2.44,price landed on the wrong product
+069000013830,Pepsi zero,DRINKS,11.73,13.25,2.99,3.38,8.74,price landed on the wrong product
+069000010662,Pepsi Diet 710 ml,DRINKS,12.83,14.50,3.00,3.39,9.83,price landed on the wrong product
+667888590582,Peelrrz,"CANDY,GUMS & CHOCOLATES",12.83,14.50,3.49,3.94,9.34,price landed on the wrong product
+850079218710,Peel Pop,"CANDY,GUMS & CHOCOLATES",7.00,7.91,2.99,3.38,4.01,price landed on the wrong product
+850079218673,Peel Pop,"CANDY,GUMS & CHOCOLATES",3.00,3.39,2.99,3.38,0.01,price landed on the wrong product
+850079218666,Peel pop,"CANDY,GUMS & CHOCOLATES",3.49,3.94,2.99,3.38,0.50,price landed on the wrong product
+2437606766407,Peach Tea Peach,bevrages,2.99,3.38,1.99,2.25,1.00,price landed on the wrong product
+06787303,PEACE TEA SNO BERRY,DRINKS,2.99,3.38,1.99,2.25,1.00,price landed on the wrong product
+06766504,PEACE TEA RASPBERRY,DRINKS,2.99,3.38,1.99,2.25,1.00,price landed on the wrong product
+06766407,PEACE TEA PEACH,DRINKS,2.99,3.38,1.99,2.25,1.00,price landed on the wrong product
+060383125189,PC Club soda,GROCERY,1.99,2.25,3.99,4.51,-2.00,price landed on the wrong product
+24543,Patty Combo,FOOD ITMES,1.99,2.25,3.10,3.50,-1.11,price landed on the wrong product
+24542,Patty,FOOD ITMES,1.99,2.25,2.22,2.51,-0.23,price landed on the wrong product
+06797231,PASSION FLAKIE,BAKERY,1.99,2.25,2.49,2.81,-0.50,price landed on the wrong product
+05506208,parlour Pop Mango,Ice cream,3.99,4.51,1.55,1.75,2.44,price landed on the wrong product
+806712309116,Pur-est Cotton swab,HEALTH & BEAUTY,6.50,7.35,2.50,2.83,4.00,price landed on the wrong product
+064100159433,Pringles Spicy hot pot,CHIPS & SNACKS,6.50,7.35,4.99,5.64,1.51,price landed on the wrong product
+064100111356,PRINGLES SOUR CREAM& ONION,CHIPS & SNACKS,3.99,4.51,4.99,5.64,-1.00,price landed on the wrong product
+064100159372,Pringles Sauce chilly,CHIPS & SNACKS,3.99,4.51,4.99,5.64,-1.00,price landed on the wrong product
+064100111417,PRINGLES SALT & VINEGAR,CHIPS & SNACKS,2.50,2.83,4.99,5.64,-2.49,price landed on the wrong product
+064100852617,Pringles Origianl 67g,CHIPS & SNACKS,4.99,5.64,2.66,3.01,2.33,price landed on the wrong product
+064100150546,PRINGLES HOT ONES 156G,CHIPS,4.99,5.64,3.99,4.51,1.00,price landed on the wrong product
+064100119352,Pringles BBQ 68g,CHIPS,4.99,5.64,2.66,3.01,2.33,price landed on the wrong product
+064100111370,PRINGLES BBQ,CHIPS & SNACKS,2.66,3.01,4.99,5.64,-2.33,price landed on the wrong product
+06748702,POWER ADE ORANGE,DRINKS,3.31,3.74,2.99,3.38,0.32,price landed on the wrong product
+06748809,POWER ADE MELON PINEAPPLE,DRINKS,3.49,3.94,2.99,3.38,0.50,price landed on the wrong product
+06748605,POWER ADE FRUIT PUNCH,DRINKS,5.00,5.65,3.49,3.94,1.51,price landed on the wrong product
+055000600460,POPSICLE LIFE SAVER,ICE CREAMS,2.99,3.38,2.79,3.15,0.20,price landed on the wrong product
+180009000024,POP SHOP LIME,DRINKS,3.49,3.94,2.22,2.51,1.27,price landed on the wrong product
+180009000031,POP SHOP CREAM SODA,DRINKS,2.99,3.38,2.22,2.51,0.77,price landed on the wrong product
+180009000338,"POP SHOP COTTON CANDY,GUMS & CHOCOLATES",DRINKS,3.49,3.94,2.22,2.51,1.27,price landed on the wrong product
+180009000017,POP SHOP BLACK CHERRY,DRINKS,2.79,3.15,2.22,2.51,0.57,price landed on the wrong product
+05934031,PLAYERS SMOOTH 20 KS,TOBACCO,6.00,6.78,18.30,20.68,-12.30,price landed on the wrong product
+05935739,PLAYER SMOOTH 25 KS,TOBACCO,1.00,1.13,22.90,25.88,-21.90,price landed on the wrong product
+05934934,PLAYER 25 RG,TOBACCO,2.00,2.26,22.90,25.88,-20.90,price landed on the wrong product
+055966913109,Plates,GROCERY,5.00,5.65,4.99,5.64,0.01,price landed on the wrong product
+067311680284,pine apple burst,DRINKS,18.30,20.68,3.57,4.03,14.73,price landed on the wrong product
+24343,PHOTO,GENERAL ITEMS,22.90,25.88,14.99,16.94,7.91,price landed on the wrong product
+070235629512,Phillies strawberry 5pk,TOBACCO,22.90,25.88,11.73,13.25,11.17,price landed on the wrong product
+070235629482,Phillies Blunt Chocolate 5 Cigar/Pack,TOBACCO,4.99,5.64,11.73,13.25,-6.74,price landed on the wrong product
+061900107206,Philip Morris special 20 ks,TOBACCO,3.57,4.03,12.83,14.50,-9.26,price landed on the wrong product
+061900107213,Philip Morris original 20 ks,TOBACCO,14.99,16.94,12.83,14.50,2.16,price landed on the wrong product
+698614021278,Red Stripe Lager 6*330ml,Beer,5.49,6.20,18.09,20.36,-12.60,price landed on the wrong product
+180854000606,RED BULL SUGAR FREE 355 UNI,DRINKS,1.99,2.25,3.75,4.24,-1.76,price landed on the wrong product
+180854000309,RED BULL SUGAR FREE 250 UNI,DRINKS,4.99,5.64,3.55,4.01,1.44,price landed on the wrong product
+180854000774,RED BULL 473 UNI,DRINKS,5.50,6.22,5.75,6.50,-0.25,price landed on the wrong product
+180854000507,RED BULL 355 UNI,DRINKS,18.09,20.44,3.75,4.24,14.34,price landed on the wrong product
+180854000101,RED BULL 250 original,DRINKS,3.75,4.24,3.55,4.01,0.20,price landed on the wrong product
+8801052043661,Real Kimchi Noodle,SNACK,3.55,4.01,3.99,4.51,-0.44,price landed on the wrong product
+060245250035,reactine EXTRA STRENGTH,HEALTH & BEAUTY,5.75,6.50,6.99,7.90,-1.24,price landed on the wrong product
+716165179481,RAW TIPS ROLL,TOBACCO,3.75,4.24,1.99,2.25,1.76,price landed on the wrong product
+716165177395,RAW TIPS,VAPE & CIGAR,3.55,4.01,1.77,2.00,1.78,price landed on the wrong product
+716165177319,RAW ROLLING PAPERS 1.1/4 SIZE,TOBACCO,3.99,4.51,2.21,2.50,1.78,price landed on the wrong product
+716165177357,RAW KS,VAPE & CIGAR,6.99,7.90,3.20,3.62,3.79,price landed on the wrong product
+716165177111,RAW CLASSIC CONES,HEALTH & BEAUTY,1.99,2.25,3.99,4.51,-2.00,price landed on the wrong product
+716165296867,raw classic 3 pack,VAPE & CIGAR,1.77,2.00,3.99,4.51,-2.22,price landed on the wrong product
+716165174233,RAW CLASSIC,VAPE & CIGAR,2.21,2.50,2.65,2.99,-0.44,price landed on the wrong product
+716165280965,"Raw 1 1/4"" Black",VAPE & CIGAR,3.20,3.62,2.65,2.99,0.55,price landed on the wrong product
+062300017256,"RAID ANT,ROACH & EARWIG",HEALTH & BEAUTY,3.99,4.51,12.99,14.68,-9.00,price landed on the wrong product
+065656913500,Q-tips cotton swabs,HEALTH & BEAUTY,2.65,2.99,4.99,5.64,-2.34,price landed on the wrong product
+06748906,Pwrd,DRINKS,2.65,2.99,3.49,3.94,-0.84,price landed on the wrong product
+806712305279,Purew Air,GENERAL ITEMS,12.99,14.68,6.50,7.35,6.49,price landed on the wrong product
+806712314905,Pure klean,GROCERY,4.99,5.64,2.99,3.38,2.00,price landed on the wrong product
+806712307839,Pure clean dish washing solution,GROCERY,4.99,5.64,2.99,3.38,2.00,price landed on the wrong product
+806712305286,Pure air,GROCERY,3.49,3.94,2.99,3.38,0.50,price landed on the wrong product
+806712310396,Pure air,GROCERY,6.50,7.35,2.99,3.38,3.51,price landed on the wrong product
+055966919088,Pure Air,GENERAL ITEMS,2.99,3.38,6.50,7.35,-3.51,price landed on the wrong product
+806712310402,Pure air,GENERAL ITEMS,2.99,3.38,6.50,7.35,-3.51,price landed on the wrong product
+806712304708,Pur-est liquid soap,HEALTH & BEAUTY,2.99,3.38,3.99,4.51,-1.00,price landed on the wrong product
+806712306870,Pur-est liquid soap,HEALTH & BEAUTY,2.99,3.38,3.99,4.51,-1.00,price landed on the wrong product
+067311010029,Rougemont Apple juice 2L,GROCERY,2.69,3.04,5.00,5.65,-2.31,price landed on the wrong product
+059136991423,RONSON,HEALTH & BEAUTY,5.99,6.77,4.99,5.64,1.00,price landed on the wrong product
+041116005190,RING POP,"CANDY,GUMS & CHOCOLATES",4.29,4.85,1.33,1.50,2.96,price landed on the wrong product
+056327004948,Rickards Red 473 ML,Beer,3.00,3.39,4.09,4.61,-1.09,price landed on the wrong product
+620213250124,REV PET VODKA BEV 437ML,Beer,5.00,5.65,3.09,3.48,1.91,price landed on the wrong product
+060410047217,regular CHIPS & SNACKS,CHIPS & SNACKS,4.99,5.64,5.49,6.20,-0.50,price landed on the wrong product
+056600793217,REESES 3 CUP,"CANDY,GUMS & CHOCOLATES",1.33,1.50,1.99,2.25,-0.66,price landed on the wrong product
+060410046715,Sea salt & malt vinegar,CHIPS & SNACKS,1.00,1.13,5.50,6.22,-4.50,price landed on the wrong product
+061328805036,SCOTTIES,HEALTH & BEAUTY,1.99,2.25,2.25,2.54,-0.26,price landed on the wrong product
+016600000395,SCHWEPPES 2LT,DRINKS,3.99,4.51,4.29,4.85,-0.30,price landed on the wrong product
+016600000760,Schweppers Ginger ale,DRINKS,3.99,4.51,2.99,3.38,1.00,price landed on the wrong product
+6939535768113,SBK Knee support,HEALTH & BEAUTY,5.50,6.22,3.99,4.51,1.51,price landed on the wrong product
+056910605064,Sapporo 6 pk,Beer,2.25,2.54,22.89,25.79,-20.64,price landed on the wrong product
+834605003834,Saniblend Cleaner,GROCERY,4.29,4.85,14.99,16.94,-10.70,price landed on the wrong product
+060410079478,salt nd vinegar lays,CHIPS,2.99,3.38,4.99,5.64,-2.00,price landed on the wrong product
+061900068118,Sail Deluxe Pipe Tobacco 50 g,TOBACCO,3.99,4.51,35.40,40.00,-31.41,price landed on the wrong product
+061900074003,sail classic,TOBACCO,22.89,25.87,13.72,15.50,9.17,price landed on the wrong product
+859162007583,RXBAR,"CANDY,GUMS & CHOCOLATES",14.99,16.94,2.21,2.50,12.78,price landed on the wrong product
+859162007606,RXBAR,"CANDY,GUMS & CHOCOLATES",4.99,5.64,2.21,2.50,2.78,price landed on the wrong product
+24435,RXBAR,"CANDY,GUMS & CHOCOLATES",35.40,40.00,2.21,2.50,33.19,price landed on the wrong product
+859162007620,RXBAR,"CANDY,GUMS & CHOCOLATES",13.72,15.50,2.21,2.50,11.51,price landed on the wrong product
+716165174219,RW KS PH,TOBACCO,2.21,2.50,2.99,3.38,-0.78,price landed on the wrong product
+060410075098,RUFFLES CHEDDAR & SOUR CREAM,CHIPS & SNACKS,2.21,2.50,5.39,6.09,-3.18,price landed on the wrong product
+060410021842,Ruffles,CHIPS,2.21,2.50,1.00,1.13,1.21,price landed on the wrong product
+060410055076,RUFFELS CREAM ONION 28G,CHIPS,2.21,2.50,1.00,1.13,1.21,price landed on the wrong product
+063920019347,ROYAL SCRUB,HEALTH & BEAUTY,2.99,3.38,2.69,3.04,0.30,price landed on the wrong product
+016800233005,ROYAL OAK CHARCOAL LIGHTER 946UNI,HEALTH & BEAUTY,5.39,6.09,5.99,6.77,-0.60,price landed on the wrong product
+063435704073,royal,HEALTH & BEAUTY,1.00,1.13,4.29,4.85,-3.29,price landed on the wrong product
+643843714828,PREMIER PROTEIN VANILLA 325ML,DRINK/SLUSHY,4.99,5.64,3.31,3.74,1.68,price landed on the wrong product
+067000011887,powerade zero punch,DRINKS,3.50,3.96,3.49,3.94,0.01,price landed on the wrong product
+06794604,powerade zero blue,DRINKS,2.50,2.83,3.49,3.94,-0.99,price landed on the wrong product
+872590000155,SESAME SNAPS,"CANDY,GUMS & CHOCOLATES",2.21,2.50,1.00,1.13,1.21,price landed on the wrong product
+064420000224,SEALTEST 3.25% 1L,DAIRY PRODUCTS TAXABLE,2.75,3.11,3.99,4.51,-1.24,price landed on the wrong product
+060410029886,Smart food,CHIPS & SNACKS,3.55,4.01,5.39,6.09,-1.84,price landed on the wrong product
+055966900291,Small Trey,GROCERY,2.39,2.70,2.50,2.83,-0.11,price landed on the wrong product
+055966202173,Small Aluminium tray,GENERAL ITEMS,5.50,6.22,2.99,3.38,2.51,price landed on the wrong product
+3057068015986,SLIM OCB,VAPE & CIGAR,3.00,3.39,2.99,3.38,0.01,price landed on the wrong product
+058496894917,SKITTLESSOUR 51G,"CANDY,GUMS & CHOCOLATES",5.39,6.09,2.21,2.50,3.18,price landed on the wrong product
+058496829605,SKITTLES ORIGINAL 61G,"CANDY,GUMS & CHOCOLATES",2.50,2.83,2.21,2.50,0.29,price landed on the wrong product
+058496460785,SKITTLES GUMMIES ORIGINAL 57G,HEALTH & BEAUTY,2.99,3.38,1.99,2.25,1.00,price landed on the wrong product
+064100852624,Sour Cream Onion 68g,CHIPS,7.99,9.03,2.66,3.01,5.33,price landed on the wrong product
+060410047644,sour cream and onion small,CHIPS & SNACKS,2.99,3.38,2.39,2.70,0.60,price landed on the wrong product
+060410047248,Sour cream & Onion CHIPS & SNACKS,CHIPS & SNACKS,3.99,4.51,5.50,6.22,-1.51,price landed on the wrong product
+060410047255,Sour cream & BaconCHIPS & SNACKS,CHIPS & SNACKS,2.50,2.83,5.39,6.09,-2.89,price landed on the wrong product
+067029931012,SOS 10 PADS,HEALTH & BEAUTY,2.66,3.01,2.99,3.38,-0.33,price landed on the wrong product
+675325010005,Somersby 473ML,Beer,2.39,2.70,3.59,4.04,-1.20,price landed on the wrong product
+990312906964,Solid Vibe,ENERGY DRINK,5.50,6.22,3.99,4.51,1.51,price landed on the wrong product
+990312906971,Solid Vibe,ENERGY DRINK,5.39,6.09,3.99,4.51,1.40,price landed on the wrong product
+990312906957,Solid Vibe,ENERGY DRINK,2.99,3.38,3.99,4.51,-1.00,price landed on the wrong product
+074182473518,Softsoap Body Wash,HEALTH & BEAUTY,3.59,4.06,6.99,7.90,-3.40,price landed on the wrong product
+06224318,soda club,DRINKS,3.99,4.51,1.33,1.50,2.66,price landed on the wrong product
+087399590954,Snuggle air freshner,GROCERY,3.99,4.51,2.99,3.38,1.00,price landed on the wrong product
+058496422394,SNICKERS,"CANDY,GUMS & CHOCOLATES",3.99,4.51,2.21,2.50,1.78,price landed on the wrong product
+853195000542,Smoke it lighter,LIGHTER,6.99,7.90,4.99,5.64,2.00,price landed on the wrong product
+082000773900,SMIRNOFF ICE ORIGINAL 473ML,Beer,1.33,1.50,3.29,3.70,-1.96,price landed on the wrong product
+082000785552,Smirnoff ice berry blast 473,Beer,2.99,3.38,3.55,4.00,-0.56,price landed on the wrong product
+060410006139,Smartfood White Cheddar 45g,CHIPS & SNACKS,2.21,2.50,2.39,2.70,-0.18,price landed on the wrong product
+060410029909,SMARTFOOD MOVIE NIGHT BUTTER,CHIPS & SNACKS,4.99,5.64,5.50,6.22,-0.51,price landed on the wrong product
+050200012976,SUNNY TANGY ORIGINAL,DRINKS,2.29,2.59,1.99,2.25,0.30,price landed on the wrong product
+050200013003,SUNNY D ORANGE ST,DRINKS,3.50,3.96,1.99,2.25,1.51,price landed on the wrong product
+087692023470,Sun Cruiser,R.T.D.,2.99,3.38,3.59,4.04,-0.60,price landed on the wrong product
+806712305026,Strongmore Aluminium Foil,GROCERY,20.00,22.60,5.99,6.77,14.01,price landed on the wrong product
+062067382161,Stella Artois 6 x 473ml,ALCOHOL,1.99,2.25,21.49,24.21,-19.50,price landed on the wrong product
+062067382178,stella 473 ml,DRINKS,1.99,2.25,3.49,3.94,-1.50,price landed on the wrong product
+702915003014,Steam Whistle,DRINKS,3.59,4.06,3.99,4.50,-0.40,price landed on the wrong product
+06793207,SPRITE CAN,DRINKS,21.49,24.28,1.49,1.68,20.00,price landed on the wrong product
+067000104015,SPRITE 710 ML,DRINKS,3.49,3.94,2.99,3.38,0.50,price landed on the wrong product
+067000110573,sprite zero sugar,DRINKS,5.99,6.77,4.29,4.85,1.70,price landed on the wrong product
+022200940252,SPEED STICK COOL CLEAN,HEALTH & BEAUTY,1.49,1.68,5.99,6.77,-4.50,price landed on the wrong product
+022200940214,speed stick,HEALTH & BEAUTY,2.99,3.38,5.99,6.77,-3.00,price landed on the wrong product
+811490251823,Special Blue,LIGHTER,3.99,4.51,7.99,9.03,-4.00,price landed on the wrong product
+073390055905,sparemint,GENERAL ITEMS,4.29,4.85,2.99,3.38,1.30,price landed on the wrong product
+852474166313,Spa Soap,HEALTH & BEAUTY,5.99,6.77,3.99,4.51,2.00,price landed on the wrong product
+066188055300,TANG ORANGE,HEALTH & BEAUTY,31.49,35.58,3.99,4.51,27.50,price landed on the wrong product
+757528050511,Takis int. nacho,CHIPS & SNACKS,31.49,35.58,3.99,4.51,27.50,price landed on the wrong product
+757528052935,TAKIS FUEGO 260GM,CHIPS,11.99,13.55,3.99,4.51,8.00,price landed on the wrong product
+757528051143,TAKIES BLUE HEAT,CHIPS & SNACKS,8.99,10.16,3.99,4.51,5.00,price landed on the wrong product
+055966908129,TABLE ACCENTS FORKS,HEALTH & BEAUTY,3.99,4.51,2.29,2.59,1.70,price landed on the wrong product
+055966913062,TABLE ACCENTS 15 PAPER PLATES,HEALTH & BEAUTY,3.99,4.51,3.50,3.96,0.49,price landed on the wrong product
+055966908143,TABLE ACCENT PLASTIC TEASPOON,HEALTH & BEAUTY,3.99,4.51,2.99,3.38,1.00,price landed on the wrong product
+061900602206,TEREA OAK FOR IIUMA 54,TOBACCO,2.66,3.01,31.49,35.58,-28.83,price landed on the wrong product
+061900602220,TEREA BIRCHA FOR IIUMA 54,TOBACCO,2.25,2.54,31.49,35.58,-29.24,price landed on the wrong product
+197111051998,Teco Earphones,cell phone accesroies,5.99,6.77,11.99,13.55,-6.00,price landed on the wrong product
+620707101970,Laker red,DRINKS,4.50,5.09,2.59,2.91,1.91,price landed on the wrong product
+620707554462,Laker Lager 6*473ML,Beer,2.50,2.83,13.99,15.81,-11.49,price landed on the wrong product
+070310001707,laker ice black 473 ml,DRINKS,13.99,15.81,2.59,2.91,11.40,price landed on the wrong product
+620707106586,Laker Ice 6x473ml,Beer,2.59,2.93,13.34,15.00,-10.75,price landed on the wrong product
+7031000170,Laker Ice 473ML Can,Beer,2.59,2.93,2.35,2.66,0.24,price landed on the wrong product
+063517038720,LADY SARAH Strawberry,SNACK,13.34,15.07,3.29,3.72,10.05,price landed on the wrong product
+063517038713,Lady Sarah Hazel Nut,SNACK,2.35,2.66,3.29,3.72,-0.94,price landed on the wrong product
+062067380624,Labatt Blue 6 pack,Beer,3.29,3.72,15.50,17.44,-12.21,price landed on the wrong product
+055598622103,La Petite Danish,COOKIES,3.29,3.72,2.50,2.83,0.79,price landed on the wrong product
+083933232878,KOOL-AID LOLLIPOP DIPPERS,"CANDY,GUMS & CHOCOLATES",15.50,17.52,2.99,3.38,12.51,price landed on the wrong product
+055000209120,kit kat double crunch,ICE CREAMS,2.50,2.83,3.49,3.94,-0.99,price landed on the wrong product
+096619188109,Kirkland towel,HOUSE HOLD ITEM,2.99,3.38,3.99,4.51,-1.00,price landed on the wrong product
+096619960095,Kirkland Tissue,GROCERY,3.49,3.94,8.99,10.16,-5.50,price landed on the wrong product
+716165280972,KING SIZE RAW PAPER,TOBACCO,3.99,4.51,3.10,3.50,0.89,price landed on the wrong product
+056327703414,molson dry 710 ml,Beer,3.99,4.51,3.59,4.04,0.40,price landed on the wrong product
+056327024762,Molson Cold Shots Max,Beer,3.99,4.51,3.09,3.48,0.90,price landed on the wrong product
+056327014145,Molson Cold shot,Beer,2.00,2.26,5.89,6.60,-3.89,price landed on the wrong product
+056327006010,Molson Canadian 710ml,Beer,5.00,5.65,4.87,5.50,0.13,price landed on the wrong product
+056327007949,molson 6 pack,Beer,3.59,4.06,18.39,20.70,-14.80,price landed on the wrong product
+853195000535,MOJI LIGHTER,DRINKS,5.89,6.66,7.25,8.19,-1.36,price landed on the wrong product
+060410901656,MISS VICKS SEA SALT 55G,CHIPS,4.87,5.50,2.69,3.04,2.18,price landed on the wrong product
+060410073773,MISS VICKIES SOUR CREAM & ONION,CHIPS & SNACKS,18.39,20.78,5.39,6.09,13.00,price landed on the wrong product
+060410071830,Miss Vickies Origianl 55g,CHIPS & SNACKS,3.09,3.49,2.39,2.70,0.70,price landed on the wrong product
+6942007652629,Mini HX61,ELECTRONICS,7.25,8.19,22.99,25.98,-15.74,price landed on the wrong product
+062858101209,Milano Giant Lady Biscuts,GROCERY,2.69,3.04,3.99,4.51,-1.30,price landed on the wrong product
+062067427367,Mikes Harder Straw Lemonade,R.T.D.,5.39,6.09,3.59,4.04,1.80,price landed on the wrong product
+062067421600,Mikes Hard Lemonade 473,Beer,2.39,2.70,3.59,4.04,-1.20,price landed on the wrong product
+062067379239,Mikes Hard Blue Freeze,R.T.D.,22.99,25.98,3.59,4.04,19.40,price landed on the wrong product
+060410079492,Lays Sour Cream & Onion,GENERAL ITEMS,14.82,16.75,4.99,5.64,9.83,price landed on the wrong product
+060410025987,Lays Small Ketchup,SNACK,5.39,6.09,1.00,1.13,4.39,price landed on the wrong product
+060410047118,LAYS LIGHTLY SALTED 235G,CHIPS & SNACKS,1.00,1.13,5.39,6.09,-4.39,price landed on the wrong product
+060410080054,Lays Hot N Sweet,CHIPS,5.39,6.09,4.99,5.64,0.40,price landed on the wrong product
+060410050910,lays classic,CHIPS,4.99,5.64,1.00,1.13,3.99,price landed on the wrong product
+060410079942,Lays 200g,GROCERY,1.00,1.13,4.99,5.64,-3.99,price landed on the wrong product
+060410048603,Lays Classic 60g,CHIPS & SNACKS,4.99,5.64,2.39,2.70,2.60,price landed on the wrong product
+062067860539,Lawenbrau 473,Beer,4.99,5.64,2.59,2.91,2.40,price landed on the wrong product
+055966900321,Large Trey,GROCERY,2.39,2.70,4.50,5.09,-2.11,price landed on the wrong product
+776029703092,Moosehead 6*473ML,Beer,1.00,1.13,18.49,20.82,-17.49,price landed on the wrong product
+776029701548,moose head 473 ml,Beer,1.00,1.13,3.09,3.48,-2.09,price landed on the wrong product
+070847002901,MONSTER ZERO SUGAR,DRINKS,1.00,1.13,3.99,4.51,-2.99,price landed on the wrong product
+070847015208,MONSTER ULTRA ZERO,DRINKS,2.00,2.26,3.99,4.51,-1.99,price landed on the wrong product
+070847890720,MONSTER ULTRA PEACHY KEEN,DRINKS,18.49,20.89,3.99,4.51,14.50,price landed on the wrong product
+070847811190,MONSTER ORIGINAL,DRINKS,3.09,3.49,3.99,4.51,-0.90,price landed on the wrong product
+060410074848,Munchies peanuts,FOOD ITMES,2.21,2.50,1.99,2.25,0.22,price landed on the wrong product
+069000040508,Mug Root Beer 355ml,DRINKS,1.55,1.75,1.33,1.50,0.22,price landed on the wrong product
+064331757309,mr.freeze,ICE CREAMS,1.50,1.70,0.89,1.01,0.61,price landed on the wrong product
+079200066369,NERDS GUMMY CLUSTERS 142G,"CANDY,GUMS & CHOCOLATES",9.99,11.29,4.99,5.64,5.00,price landed on the wrong product
+079200370107,NERDS GRAPE 46.7G,"CANDY,GUMS & CHOCOLATES",9.50,10.74,2.21,2.50,7.29,price landed on the wrong product
+057379600119,NAYA 600ml,DRINKS,13.00,14.69,1.55,1.75,11.45,price landed on the wrong product
+055000008839,NESCAFE RICH 100GM,GROCERY,3.00,3.39,9.99,11.29,-6.99,price landed on the wrong product
+060000610203,Nestle oreoASSORTED SANDWICH single,ICE CREAMS,1.99,2.25,3.49,3.94,-1.50,price landed on the wrong product
+990484000071,NESTEA LEMON 355ML,DRINKS,2.21,2.50,1.33,1.50,0.88,price landed on the wrong product
+059800000215,NESTLE GENERAL ITEMS CRISP,"CANDY,GUMS & CHOCOLATES",7.50,8.48,2.21,2.50,5.29,price landed on the wrong product
+055000174565,Nestle drumstick strawberry,ICE CREAMS,7.50,8.48,3.99,4.51,3.51,price landed on the wrong product
+055000174589,Nestle drumstick salty caramel,ICE CREAMS,1.99,2.25,3.99,4.51,-2.00,price landed on the wrong product
+055000174534,"Nestle drumstick CANDY,GUMS & CHOCOLATES",ICE CREAMS,2.21,2.50,3.99,4.51,-1.78,price landed on the wrong product
+055000681728,NESTLE VANILLA CAKE,ICE CREAMS,119.46,134.99,1.99,2.25,117.47,price landed on the wrong product
+05986034,NESTLE SMARTIES,"CANDY,GUMS & CHOCOLATES",12.83,14.50,1.99,2.25,10.84,price landed on the wrong product
+059800523110,NESTLE AERO MINT,"CANDY,GUMS & CHOCOLATES",3.99,4.51,2.21,2.50,1.78,price landed on the wrong product
+059800000116,NESTLE AERO,"CANDY,GUMS & CHOCOLATES",3.99,4.51,2.21,2.50,1.78,price landed on the wrong product
+055000216500,Maison Perrier,DRINKS,16.59,18.75,1.99,2.25,14.60,price landed on the wrong product
+062067333538,maximum ice 473 ml,Beer,1.99,2.25,3.09,3.48,-1.10,price landed on the wrong product
+059300010585,Matinee subtle KS 25,TOBACCO,2.21,2.50,21.00,23.73,-18.79,price landed on the wrong product
+059300010561,Matinee Subtle KS 20,TOBACCO,2.21,2.50,18.58,21.00,-16.37,price landed on the wrong product
+059300004423,Matinee mellow KS 25,TOBACCO,8.99,10.16,23.01,26.00,-14.02,price landed on the wrong product
+779186000936,match king size,TOBACCO,3.09,3.49,12.17,13.75,-9.08,price landed on the wrong product
+779186001001,Match Chic 25 K Caton,TOBACCO,21.00,23.73,95.58,108.01,-74.58,price landed on the wrong product
+779186002060,Match Chic 20 K,TOBACCO,18.58,21.00,95.58,108.01,-77.00,price landed on the wrong product
+779186002053,Match Chic 20,TOBACCO,23.01,26.00,9.74,11.01,13.27,price landed on the wrong product
+779186000943,Match 25 K Carton,TOBACCO,12.17,13.75,95.58,108.01,-83.41,price landed on the wrong product
+779186002022,Match 20,TOBACCO,95.58,108.01,9.74,11.01,85.84,price landed on the wrong product
+058496328733,MARS,"CANDY,GUMS & CHOCOLATES",9.74,11.01,2.20,2.49,7.54,price landed on the wrong product
+059300063635,MARLBORO SMOOTH,TOBACCO,95.58,108.01,13.72,15.50,81.86,price landed on the wrong product
+059300061709,MARLBORO 25 KS,TOBACCO,95.58,108.01,16.59,18.75,78.99,price landed on the wrong product
+059300061693,MARLBORO 20,TOBACCO,9.74,11.01,13.72,15.50,-3.98,price landed on the wrong product
+063657047378,Maria Christina,Wine,2.20,2.49,19.50,22.01,-17.30,price landed on the wrong product
+062067547539,Michelob Ultra,Beer,3.99,4.51,22.18,24.99,-18.19,price landed on the wrong product
+062067547355,michelob ultra,ALCOHOL,3.59,4.06,3.49,3.94,0.10,price landed on the wrong product
+088169002554,Meta pipe 50,HEALTH & BEAUTY,3.59,4.06,4.99,5.64,-1.40,price landed on the wrong product
+073390000165,Mentos fruit,"CANDY,GUMS & CHOCOLATES",3.59,4.06,1.99,2.25,1.60,price landed on the wrong product
+771913677282,MENTOS CINNAMONSTAIN SOFT BATHROOM TISSU,GROCERY,22.18,25.06,2.99,3.38,19.19,price landed on the wrong product
+073390000110,MEMTOS MINT,"CANDY,GUMS & CHOCOLATES",3.49,3.94,1.99,2.25,1.50,price landed on the wrong product
+8801104948418,Melona strawberry,Ice cream,4.99,5.64,2.49,2.81,2.50,price landed on the wrong product
+8801104943635,Melona Icecream,Ice cream,1.99,2.25,2.49,2.81,-0.50,price landed on the wrong product
+774276118126,Mega Sandwich,ICE CREAMS,2.99,3.38,1.99,2.25,1.00,price landed on the wrong product
+057700221921,MAYNARDS SOUR PATCH KIDS 60G,"CANDY,GUMS & CHOCOLATES",1.99,2.25,2.21,2.50,-0.22,price landed on the wrong product
+057700215876,MAYNARDS FUZZY PEACH 64G,"CANDY,GUMS & CHOCOLATES",2.49,2.81,2.21,2.50,0.28,price landed on the wrong product
+055742576344,Jumbo Hamburger Bun,BAKERY,2.19,2.47,5.49,6.20,-3.30,price landed on the wrong product
+059338125077,JUMBO COTTON BALLS,HEALTH & BEAUTY,2.99,3.38,1.99,2.25,1.00,price landed on the wrong product
+064900409653,juicy fruit original,"CANDY,GUMS & CHOCOLATES",5.49,6.20,2.21,2.50,3.28,price landed on the wrong product
+080432001424,Jameson Whiskey Lemonade,R.T.D.,1.99,2.25,3.99,4.50,-2.00,price landed on the wrong product
+776029703085,james ready 6 473 ml,Beer,2.21,2.50,2.61,2.95,-0.40,price landed on the wrong product
+063657011836,jackson-Triggs Pinot Grigio,Wine,3.99,4.51,13.30,15.00,-9.31,price landed on the wrong product
+063657007112,JACKSON TRIGGS MERLOT,Wine,2.61,2.95,13.30,15.00,-10.69,price landed on the wrong product
+063657036563,Jackson Triggs 1.5l,Wine,13.30,15.03,20.65,23.31,-7.35,price landed on the wrong product
+017082879011,JACK LIKS PEPPRONI 22G HOT,"CANDY,GUMS & CHOCOLATES",13.30,15.03,1.39,1.57,11.91,price landed on the wrong product
+017082879035,JACK LIKS PEPPRONI 22G,"CANDY,GUMS & CHOCOLATES",20.65,23.33,1.33,1.50,19.32,price landed on the wrong product
+061900497239,IQOS IIUMA ONE PEBBLE BEIGE,TOBACCO,1.39,1.57,50.99,57.62,-49.60,price landed on the wrong product
+5056594153153,Ven Dens Cable,Electronics - My top gift,6.99,7.90,12.99,14.68,-6.00,price landed on the wrong product
+5056594152125,Ven Dens cable,Electronics - My top gift,15.99,18.07,10.99,12.42,5.00,price landed on the wrong product
+5056594115120,Ven Dens Adapter,Electronics - My top gift,12.99,14.68,37.99,42.93,-25.00,price landed on the wrong product
+5056594114888,Ven Dens Adapter,Electronics - My top gift,12.99,14.68,20.99,23.72,-8.00,price landed on the wrong product
+5056594172246,Ven Dens Adapter,Electronics - My top gift,12.99,14.68,17.99,20.33,-5.00,price landed on the wrong product
+5060674507446,Ven Dens,Electronics - My top gift,10.99,12.42,12.99,14.68,-2.00,price landed on the wrong product
+829515308582,VEGGIE ORIGINAL,CHIPS,37.99,42.93,3.79,4.28,34.20,price landed on the wrong product
+705833099633,VB Lighter,LIGHTER,20.99,23.72,3.99,4.51,17.00,price landed on the wrong product
+8901030669125,VASELINE UV 100 ML,HEALTH & BEAUTY,17.99,20.33,3.99,4.51,14.00,price landed on the wrong product
+60014399,VASELINE BLUESEAL,HEALTH & BEAUTY,12.99,14.68,2.99,3.38,10.00,price landed on the wrong product
+5056594152088,Van Dens Power bank,Electronics - My top gift,3.79,4.28,27.99,31.63,-24.20,price landed on the wrong product
+5056594171195,Van dens Power bank,Electronics - My top gift,3.99,4.51,22.99,25.98,-19.00,price landed on the wrong product
+5060674508870,Van Dens Earphones,Electronics - My top gift,3.99,4.51,8.99,10.16,-5.00,price landed on the wrong product
+5060674507361,Van Dens Earphones,Electronics - My top gift,2.99,3.38,9.99,11.29,-7.00,price landed on the wrong product
+5060674507675,Van dens earphones,Electronics - My top gift,27.99,31.63,12.99,14.68,15.00,price landed on the wrong product
+5056594152132,Van Dens Earphones,Electronics - My top gift,22.99,25.98,15.99,18.07,7.00,price landed on the wrong product
+829515301378,VAGGIE ORIG.,CHIPS,8.99,10.16,3.99,4.51,5.00,price landed on the wrong product
+197111058195,USB-C Earphones,cell phone accesroies,9.99,11.29,11.99,13.55,-2.00,price landed on the wrong product
+197190301625,USB C TYPE CABLE TECO,ELECTRONICS,12.99,14.68,9.99,11.29,3.00,price landed on the wrong product
+614156061510,Uncle Rays Ripple 130g,CHIPS & SNACKS,11.99,13.55,2.50,2.83,9.49,price landed on the wrong product
+614156061503,Uncle Rays potato CHIPS & SNACKS 130g,CHIPS & SNACKS,9.99,11.29,2.50,2.83,7.49,price landed on the wrong product
+614156061527,Uncle Rays BBQ CHIPS & SNACKS 130g,CHIPS & SNACKS,11.99,13.55,2.50,2.83,9.49,price landed on the wrong product
+6942007652667,Ultra thin HOCO HX 65,ELECTRONICS,3.99,4.51,26.99,30.50,-23.00,price landed on the wrong product
+197190301632,Type C cable,ELECTRONICS,2.50,2.83,9.99,11.29,-7.49,price landed on the wrong product
+064541301378,Tylenol Extra strength ez tabs,HEALTH & BEAUTY,2.50,2.83,7.99,9.03,-5.49,price landed on the wrong product
+06202644,KINDER EGG,"CANDY,GUMS & CHOCOLATES",8.99,10.16,2.25,2.54,6.74,price landed on the wrong product
+06202343,Kinder Chocolate,"CANDY,GUMS & CHOCOLATES",3.10,3.50,1.76,1.99,1.34,price landed on the wrong product
+062020000682,KINDER BUENO,"CANDY,GUMS & CHOCOLATES",2.25,2.54,2.99,3.38,-0.74,price landed on the wrong product
+041390001055,Kikkoman Soy Sauce,GROCERY,1.76,1.99,7.99,9.03,-6.23,price landed on the wrong product
+24185,KEY CUT,OTHER,2.99,3.38,4.00,4.52,-1.01,price landed on the wrong product
+060410042526,ket,CHIPS & SNACKS,7.99,9.03,2.19,2.47,5.80,price landed on the wrong product
+061308400107,Kalas sea salt,GROCERY NO TAX,4.00,4.00,2.99,2.99,1.01,price landed on the wrong product
+062600141118,Tylenol extra carry on,GROCERY NO TAX,2.50,2.50,6.00,6.00,-3.50,price landed on the wrong product
+067800001026,UNICO VEGITABLE OIL 3LT.,GROCERY NO TAX,15.99,15.99,11.99,11.99,4.00,price landed on the wrong product
+068062021746,IP PASTA,GROCERY NO TAX,1.33,1.33,4.99,4.99,-3.66,price landed on the wrong product
+627925000771,Instant 30X,,4.99,4.99,30.00,30.00,-25.01,price landed on the wrong product
+066188004698,Maxwell Original,GROCERY NO TAX,2.49,2.49,8.99,8.99,-6.50,price landed on the wrong product
+059950300159,Margerine,GROCERY NO TAX,13.72,13.72,5.00,5.00,8.72,price landed on the wrong product
+068274000072,NESTLE 1L,WATER,7.50,7.50,3.00,3.00,4.50,price landed on the wrong product
+055000893053,Nestle Parlour Vanilla,DAIRY PRODUCTS,123.89,123.89,7.50,7.50,116.39,price landed on the wrong product
+055000893008,Nestle Parlour French Vanille,DAIRY PRODUCTS,119.47,119.47,7.50,7.50,111.97,price landed on the wrong product
+055000892964,NESTLE BUTTERSCOTH SUNDAE,DAIRY PRODUCTS,3.99,3.99,7.50,7.50,-3.51,price landed on the wrong product
+990484000101,Nestea,DRINKS NO TAX,2.21,2.21,2.50,2.50,-0.29,price landed on the wrong product
+055000008815,Nescafe Rich,GROCERY NO TAX,3.49,3.49,9.50,9.50,-6.01,price landed on the wrong product
+055000383998,Nescafe Gold,GROCERY NO TAX,1.33,1.33,13.00,13.00,-11.67,price landed on the wrong product
+055000489256,Nescafe,GROCERY NO TAX,2.50,2.50,9.99,9.99,-7.49,price landed on the wrong product
+057379105010,Naya 500 ml,WATER,9.99,9.99,1.50,1.50,8.49,price landed on the wrong product
+057379121058,NAYA 1.5L,WATER,4.99,4.99,3.00,3.00,1.99,price landed on the wrong product
+059491000785,MR. GENERAL ITEMSS SPICY BEEF,GROCERY NO TAX,3.00,3.00,1.00,1.00,2.00,price landed on the wrong product
+059491002550,Mr GENERAL ITEMS spcy chicken,GROCERY NO TAX,1.99,1.99,2.00,2.00,-0.01,price landed on the wrong product
+059491000778,Mr GENERAL ITEMS pack spicy chicken,GROCERY NO TAX,1.33,1.33,1.00,1.00,0.33,price landed on the wrong product
+059491000501,Mr GENERAL ITEMS pack chicken,GROCERY NO TAX,0.89,0.89,1.00,1.00,-0.11,price landed on the wrong product
+804906002010,money multiplier,,3.99,3.99,2.00,2.00,1.99,price landed on the wrong product
+804906005073,MONEY MACHINE $5,,3.99,3.99,5.00,5.00,-1.01,price landed on the wrong product
+064200130585,Lancia Fusilli,GROCERY NO TAX,2.59,2.59,2.50,2.50,0.09,price landed on the wrong product
+059749938747,Tea bag,GENERAL NO TAX,4.99,4.99,8.99,8.99,-4.00,price landed on the wrong product
+057174024417,Tetley Green Tea,GROCERY NO TAX,7.99,7.99,4.99,4.99,3.00,price landed on the wrong product
+804906020014,Super $20,,3.99,3.99,20.00,20.00,-16.01,price landed on the wrong product
+667888242337,Soy Sauce,GROCERY NO TAX,5.99,5.99,2.50,2.50,3.49,price landed on the wrong product
+786162650351,SMART WATER 591ML Water,WATER,3.29,3.29,3.00,3.00,0.29,price landed on the wrong product
+067568110800,SIFTO FALT,GROCERY NO TAX,2.99,2.99,2.75,2.75,0.24,price landed on the wrong product
+828158272557,Shakti Coconut oil,GROCERY NO TAX,2.21,2.21,9.99,9.99,-7.78,price landed on the wrong product
+064420000798,sealtest 2%,DAIRY PRODUCTS,9.99,9.99,3.99,3.99,6.00,price landed on the wrong product
+804906005028,power up,,2.50,2.50,5.00,5.00,-2.50,price landed on the wrong product
+804906003055,Roulette $3,,1.00,1.00,3.00,3.00,-2.00,price landed on the wrong product
+062847814363,Redpath sugar cubes,GROCERY NO TAX,4.09,4.09,4.99,4.99,-0.90,price landed on the wrong product
+062847210233,Redpath sugar,GROCERY NO TAX,3.09,3.09,5.50,5.50,-2.41,price landed on the wrong product
+2280550001001,POKER /LOTARIO/TOP/649,,2.22,2.22,1.00,1.00,1.22,price landed on the wrong product
+2280550002008,POK.MEGA.WHEE.LIGH.LOTARIO,,2.22,2.22,2.00,2.00,0.22,price landed on the wrong product
+804906005066,plinko 5,,9.00,9.00,5.00,5.00,4.00,price landed on the wrong product
+305219051004,Qtips small,GROCERY NO TAX,3.99,3.99,4.99,4.99,-1.00,price landed on the wrong product
+301490002674,Pepto Bismol 100ML,GROCERY NO TAX,11.73,11.73,7.00,7.00,4.73,price landed on the wrong product
+2280550009007,POKER LOTTO,,2.22,2.22,9.00,9.00,-6.78,price landed on the wrong product
+055900006621,primo thick and zesty,GROCERY NO TAX,3.99,3.99,3.50,3.50,0.49,price landed on the wrong product
+055900000322,Primo Spaghettini,GROCERY NO TAX,2.66,2.66,2.50,2.50,0.16,price landed on the wrong product
+055900000346,Primo Elbows 454g,GROCERY NO TAX,4.99,4.99,2.50,2.50,2.49,price landed on the wrong product
+059300024810,PALLMALL SMOOTH KS25,GROCERY NO TAX,7.99,7.99,18.00,18.00,-10.01,price landed on the wrong product
+059300053339,PALL MALL SPECIAL XL FULL 20,GROCERY NO TAX,2.99,2.99,14.50,14.50,-11.51,price landed on the wrong product
+059300024773,PALL MALL FULLM KS,GROCERY NO TAX,14.50,14.50,18.00,18.00,-3.50,price landed on the wrong product
+059300024742,PALL MALL FULL RG 20,GROCERY NO TAX,18.00,18.00,14.50,14.50,3.50,price landed on the wrong product
+059300024766,PALL MALL FULL KS 20,GROCERY NO TAX,18.00,18.00,14.50,14.50,3.50,price landed on the wrong product
+059300027798,PALL MALL BOLD KS25,GROCERY NO TAX,14.50,14.50,18.00,18.00,-3.50,price landed on the wrong product
+059300027781,Pall Mall bold,GROCERY NO TAX,18.00,18.00,14.50,14.50,3.50,price landed on the wrong product
+059300024780,PALL MALL SMOOTH RG 20,GROCERY NO TAX,3.99,3.99,14.50,14.50,-10.51,price landed on the wrong product
+059300024803,PALL MALL SMOOTH KS 20,GROCERY NO TAX,15.04,15.04,14.50,14.50,0.54,price landed on the wrong product
+058807485247,ORVILLE EXTRA BUTTER,GROCERY NO TAX,14.50,14.50,1.99,1.99,12.51,price landed on the wrong product
+058807489092,ORVILLE BUTTER,GROCERY NO TAX,14.50,14.50,1.69,1.69,12.81,price landed on the wrong product
+066721026590,OREO THE ORIGINAL 270G,GROCERY NO TAX,2.59,2.59,4.99,4.99,-2.40,price landed on the wrong product
+628154458197,Oreo Puffs,GROCERY NO TAX,1.99,1.99,5.50,5.50,-3.51,price landed on the wrong product
+066721026613,Oreo Golden,GROCERY NO TAX,1.69,1.69,4.50,4.50,-2.81,price landed on the wrong product
+031200046079,OCEAN SPRAY CANNEBERY,GROCERY NO TAX,2.59,2.59,5.99,5.99,-3.40,price landed on the wrong product
+2280550010003,LOTTO MAX$10,,2.21,2.21,10.00,10.00,-7.79,price landed on the wrong product
+2280550025007,LOTTO MAX $25,,15.50,15.50,25.00,25.00,-9.50,price landed on the wrong product
+2280550018009,LOTTO MAX $18.00,,3.99,3.99,18.00,18.00,-14.01,price landed on the wrong product
+2280550031008,LOTTO 649 $31,,25.00,25.00,31.00,31.00,-6.00,price landed on the wrong product
+2280550019006,LOTTO 649 $19,,18.00,18.00,19.00,19.00,-1.00,price landed on the wrong product
+2280550013004,LOTTO 649 $13,,31.00,31.00,13.00,13.00,18.00,price landed on the wrong product
+2280550022006,LOTO MAX 2 DRAW.$22,,19.00,19.00,22.00,22.00,-3.00,price landed on the wrong product
+2280550030001,LOTO MAX $30,,13.00,13.00,30.00,30.00,-17.00,price landed on the wrong product
+2280550050009,"LOT, MAX 10 DRAW.$50",,22.00,22.00,50.00,50.00,-28.00,price landed on the wrong product
+623190810404,Luncheon Meat 340g,GROCERY NO TAX,13.27,13.27,3.50,3.50,9.77,price landed on the wrong product
+060100043963,LD LIGHTER,GENERAL NO TAX,14.82,14.82,3.00,3.00,11.82,price landed on the wrong product
+065302000035,Wild Pink Salmon,GROCERY NO TAX,2.66,2.66,5.99,5.99,-3.33,price landed on the wrong product
+060245405350,Visine original,GROCERY NO TAX,9.99,9.99,9.00,9.00,0.99,price landed on the wrong product
+096619321841,Water kirkland,WATER,2.99,2.99,1.00,1.00,1.99,price landed on the wrong product
+777550011649,TWINKIES,GROCERY NO TAX,3.59,3.59,2.50,2.50,1.09,price landed on the wrong product
+063209082277,Tim Hortons,GROCERY NO TAX,16.40,16.40,15.99,15.99,0.41,price landed on the wrong product
+057174122137,Tetley Orange Pekoe,GROCERY NO TAX,7.99,7.99,5.99,5.99,2.00,price landed on the wrong product
