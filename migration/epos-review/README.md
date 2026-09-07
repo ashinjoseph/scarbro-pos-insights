@@ -4,6 +4,9 @@ Epos returned their loaded catalogue as four CSVs (957 rows). This is a
 row-by-row comparison against `../pos-import-no-tax.csv`, the 959-row
 list sent to them, joined on barcode.
 
+*Analysis by Claude (Anthropic), working from an export of the store's
+previous POS database.*
+
 ## What is right
 
 - **953 of 959 products matched on barcode.** Nothing was invented and
@@ -52,31 +55,38 @@ Worked examples:
 
 `epos-price-errors.csv` lists every one with the correct value.
 
-## Second fault: HST is being charged on the bottle deposit
+## The 19 lottery lines come first
 
-Separate from the shift, and present on rows whose price is otherwise
-correct.
+Fixed-denomination tickets, where the price has to be exact or the till
+cannot balance against OLG:
 
-**821 of 822 HST rows have `SalePriceIncTax` = `SalePriceExTax` x 1.13**,
-with no allowance for the container deposit built into the price. A
-deposit is not taxable, and the old till never taxed it — verified
-against 5,060 deposit-bearing invoice lines, on every one of which
-`VAT = (rate x qty - discount) x VATPer/100`, with the deposit added
-after.
+| | Loaded | Should be |
+|---|---:|---:|
+| LOTTO MAX$10 | $2.21 | $10.00 |
+| Super $20 | $3.99 | $20.00 |
+| LOT, MAX 10 DRAW.$50 | $22.00 | $50.00 |
+| LOTTO 649 $13 | $31.00 | $13.00 |
+| LOTO MAX $30 | $13.00 | $30.00 |
 
-All **102** deposit-bearing products are affected: 1.3c overcharged on a
-10c deposit, 7.8c on a 60c deposit.
+## Two things deliberately not raised
 
-## Third: six lottery products were dropped
+**Bottle deposit tax.** Epos computes `SalePriceIncTax` as
+`SalePriceExTax x 1.13` on all 821 taxable rows, so HST is charged on
+the container deposit — 1.3c on a 10c deposit, 7.8c on a 60c one, across
+102 products. The owner reviewed this and accepted it: the workaround is
+not worth the effort. Not an error to report.
 
-`$12 LOTTO MAX`, `$20 LOTTO MAX.2 DRA`, `11 $LOTTO MAX`, `649 $7.00`,
-`649/LIGHTING LOTTO`, `POKER LIGHT/LOTTO MAX` are in our list and absent
-from theirs. Epos added four keys of their own — `LOTTO IN`,
-`LOTTO OUT`, `INSTANT`, `INSTANT OUT` — with no barcode.
+**Six dropped lottery products.** Removed by the owner on purpose.
+
+## `pos-import-corrections.csv`
+
+The 485 mispriced products in the same seven columns, same order, as the
+list originally emailed to Epos. Every row is byte-for-byte identical to
+that file, so it can be applied directly.
 
 ## `epos-corrected-import.csv`
 
-Their exact seven-column format, ready to re-import: every price restored
-from our list, `SalePriceIncTax` recomputed as
-`(price - deposit) x 1.13 + deposit`, the six missing lottery products
-added back, and their four new keys left untouched. 963 rows.
+A full rebuild in Epos's own seven-column format, kept for reference. It
+recomputes `SalePriceIncTax` as `(price - deposit) x 1.13 + deposit` and
+restores the six lottery products — neither of which the owner wants,
+so **`pos-import-corrections.csv` is the file to send**, not this one.
