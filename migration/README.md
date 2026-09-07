@@ -90,6 +90,30 @@ Tax is a **category** attribute (`Category.TaxApplicable` /
 151 at 0%. The 8% GST rate defined in `TaxMaster` is not used by any
 product and never appears on an invoice line.
 
+## Two price versions
+
+The POS vendor asked for prices without tax, so there are two files with
+identical rows and columns, differing only in `Selling Price`:
+
+| File | Selling Price |
+|------|---------------|
+| `pos-import.csv` | tax-inclusive — `SalesCost x (1 + tax) + deposit` |
+| `pos-import-no-tax.csv` | **tax-exclusive** — `SalesCost + deposit` |
+
+`Tax Percentage` is unchanged in both, so the vendor's system can apply
+the rate itself.
+
+**The deposit stays in the tax-exclusive price.** A deposit is not a
+tax — the till adds it separately and never charges tax on it — and this
+format has no deposit column, so folding it into the price is the only
+way it survives the import. If the vendor's system applies container
+deposits itself, ask for a variant with the bare shelf price instead,
+or those 102 products will be charged the deposit twice.
+
+The two files round-trip exactly: applying the tax rate to
+`price - deposit` and adding the deposit back reproduces the
+tax-inclusive file on all 959 rows, to the cent.
+
 ## Bottle deposit is folded into the selling price
 
 Deposit is a separate field (`Product.BD`) that the till adds after tax,
