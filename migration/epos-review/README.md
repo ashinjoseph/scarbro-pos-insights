@@ -90,3 +90,58 @@ A full rebuild in Epos's own seven-column format, kept for reference. It
 recomputes `SalePriceIncTax` as `(price - deposit) x 1.13 + deposit` and
 restores the six lottery products — neither of which the owner wants,
 so **`pos-import-corrections.csv` is the file to send**, not this one.
+
+---
+
+# Round 2 — after Epos reloaded (8 Sep 2026)
+
+*Verified by Claude (Anthropic) against `../pos-import-no-tax.csv`,
+joined on barcode.*
+
+**458 of the 485 wrong prices are fixed — 94.4%.** The column shift is
+gone. Tax groups still match on all 953, categories still match, no
+product was lost or added.
+
+## 27 prices are still wrong, and they split cleanly
+
+**19 are products that share a name with another product.** Epos gave
+every copy in a name group the same price, which means the update was
+applied by product name rather than by barcode:
+
+| Name | Epos gave all copies | Our prices |
+|------|---:|---|
+| Ven Dens Car Holder | $15.99 | $6.99 / $11.99 / $12.99 / $15.99 |
+| Van Dens Earphones | $15.99 | $8.99 / $9.99 / $12.99 / $15.99 |
+| Ven Dens Adapter | $17.99 | $17.99 / $20.99 / $37.99 |
+| michelob ultra | $3.49 | $3.49 / $22.18 |
+| Tide detergent | $7.99 | $3.99 / $7.99 |
+
+Eleven name groups collapsed this way. `michelob ultra` is the costly
+one — a single can and a six-pack now ring up at the same $3.49.
+
+**8 are one-offs** with no name collision, so they look like rows simply
+missed in the reload:
+
+`LOT, MAX 10 DRAW.$50` ($22.00, should be $50.00), `RAID ANT,ROACH &
+EARWIG`, `WRIGLEYS DOUBLE MINT`, `M & M CANDY,GUMS & CHOCOLATES 48G`,
+`Nestle drumstick CANDY,GUMS & CHOCOLATES`, `POP SHOP COTTON CANDY...`,
+`Lays Classic 60g`, `Miss Vickies Origianl 55g`.
+
+The lottery one matters most: a $50 Lotto Max book is still priced at
+$22.
+
+## Everything else checks out
+
+- Tax groups: 0 mismatches on 953 products.
+- Categories: 0 mismatches, apart from the lottery rows which carry a
+  blank category on their side.
+- Coverage: no product added or lost. The six lottery products the owner
+  removed are still out, and Epos's own four keys are untouched.
+- `SalePriceIncTax` is `ExTax x 1.13` throughout, as accepted. One row,
+  `Heineken 6* 330Ml Bottle`, is a cent light ($19.77 against $19.78).
+
+## `pos-import-corrections-round2.csv`
+
+The 27 products in the same seven columns as the original list, each row
+byte-for-byte identical to it. **These must be applied by barcode, not
+by name** — matching on name is what left 19 of them wrong.
