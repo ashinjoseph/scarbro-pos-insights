@@ -1,0 +1,135 @@
+Barcode,Product Name,Product Description,Cost Price,Selling Price,Tax Percentage,Category Name
+,ALLO 2500 8mL Org Mango Guava,ALLO 2500 8mL Org Mango Guava,20.45,29.99,13.00,VAPE & CIGAR
+,ALLO 2500 8mL Org Mango Guava CTN5,ALLO 2500 8mL Org Mango Guava - carton of 5,102.25,149.95,13.00,VAPE & CIGAR
+,ALLO 2500 8mL Wtrmln Ice,ALLO 2500 8mL Watermelon Ice,20.45,29.99,13.00,VAPE & CIGAR
+,ALLO 2500 8mL Wtrmln Ice CTN5,ALLO 2500 8mL Watermelon Ice - carton of 5,102.25,149.95,13.00,VAPE & CIGAR
+,ALLO Ultra 10K 8mL Wtrmln Ice,ALLO Ultra 10K 8mL Watermelon Ice,19.45,27.99,13.00,VAPE & CIGAR
+,ALLO Ultra 10K 8mL Wtrmln Ice CTN6,ALLO Ultra 10K 8mL Watermelon Ice - carton of 6,116.70,167.94,13.00,VAPE & CIGAR
+,DRIP'N 8mL Mango Peach Wtrmln,DRIP'N 8mL Mango Peach Watermelon,18.95,26.99,13.00,VAPE & CIGAR
+,DRIP'N 8mL Mango Peach Wtrmln CTN5,DRIP'N 8mL Mango Peach Watermelon - carton of 5,94.75,134.95,13.00,VAPE & CIGAR
+,DRIP'N 8mL Triple Berry,DRIP'N 8mL Triple Berry,18.95,26.99,13.00,VAPE & CIGAR
+,DRIP'N 8mL Triple Berry CTN5,DRIP'N 8mL Triple Berry - carton of 5,94.75,134.95,13.00,VAPE & CIGAR
+,ELFBAR FS70K 20mL Banana Ice,ELFBAR FS70K 20mL Banana Ice,23.43,33.99,13.00,VAPE & CIGAR
+,ELFBAR FS70K 20mL Banana Ice CTN4,ELFBAR FS70K 20mL Banana Ice - carton of 4,93.72,135.96,13.00,VAPE & CIGAR
+,ELFBAR FS70K 20mL Kiwi Passion Guava Ice,ELFBAR FS70K 20mL Kiwi Passion Fruit Guava Ice,23.43,33.99,13.00,VAPE & CIGAR
+,ELFBAR FS70K Kiwi Passion Guava Ice CTN4,ELFBAR FS70K 20mL Kiwi Passion Fruit Guava Ice - carton of 4,93.72,135.96,13.00,VAPE & CIGAR
+,ELFBAR FS70K 20mL Mango Ice,ELFBAR FS70K 20mL Mango Ice,23.43,33.99,13.00,VAPE & CIGAR
+,ELFBAR FS70K 20mL Mango Ice CTN4,ELFBAR FS70K 20mL Mango Ice - carton of 4,93.72,135.96,13.00,VAPE & CIGAR
+,ELFBAR FS70K 20mL Miami Mint,ELFBAR FS70K 20mL Miami Mint,23.43,33.99,13.00,VAPE & CIGAR
+,ELFBAR FS70K 20mL Miami Mint CTN4,ELFBAR FS70K 20mL Miami Mint - carton of 4,93.72,135.96,13.00,VAPE & CIGAR
+,ELFBAR FS70K 20mL Pineap Peach Mango Ice,ELFBAR FS70K 20mL Pineapple Peach Mango Ice,23.43,33.99,13.00,VAPE & CIGAR
+,ELFBAR FS70K Pineap Peach Mango Ice CTN4,ELFBAR FS70K 20mL Pineapple Peach Mango Ice - carton of 4,93.72,135.96,13.00,VAPE & CIGAR
+,ELFBAR FS70K 20mL Straw Banana Ice,ELFBAR FS70K 20mL Strawberry Banana Ice,23.43,33.99,13.00,VAPE & CIGAR
+,ELFBAR FS70K 20mL Straw Banana Ice CTN4,ELFBAR FS70K 20mL Strawberry Banana Ice - carton of 4,93.72,135.96,13.00,VAPE & CIGAR
+,ELFBAR FS70K 20mL Wtrmln Ice,ELFBAR FS70K 20mL Watermelon Ice,23.43,33.99,13.00,VAPE & CIGAR
+,ELFBAR FS70K 20mL Wtrmln Ice CTN4,ELFBAR FS70K 20mL Watermelon Ice - carton of 4,93.72,135.96,13.00,VAPE & CIGAR
+,ELFBAR GH20K 20mL Blue Razz Ice,ELFBAR GH20K 20mL Blue Razz Ice,26.43,37.99,13.00,VAPE & CIGAR
+,ELFBAR GH20K 20mL Blue Razz Ice CTN5,ELFBAR GH20K 20mL Blue Razz Ice - carton of 5,132.15,189.95,13.00,VAPE & CIGAR
+,ELFBAR GH20K 20mL Grape Ice,ELFBAR GH20K 20mL Grape Ice,26.43,37.99,13.00,VAPE & CIGAR
+,ELFBAR GH20K 20mL Grape Ice CTN5,ELFBAR GH20K 20mL Grape Ice - carton of 5,132.15,189.95,13.00,VAPE & CIGAR
+,ELFBAR GH20K 20mL Peach Mango Wtrmln,ELFBAR GH20K 20mL Peach Mango Watermelon,26.43,37.99,13.00,VAPE & CIGAR
+,ELFBAR GH20K Peach Mango Wtrmln CTN5,ELFBAR GH20K 20mL Peach Mango Watermelon - carton of 5,132.15,189.95,13.00,VAPE & CIGAR
+,ELFBAR GH20K 20mL Sour Blueb Lemon,ELFBAR GH20K 20mL Sour Blueberry Lemon,26.43,37.99,13.00,VAPE & CIGAR
+,ELFBAR GH20K 20mL Sour Blueb Lemon CTN5,ELFBAR GH20K 20mL Sour Blueberry Lemon - carton of 5,132.15,189.95,13.00,VAPE & CIGAR
+,ELFBAR GH20K 20mL Straw Kiwi Ice,ELFBAR GH20K 20mL Strawberry Kiwi Ice,26.43,37.99,13.00,VAPE & CIGAR
+,ELFBAR GH20K 20mL Straw Kiwi Ice CTN5,ELFBAR GH20K 20mL Strawberry Kiwi Ice - carton of 5,132.15,189.95,13.00,VAPE & CIGAR
+,ELFBAR GH20K 20mL Wtrmln Ice,ELFBAR GH20K 20mL Watermelon Ice,26.43,37.99,13.00,VAPE & CIGAR
+,ELFBAR GH20K 20mL Wtrmln Ice CTN5,ELFBAR GH20K 20mL Watermelon Ice - carton of 5,132.15,189.95,13.00,VAPE & CIGAR
+,FB Beast Mode Max2 Gushin Wtrmln Apple,FLAVOUR BEAST Beast Mode Max 2 20mL Gushin Watermelon Apple,29.93,42.99,13.00,VAPE & CIGAR
+,FB Beast Mode Max2 Gushin Wtrmln Ap CTN5,FLAVOUR BEAST Beast Mode Max 2 20mL Gushin Watermelon Apple - carton of 5,149.65,214.95,13.00,VAPE & CIGAR
+,FB Beast Mode Max2 20mL Mega Mango,FLAVOUR BEAST Beast Mode Max 2 20mL Mega Mango,29.93,42.99,13.00,VAPE & CIGAR
+,FB Beast Mode Max2 20mL Mega Mango CTN5,FLAVOUR BEAST Beast Mode Max 2 20mL Mega Mango - carton of 5,149.65,214.95,13.00,VAPE & CIGAR
+,FB Beast Mode Max2 20mL Wtrmln G,FLAVOUR BEAST Beast Mode Max 2 20mL Watermelon G,29.93,42.99,13.00,VAPE & CIGAR
+,FB Beast Mode Max2 20mL Wtrmln G CTN5,FLAVOUR BEAST Beast Mode Max 2 20mL Watermelon G - carton of 5,149.65,214.95,13.00,VAPE & CIGAR
+,Krave PulseX 60K 20mL BlueRazz LemonHead,KRAVE Pulse X 60K 20mL Blue Razz Lemon Head,18.00,25.99,13.00,VAPE & CIGAR
+,Krave PulseX 60K BlueRazz LemonHead CTN3,KRAVE Pulse X 60K 20mL Blue Razz Lemon Head - carton of 3,54.00,77.97,13.00,VAPE & CIGAR
+,Krave PulseX 60K 20mL Cool Mint,KRAVE Pulse X 60K 20mL Cool Mint,18.00,25.99,13.00,VAPE & CIGAR
+,Krave PulseX 60K 20mL Cool Mint CTN3,KRAVE Pulse X 60K 20mL Cool Mint - carton of 3,54.00,77.97,13.00,VAPE & CIGAR
+,LVLX Boost 20mL Mad Mango Peach,LEVEL X Boost 20mL Mad Mango Peach,21.93,31.99,13.00,VAPE & CIGAR
+,LVLX Boost 20mL Mad Mango Peach CTN6,LEVEL X Boost 20mL Mad Mango Peach - carton of 6,131.58,191.94,13.00,VAPE & CIGAR
+,LVLX Boost 20mL Straw Rasp Blueb Ice,LEVEL X Boost 20mL Strawberry Raspberry Blueberry Ice,21.93,31.99,13.00,VAPE & CIGAR
+,LVLX Boost Straw Rasp Blueb Ice CTN6,LEVEL X Boost 20mL Strawberry Raspberry Blueberry Ice - carton of 6,131.58,191.94,13.00,VAPE & CIGAR
+,LVLX Boost 20mL Super Sour Apple Iced,LEVEL X Boost 20mL Super Sour Apple Iced,21.93,31.99,13.00,VAPE & CIGAR
+,LVLX Boost Super Sour Apple Iced CTN6,LEVEL X Boost 20mL Super Sour Apple Iced - carton of 6,131.58,191.94,13.00,VAPE & CIGAR
+,LVLX Boost 20mL Wtrmln Straw Kiwi Ice,LEVEL X Boost 20mL Watermelon Strawberry Kiwi Ice,21.93,31.99,13.00,VAPE & CIGAR
+,LVLX Boost Wtrmln Straw Kiwi Ice CTN6,LEVEL X Boost 20mL Watermelon Strawberry Kiwi Ice - carton of 6,131.58,191.94,13.00,VAPE & CIGAR
+,LVLX M-Series Device Obsidian Black,LEVEL X M Series Device Kit Obsidian Black,8.09,11.73,13.00,VAPE & CIGAR
+,LVLX M-Series Device Obsidian Black CTN4,LEVEL X M Series Device Kit Obsidian Black - carton of 4,32.36,46.92,13.00,VAPE & CIGAR
+,LVLX M-Series Kit 30mL Bomb Blue Razz,LEVEL X M Series Starter Kit 30mL Bomb Blue Razz,31.87,45.99,13.00,VAPE & CIGAR
+,LVLX M-Series Kit Bomb Blue Razz CTN4,LEVEL X M Series Starter Kit 30mL Bomb Blue Razz - carton of 4,127.48,183.96,13.00,VAPE & CIGAR
+,LVLX M-Series Kit Flippin' Fruit Flash,LEVEL X M Series Starter Kit 30mL Flippin' Fruit Flash,31.87,45.99,13.00,VAPE & CIGAR
+,LVLX M-Series Kit Flippin' Fruit Fl CTN4,LEVEL X M Series Starter Kit 30mL Flippin' Fruit Flash - carton of 4,127.48,183.96,13.00,VAPE & CIGAR
+,LVLX M-Series Kit 30mL Gusto Green Apple,LEVEL X M Series Starter Kit 30mL Gusto Green Apple,31.87,45.99,13.00,VAPE & CIGAR
+,LVLX M-Series Kit Gusto Green Apple CTN4,LEVEL X M Series Starter Kit 30mL Gusto Green Apple - carton of 4,127.48,183.96,13.00,VAPE & CIGAR
+,LVLX M-Series Kit Trippin' Triple Berry,LEVEL X M Series Starter Kit 30mL Trippin' Triple Berry,31.87,45.99,13.00,VAPE & CIGAR
+,LVLX M-Series Kit Trippin' Triple B CTN4,LEVEL X M Series Starter Kit 30mL Trippin' Triple Berry - carton of 4,127.48,183.96,13.00,VAPE & CIGAR
+,LVLX M-Series Kit Weekend Wtrmln Iced,LEVEL X M Series Starter Kit 30mL Weekend Watermelon Iced,31.87,45.99,13.00,VAPE & CIGAR
+,LVLX M-Series Kit Weekend Wtrmln Ic CTN4,LEVEL X M Series Starter Kit 30mL Weekend Watermelon Iced - carton of 4,127.48,183.96,13.00,VAPE & CIGAR
+,OVNS 2500 2mL Dragon Fruit Blue Rasp,OVNS 2500 2mL Dragon Fruit Blue Raspberry,11.00,15.99,13.00,VAPE & CIGAR
+,OVNS 2500 Dragon Fruit Blue Rasp CTN10,OVNS 2500 2mL Dragon Fruit Blue Raspberry - carton of 10,110.00,159.90,13.00,VAPE & CIGAR
+,OVNS 2500 2mL Mint Ice,OVNS 2500 2mL Mint Ice,11.00,15.99,13.00,VAPE & CIGAR
+,OVNS 2500 2mL Mint Ice CTN10,OVNS 2500 2mL Mint Ice - carton of 10,110.00,159.90,13.00,VAPE & CIGAR
+,OVNS Max 3K 2mL Blue Razz Ice,OVNS Max 3K 2mL Blue Razz Ice,14.25,20.99,13.00,VAPE & CIGAR
+,OVNS Max 3K 2mL Blue Razz Ice CTN6,OVNS Max 3K 2mL Blue Razz Ice - carton of 6,85.50,125.94,13.00,VAPE & CIGAR
+,OVNS Max 3K 2mL Mexican Mango,OVNS Max 3K 2mL Mexican Mango,14.25,20.99,13.00,VAPE & CIGAR
+,OVNS Max 3K 2mL Mexican Mango CTN6,OVNS Max 3K 2mL Mexican Mango - carton of 6,85.50,125.94,13.00,VAPE & CIGAR
+,OVNS Max 3K 2mL Peach Mango,OVNS Max 3K 2mL Peach Mango,14.25,20.99,13.00,VAPE & CIGAR
+,OVNS Max 3K 2mL Peach Mango CTN6,OVNS Max 3K 2mL Peach Mango - carton of 6,85.50,125.94,13.00,VAPE & CIGAR
+,OVNS Max 3K 2mL Straw Peach Mint,OVNS Max 3K 2mL Strawberry Peach Mint,14.25,20.99,13.00,VAPE & CIGAR
+,OVNS Max 3K 2mL Straw Peach Mint CTN6,OVNS Max 3K 2mL Strawberry Peach Mint - carton of 6,85.50,125.94,13.00,VAPE & CIGAR
+,OVNS Max 3K 2mL White Grape Ice,OVNS Max 3K 2mL White Grape Ice,14.25,20.99,13.00,VAPE & CIGAR
+,OVNS Max 3K 2mL White Grape Ice CTN6,OVNS Max 3K 2mL White Grape Ice - carton of 6,85.50,125.94,13.00,VAPE & CIGAR
+,OVNS O2 2500 2mL,OVNS O2 2500 2mL,10.25,14.99,13.00,VAPE & CIGAR
+,OVNS O2 2500 2mL CTN10,OVNS O2 2500 2mL - carton of 10,102.50,149.90,13.00,VAPE & CIGAR
+,STLTH 2% Pack (3 pods) Berry Blast,STLTH 2% Pack (3 pods) Berry Blast,14.22,20.99,13.00,VAPE & CIGAR
+,STLTH 2% Pack (3 pods) Double Mint,STLTH 2% Pack (3 pods) Double Mint,14.22,20.99,13.00,VAPE & CIGAR
+,STLTH 2% Pack (3 pods) Frost Mint,STLTH 2% Pack (3 pods) Frost Mint,14.22,20.99,13.00,VAPE & CIGAR
+,STLTH 2% Pack (3 pods) Honeydew Menthol,STLTH 2% Pack (3 pods) Honeydew Menthol,14.22,20.99,13.00,VAPE & CIGAR
+,STLTH 2% Pack (3 pods) Peach,STLTH 2% Pack (3 pods) Peach,14.22,20.99,13.00,VAPE & CIGAR
+,STLTH 2% Pack (3 pods) Tobacco Blend,STLTH 2% Pack (3 pods) Tobacco Blend,14.22,20.99,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Cherry Lemon Ice,STLTH ECO 6mL Cherry Lemon Ice,13.47,19.99,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Cherry Lemon Ice CTN6,STLTH ECO 6mL Cherry Lemon Ice - carton of 6,80.82,119.94,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Juicy Peach,STLTH ECO 6mL Juicy Peach,13.47,19.99,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Juicy Peach CTN6,STLTH ECO 6mL Juicy Peach - carton of 6,80.82,119.94,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Peach Ice,STLTH ECO 6mL Peach Ice,13.47,19.99,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Peach Ice CTN6,STLTH ECO 6mL Peach Ice - carton of 6,80.82,119.94,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Polar Mint,STLTH ECO 6mL Polar Mint,13.47,19.99,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Polar Mint CTN6,STLTH ECO 6mL Polar Mint - carton of 6,80.82,119.94,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Razz Apple Ice,STLTH ECO 6mL Razz Apple Ice,13.47,19.99,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Razz Apple Ice CTN6,STLTH ECO 6mL Razz Apple Ice - carton of 6,80.82,119.94,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Razzy Grape Ice,STLTH ECO 6mL Razzy Grape Ice,13.47,19.99,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Razzy Grape Ice CTN6,STLTH ECO 6mL Razzy Grape Ice - carton of 6,80.82,119.94,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Straw Banana,STLTH ECO 6mL Strawberry Banana,13.47,19.99,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Straw Banana CTN6,STLTH ECO 6mL Strawberry Banana - carton of 6,80.82,119.94,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Straw Kiwi Ice,STLTH ECO 6mL Strawberry Kiwi Ice,13.47,19.99,13.00,VAPE & CIGAR
+,STLTH ECO 6mL Straw Kiwi Ice CTN6,STLTH ECO 6mL Strawberry Kiwi Ice - carton of 6,80.82,119.94,13.00,VAPE & CIGAR
+,STLTH ECO MINI 2mL Blue Razz Ice,STLTH ECO MINI 2mL Blue Razz Ice,6.34,8.99,13.00,VAPE & CIGAR
+,STLTH ECO MINI 2mL Blue Razz Ice CTN6,STLTH ECO MINI 2mL Blue Razz Ice - carton of 6,38.04,53.94,13.00,VAPE & CIGAR
+,STLTH ECO MINI 2mL Green Apple,STLTH ECO MINI 2mL Green Apple,6.34,8.99,13.00,VAPE & CIGAR
+,STLTH ECO MINI 2mL Green Apple CTN6,STLTH ECO MINI 2mL Green Apple - carton of 6,38.04,53.94,13.00,VAPE & CIGAR
+,STLTH ECO MINI 2mL Juicy Peach,STLTH ECO MINI 2mL Juicy Peach,6.34,8.99,13.00,VAPE & CIGAR
+,STLTH ECO MINI 2mL Juicy Peach CTN6,STLTH ECO MINI 2mL Juicy Peach - carton of 6,38.04,53.94,13.00,VAPE & CIGAR
+,STLTH ECO MINI 2mL Razzy Grape Ice,STLTH ECO MINI 2mL Razzy Grape Ice,6.34,8.99,13.00,VAPE & CIGAR
+,STLTH ECO MINI 2mL Razzy Grape Ice CTN6,STLTH ECO MINI 2mL Razzy Grape Ice - carton of 6,38.04,53.94,13.00,VAPE & CIGAR
+,STLTH ECO MINI 2mL Straw Kiwi Ice,STLTH ECO MINI 2mL Strawberry Kiwi Ice,6.34,8.99,13.00,VAPE & CIGAR
+,STLTH ECO MINI 2mL Straw Kiwi Ice CTN6,STLTH ECO MINI 2mL Strawberry Kiwi Ice - carton of 6,38.04,53.94,13.00,VAPE & CIGAR
+,STLTH LOOP 25K 20mL Rich Tobacco,STLTH LOOP 25K 20mL Rich Tobacco,21.44,30.99,13.00,VAPE & CIGAR
+,STLTH LOOP 25K 20mL Rich Tobacco CTN5,STLTH LOOP 25K 20mL Rich Tobacco - carton of 5,107.20,154.95,13.00,VAPE & CIGAR
+,STLTH LOOP 25K 20mL Straw Lime Ice,STLTH LOOP 25K 20mL Strawberry Lime Ice,21.44,30.99,13.00,VAPE & CIGAR
+,STLTH LOOP 25K 20mL Straw Lime Ice CTN5,STLTH LOOP 25K 20mL Strawberry Lime Ice - carton of 5,107.20,154.95,13.00,VAPE & CIGAR
+,STLTH LOOP MAX 70K 30mL Blue Razz,STLTH LOOP MAX 70K 30mL Blue Razz,23.52,33.99,13.00,VAPE & CIGAR
+,STLTH LOOP MAX 70K 30mL Blue Razz CTN4,STLTH LOOP MAX 70K 30mL Blue Razz - carton of 4,94.08,135.96,13.00,VAPE & CIGAR
+,STLTH LOOP MAX 70K 30mL Green Apple Ice,STLTH LOOP MAX 70K 30mL Green Apple Ice,25.09,35.99,13.00,VAPE & CIGAR
+,STLTH LOOP MAX 70K Green Apple Ice CTN4,STLTH LOOP MAX 70K 30mL Green Apple Ice - carton of 4,100.37,143.96,13.00,VAPE & CIGAR
+,STLTH LOOP MAX 70K 30mL Peach Berry,STLTH LOOP MAX 70K 30mL Peach Berry,23.52,33.99,13.00,VAPE & CIGAR
+,STLTH LOOP MAX 70K 30mL Peach Berry CTN4,STLTH LOOP MAX 70K 30mL Peach Berry - carton of 4,94.08,135.96,13.00,VAPE & CIGAR
+,STLTH LOOP MAX 70K 30mL Straw Kiwi,STLTH LOOP MAX 70K 30mL Strawberry Kiwi,25.09,35.99,13.00,VAPE & CIGAR
+,STLTH LOOP MAX 70K 30mL Straw Kiwi CTN4,STLTH LOOP MAX 70K 30mL Strawberry Kiwi - carton of 4,100.37,143.96,13.00,VAPE & CIGAR
+,STLTH GeekBar 80K 30mL Banana Burst Ice,STLTH x GEEK BAR 80K 30mL Banana Burst Ice,32.83,47.99,13.00,VAPE & CIGAR
+,STLTH GeekBar 80K Banana Burst Ice CTN4,STLTH x GEEK BAR 80K 30mL Banana Burst Ice - carton of 4,131.32,191.96,13.00,VAPE & CIGAR
+,STLTH GeekBar 80K 30mL Blue Razz,STLTH x GEEK BAR 80K 30mL Blue Razz,32.83,47.99,13.00,VAPE & CIGAR
+,STLTH GeekBar 80K 30mL Blue Razz CTN4,STLTH x GEEK BAR 80K 30mL Blue Razz - carton of 4,131.32,191.96,13.00,VAPE & CIGAR
+,STLTH GeekBar 80K 30mL Mango Peach Ice,STLTH x GEEK BAR 80K 30mL Mango Peach Ice,32.83,47.99,13.00,VAPE & CIGAR
+,STLTH GeekBar 80K Mango Peach Ice CTN4,STLTH x GEEK BAR 80K 30mL Mango Peach Ice - carton of 4,131.32,191.96,13.00,VAPE & CIGAR
+,STLTH GeekBar 80K 30mL Purple Grape Ice,STLTH x GEEK BAR 80K 30mL Purple Grape Ice,32.83,47.99,13.00,VAPE & CIGAR
+,STLTH GeekBar 80K Purple Grape Ice CTN4,STLTH x GEEK BAR 80K 30mL Purple Grape Ice - carton of 4,131.32,191.96,13.00,VAPE & CIGAR
