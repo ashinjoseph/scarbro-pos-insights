@@ -44,6 +44,26 @@ add('STLTH','LOOP 25K Pod 20mL',['Strawberry Lime Ice','Rich Tobacco'],20,5,'40.
 add('STLTH','LOOP MAX 70K Pod 30mL',['Strawberry Kiwi','Green Apple Ice'],30,4,'37.65',False,'Order 1373225')
 add('FLAVOUR BEAST','Beast Mode Max 2 20mL',['Watermelon G'],20,5,'82.45',False,'Order 1373225')
 
+# --- Big Smoke Distro #9007 (25 Aug) and #9160 (2 Sep): duty itemised per line -----------
+add('ELFBAR','GH20K 20mL',['Ice Mint'],20,5,'64.95',False,'Big Smoke 9007')
+add('OVNS','2500 2mL',['Blood Orange Ice','Blue Blast','Mango Twist'],2,10,'92.60',False,'Big Smoke 9007')
+add('STLTH','LOOP 25K Pod 20mL',['Rich Tobacco'],20,5,'40.00',False,'Big Smoke 9007')
+add('STLTH','x GEEK BAR 80K 30mL',['Banana Burst Ice','Blue Razz','Juicy Peach','Wild Watermelon Ice','Canada LE Strawberry Kiwi Ice'],30,4,'68.60',False,'Big Smoke 9007')
+add('ALLO','2500 8mL',['Org Mango Guava'],8,5,'57.45',False,'Big Smoke 9160')
+add('ALLO','Ultra 10K 8mL',['Watermelon Ice'],8,6,'59.79',False,'Big Smoke 9160')
+add('FLAVOUR BEAST','Beast Mode Max 2 20mL',['Watermelon G'],20,5,'82.45',False,'Big Smoke 9160')
+add("DRIP'N",'8mL',['Mango Peach Watermelon','Triple Berry'],8,5,'49.95',False,'Big Smoke 9160')
+add('ELFBAR','FS70K 20mL',['Banana Ice','Mango Ice','Miami Mint','Pineapple Peach Mango Ice','Watermelon Ice'],20,4,'37.96',False,'Big Smoke 9160')
+add('STLTH','ECO MINI 2mL',['Green Apple','Juicy Peach','Razzy Grape Ice'],2,6,'23.37',False,'Big Smoke 9160')
+add('STLTH','LOOP 25K Pod 20mL',['Rich Tobacco','Strawberry Lime Ice'],20,5,'38.00',False,'Big Smoke 9160')
+add('STLTH','LOOP MAX 70K Pod 30mL',['Green Apple Ice'],30,4,'37.24',False,'Big Smoke 9160')
+
+# prove the model on the two Big Smoke invoices as well
+bs1 = 5*fed_excise(20) + 3*10*fed_excise(2) + 5*fed_excise(20) + 5*4*fed_excise(30)
+bs2 = 5*fed_excise(8) + 6*fed_excise(8) + 5*fed_excise(20) + 2*5*fed_excise(8) + 5*4*fed_excise(20) + 3*6*fed_excise(2) + 2*5*fed_excise(20) + 4*fed_excise(30)
+print(f"Big Smoke 9007 federal duty: model {bs1} vs invoice 257.60  {'OK' if bs1==D('257.60') else 'MISMATCH'}")
+print(f"Big Smoke 9160 federal duty: model {bs2} vs invoice 380.80  {'OK' if bs2==D('380.80') else 'MISMATCH'}")
+
 # ---- prove the excise model against the receipts before using it -----------------------
 o1 = 8*6*fed_excise(6) + 2*4*fed_excise(20) + 2*6*fed_excise(2) + 3*4*fed_excise(30)
 o4 = 6*fed_excise(8) + 2*5*fed_excise(8) + 6*4*fed_excise(20) + 2*5*fed_excise(8) + 3*6*fed_excise(2) + 2*5*fed_excise(20) + 2*4*fed_excise(30) + 5*fed_excise(20)
@@ -65,7 +85,7 @@ for r in R:
     r['name']=f"{r['brand']} {r['line']} {r['flavour']}".replace(' (flavour not shown)','')
 
 # dedupe: same product bought twice -> keep the most recent price, note the other
-order={'Pinnacle 19583':1,'FB order 26 Aug':2,'Order 1':3,'Pinnacle 19825':4,'Order 1373225':5}
+order={'Pinnacle 19583':1,'Big Smoke 9007':2,'FB order 26 Aug':3,'Order 1':4,'Pinnacle 19825':5,'Order 1373225':6,'Big Smoke 9160':7}
 seen={}
 for r in sorted(R,key=lambda r:order[r['src']]):
     k=r['name'].lower()
@@ -77,7 +97,31 @@ P.sort(key=lambda r:(r['brand'],r['line'],r['flavour']))
 print(f"\ndistinct products: {len(P)}   (from {len(R)} order lines)")
 
 # ---- known barcodes (public search hits) ---------------------------------------------
-KNOWN={}   # none of the search hits matched a product actually bought
+KNOWN={
+ 'elfbar gh20k 20ml peach mango watermelon':'641961763513',
+ 'elfbar gh20k 20ml ice mint':'641961763544',
+ 'ovns 2500 2ml blood orange ice':'6937057518032',
+ 'ovns 2500 2ml blue blast':'6937057525825',
+ 'stlth x geek bar 80k 30ml banana burst ice':'691584124789',
+ 'stlth x geek bar 80k 30ml blue razz':'691584124796',
+ 'stlth x geek bar 80k 30ml juicy peach':'691584124864',
+ 'stlth x geek bar 80k 30ml wild watermelon ice':'691584125496',
+ 'stlth x geek bar 80k 30ml canada le strawberry kiwi ice':'691584151600',
+ 'allo 2500 8ml org mango guava':'827152105779',
+ 'allo ultra 10k 8ml watermelon ice':'641961819685',
+ 'flavour beast beast mode max 2 20ml watermelon g':'827152198368',
+ "drip'n 8ml mango peach watermelon":'827152214761',
+ "drip'n 8ml triple berry":'827152214808',
+ 'elfbar fs70k 20ml banana ice':'6941976245689',
+ 'elfbar fs70k 20ml mango ice':'6941976245924',
+ 'elfbar fs70k 20ml miami mint':'6941976246037',
+ 'elfbar fs70k 20ml pineapple peach mango ice':'6941976246068',
+ 'elfbar fs70k 20ml watermelon ice':'6941976246488',
+ 'stlth eco mini 2ml green apple':'691584144336',
+ 'stlth eco mini 2ml juicy peach':'691584144343',
+ 'stlth eco mini 2ml razzy grape ice':'691584144398',
+}
+BC_SOURCE='Big Smoke invoice'
 
 # ---- master list ------------------------------------------------------------------------
 with open('vape-products.csv','w',newline='') as f:

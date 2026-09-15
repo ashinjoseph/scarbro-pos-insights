@@ -1,11 +1,12 @@
 # YV Vape Shop — product list from supplier receipts (Aug–Sep 2026)
 
-Built from six purchase records: Pinnacle Commerce invoices 19583
+Built from eight purchase records: Big Smoke Distro invoices 9007
+(25 Aug) and 9160 (2 Sep), Pinnacle Commerce invoices 19583
 (12 Aug) and 19825 (1 Sep), a STLTH wholesaler order, a Flavour Beast /
 Level X order (26 Aug), order #1373225 (1 Sep), and the order
 confirmation behind invoice 19825.
 
-**70 distinct products** across STLTH, Elf Bar, OVNS, Krave, Allo,
+**77 distinct products** across STLTH, Elf Bar, OVNS, Krave, Allo,
 Drip'n, Flavour Beast and Level X.
 
 ## Files
@@ -13,7 +14,7 @@ Drip'n, Flavour Beast and Level X.
 | File | What |
 |------|------|
 | `vape-products.csv` | One row per product: pack size, invoice price, excise, unit and carton cost, suggested retail, source |
-| `vape-epos-import.csv` | Epos seven-column format, **134 rows** — a single-unit line and a carton line for every product |
+| `vape-epos-import.csv` | Epos seven-column format, **148 rows** — a single-unit line and a carton line for every product |
 | `build_vape_lists.py` | Regenerates both from the receipt data |
 
 ## Cost basis: excise is in, HST is out
@@ -29,8 +30,8 @@ HST-exclusive**:
 
 The excise model — $1.12 per 2 mL for the first 10 mL, $1.12 per 10 mL
 after that, with Ontario's provincial duty equal to the federal — was
-checked against every receipt that itemises it and reproduces all three
-to the cent: $322.56, $461.44 and $33.60. That check also settled the
+checked against every receipt that itemises it and reproduces all five
+to the cent: $322.56, $461.44, $33.60, $257.60 and $380.80. That check also settled the
 pack sizes the receipts do not state (Drip'n 5 per carton, Loop Max 70K
 4 per carton, Allo 2500 at 8 mL) — no other combination balances.
 
@@ -45,9 +46,23 @@ roughly where Ontario vape retail sits (ECO 6 mL at ~$20, GH20K at
 ~$38, Geek Bar 80K at ~$48), but it is a starting point, not the
 store's pricing. Adjust before import.
 
-## Barcodes could not be sourced from here
+## Barcodes: 22 from the Big Smoke invoices, 55 still to find
 
-The barcode column is empty on all 134 rows. From this environment every
+Big Smoke prints each item's barcode above the product name, so 22
+products carry a code read straight off invoices 9007 and 9160. Their
+prefixes match the known manufacturer ranges (STLTH `691584`, Allo /
+Flavour Beast / Drip'n `827152`, Elf Bar `694197`, OVNS `693705`), with
+one caveat: `641961` appears on both an Elf Bar and an Allo product, so
+it is a Canadian distributor prefix rather than a manufacturer one —
+those three are worth one confirming scan. Big Smoke's own SKU numbers
+(`100000xxxxxx`, `3858`) are not barcodes and were left out.
+
+The invoice code is the one Big Smoke uses to identify the carton line;
+it is most likely the unit UPC, but one scan of a unit against a carton
+will settle it, and both Epos lines want their own code.
+
+`claude-chrome-barcode-prompt.txt` is the prompt for the remaining 55,
+covering only those products. From this environment every
 vape retailer, every manufacturer site and every public UPC database
 (upcitemdb, barcodelookup, go-upc, barcodespider) is blocked by the
 network egress policy — 18 of 18 attempts. Search snippets surfaced two

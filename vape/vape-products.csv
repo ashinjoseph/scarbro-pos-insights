@@ -1,25 +1,26 @@
 Brand,Product Line,Flavour,mL,Pack Size,Invoice Carton Price,Price Includes Excise,Excise Per Unit (Fed+ON),Unit Cost ex-excise,Unit Cost incl excise,Carton Cost incl excise,Suggested Retail (x1.45),Barcode,Source,Note
-ALLO,2500 8mL,Org Mango Guava,8,5,57.45,no,8.96,11.49,20.45,102.25,29.99,,Order 1373225,
+ALLO,2500 8mL,Org Mango Guava,8,5,57.45,no,8.96,11.49,20.45,102.25,29.99,827152105779,Big Smoke 9160,
 ALLO,2500 8mL,Watermelon Ice,8,5,57.45,no,8.96,11.49,20.45,102.25,29.99,,Order 1373225,
-ALLO,Ultra 10K 8mL,Watermelon Ice,8,6,62.94,no,8.96,10.49,19.45,116.70,27.99,,Order 1373225,
-DRIP'N,8mL,Mango Peach Watermelon,8,5,49.95,no,8.96,9.99,18.95,94.75,26.99,,Order 1373225,
-DRIP'N,8mL,Triple Berry,8,5,49.95,no,8.96,9.99,18.95,94.75,26.99,,Order 1373225,
-ELFBAR,FS70K 20mL,Banana Ice,20,4,39.96,no,13.44,9.99,23.43,93.72,33.99,,Order 1373225,
+ALLO,Ultra 10K 8mL,Watermelon Ice,8,6,59.79,no,8.96,9.97,18.93,113.55,26.99,641961819685,Big Smoke 9160,also 19.45/unit on Order 1373225
+DRIP'N,8mL,Mango Peach Watermelon,8,5,49.95,no,8.96,9.99,18.95,94.75,26.99,827152214761,Big Smoke 9160,
+DRIP'N,8mL,Triple Berry,8,5,49.95,no,8.96,9.99,18.95,94.75,26.99,827152214808,Big Smoke 9160,
+ELFBAR,FS70K 20mL,Banana Ice,20,4,37.96,no,13.44,9.49,22.93,91.72,32.99,6941976245689,Big Smoke 9160,also 23.43/unit on Order 1373225
 ELFBAR,FS70K 20mL,Kiwi Passion Fruit Guava Ice,20,4,39.96,no,13.44,9.99,23.43,93.72,33.99,,Order 1,
-ELFBAR,FS70K 20mL,Mango Ice,20,4,39.96,no,13.44,9.99,23.43,93.72,33.99,,Order 1373225,
-ELFBAR,FS70K 20mL,Miami Mint,20,4,39.96,no,13.44,9.99,23.43,93.72,33.99,,Order 1373225,
-ELFBAR,FS70K 20mL,Pineapple Peach Mango Ice,20,4,39.96,no,13.44,9.99,23.43,93.72,33.99,,Order 1373225,
+ELFBAR,FS70K 20mL,Mango Ice,20,4,37.96,no,13.44,9.49,22.93,91.72,32.99,6941976245924,Big Smoke 9160,also 23.43/unit on Order 1373225
+ELFBAR,FS70K 20mL,Miami Mint,20,4,37.96,no,13.44,9.49,22.93,91.72,32.99,6941976246037,Big Smoke 9160,also 23.43/unit on Order 1373225
+ELFBAR,FS70K 20mL,Pineapple Peach Mango Ice,20,4,37.96,no,13.44,9.49,22.93,91.72,32.99,6941976246068,Big Smoke 9160,also 23.43/unit on Order 1373225
 ELFBAR,FS70K 20mL,Strawberry Banana Ice,20,4,39.96,no,13.44,9.99,23.43,93.72,33.99,,Order 1,
-ELFBAR,FS70K 20mL,Watermelon Ice,20,4,39.96,no,13.44,9.99,23.43,93.72,33.99,,Order 1373225,
+ELFBAR,FS70K 20mL,Watermelon Ice,20,4,37.96,no,13.44,9.49,22.93,91.72,32.99,6941976246488,Big Smoke 9160,also 23.43/unit on Order 1373225
 ELFBAR,GH20K 20mL,Blue Razz Ice,20,5,132.15,yes,13.44,12.99,26.43,132.15,37.99,,Pinnacle 19583,
 ELFBAR,GH20K 20mL,Grape Ice,20,5,132.15,yes,13.44,12.99,26.43,132.15,37.99,,Pinnacle 19825,
-ELFBAR,GH20K 20mL,Peach Mango Watermelon,20,5,132.15,yes,13.44,12.99,26.43,132.15,37.99,,Pinnacle 19825,
+ELFBAR,GH20K 20mL,Ice Mint,20,5,64.95,no,13.44,12.99,26.43,132.15,37.99,641961763544,Big Smoke 9007,
+ELFBAR,GH20K 20mL,Peach Mango Watermelon,20,5,132.15,yes,13.44,12.99,26.43,132.15,37.99,641961763513,Pinnacle 19825,
 ELFBAR,GH20K 20mL,Sour Blueberry Lemon,20,5,132.15,yes,13.44,12.99,26.43,132.15,37.99,,Pinnacle 19583,
 ELFBAR,GH20K 20mL,Strawberry Kiwi Ice,20,5,132.15,yes,13.44,12.99,26.43,132.15,37.99,,Pinnacle 19583,
 ELFBAR,GH20K 20mL,Watermelon Ice,20,5,132.15,yes,13.44,12.99,26.43,132.15,37.99,,Pinnacle 19825,
 FLAVOUR BEAST,Beast Mode Max 2 20mL,Gushin Watermelon Apple,20,5,149.65,yes,13.44,16.49,29.93,149.65,42.99,,FB order 26 Aug,
 FLAVOUR BEAST,Beast Mode Max 2 20mL,Mega Mango,20,5,149.65,yes,13.44,16.49,29.93,149.65,42.99,,FB order 26 Aug,
-FLAVOUR BEAST,Beast Mode Max 2 20mL,Watermelon G,20,5,82.45,no,13.44,16.49,29.93,149.65,42.99,,Order 1373225,
+FLAVOUR BEAST,Beast Mode Max 2 20mL,Watermelon G,20,5,82.45,no,13.44,16.49,29.93,149.65,42.99,827152198368,Big Smoke 9160,
 KRAVE,Pulse X 60K 20mL,Blue Razz Lemon Head,20,3,54.00,yes,13.44,4.56,18.00,54.00,25.99,,Pinnacle 19583,
 KRAVE,Pulse X 60K 20mL,Cool Mint,20,3,54.00,yes,13.44,4.56,18.00,54.00,25.99,,Pinnacle 19583,
 LEVEL X,Boost Pod 20mL,Mad Mango Peach,20,6,131.58,yes,13.44,8.49,21.93,131.58,31.99,,FB order 26 Aug,
@@ -32,7 +33,10 @@ LEVEL X,M Series Starter Kit 30mL,Flippin' Fruit Flash,30,4,127.48,yes,15.68,16.
 LEVEL X,M Series Starter Kit 30mL,Gusto Green Apple,30,4,127.48,yes,15.68,16.19,31.87,127.48,45.99,,FB order 26 Aug,
 LEVEL X,M Series Starter Kit 30mL,Trippin' Triple Berry,30,4,127.48,yes,15.68,16.19,31.87,127.48,45.99,,FB order 26 Aug,
 LEVEL X,M Series Starter Kit 30mL,Weekend Watermelon Iced,30,4,127.48,yes,15.68,16.19,31.87,127.48,45.99,,FB order 26 Aug,
+OVNS,2500 2mL,Blood Orange Ice,2,10,92.60,no,2.24,9.26,11.50,115.00,16.99,6937057518032,Big Smoke 9007,
+OVNS,2500 2mL,Blue Blast,2,10,92.60,no,2.24,9.26,11.50,115.00,16.99,6937057525825,Big Smoke 9007,
 OVNS,2500 2mL,Dragon Fruit Blue Raspberry,2,10,110.00,yes,2.24,8.76,11.00,110.00,15.99,,Pinnacle 19825,
+OVNS,2500 2mL,Mango Twist,2,10,92.60,no,2.24,9.26,11.50,115.00,16.99,,Big Smoke 9007,
 OVNS,2500 2mL,Mint Ice,2,10,110.00,yes,2.24,8.76,11.00,110.00,15.99,,Pinnacle 19825,
 OVNS,Max 3K 2mL,Blue Razz Ice,2,6,85.50,yes,2.24,12.01,14.25,85.50,20.99,,Pinnacle 19825,
 OVNS,Max 3K 2mL,Mexican Mango,2,6,85.50,yes,2.24,12.01,14.25,85.50,20.99,,Pinnacle 19825,
@@ -55,17 +59,20 @@ STLTH,ECO 6mL,Razzy Grape Ice,6,6,40.50,no,6.72,6.75,13.47,80.82,19.99,,Order 1,
 STLTH,ECO 6mL,Strawberry Banana,6,6,40.50,no,6.72,6.75,13.47,80.82,19.99,,Order 1,
 STLTH,ECO 6mL,Strawberry Kiwi Ice,6,6,40.50,no,6.72,6.75,13.47,80.82,19.99,,Order 1,
 STLTH,ECO MINI 2mL,Blue Razz Ice,2,6,24.60,no,2.24,4.10,6.34,38.04,8.99,,Order 1,
-STLTH,ECO MINI 2mL,Green Apple,2,6,24.60,no,2.24,4.10,6.34,38.04,8.99,,Order 1373225,
-STLTH,ECO MINI 2mL,Juicy Peach,2,6,24.60,no,2.24,4.10,6.34,38.04,8.99,,Order 1373225,
-STLTH,ECO MINI 2mL,Razzy Grape Ice,2,6,24.60,no,2.24,4.10,6.34,38.04,8.99,,Order 1373225,
+STLTH,ECO MINI 2mL,Green Apple,2,6,23.37,no,2.24,3.90,6.14,36.81,8.99,691584144336,Big Smoke 9160,also 6.34/unit on Order 1373225
+STLTH,ECO MINI 2mL,Juicy Peach,2,6,23.37,no,2.24,3.90,6.14,36.81,8.99,691584144343,Big Smoke 9160,also 6.34/unit on Order 1373225
+STLTH,ECO MINI 2mL,Razzy Grape Ice,2,6,23.37,no,2.24,3.90,6.14,36.81,8.99,691584144398,Big Smoke 9160,also 6.34/unit on Order 1373225
 STLTH,ECO MINI 2mL,Strawberry Kiwi Ice,2,6,24.60,no,2.24,4.10,6.34,38.04,8.99,,Order 1,
-STLTH,LOOP 25K Pod 20mL,Rich Tobacco,20,5,40.00,no,13.44,8.00,21.44,107.20,30.99,,Order 1373225,
-STLTH,LOOP 25K Pod 20mL,Strawberry Lime Ice,20,5,40.00,no,13.44,8.00,21.44,107.20,30.99,,Order 1373225,
+STLTH,LOOP 25K Pod 20mL,Rich Tobacco,20,5,38.00,no,13.44,7.60,21.04,105.20,30.99,,Big Smoke 9160,also 21.44/unit on Order 1373225
+STLTH,LOOP 25K Pod 20mL,Strawberry Lime Ice,20,5,38.00,no,13.44,7.60,21.04,105.20,30.99,,Big Smoke 9160,also 21.44/unit on Order 1373225
 STLTH,LOOP MAX 70K Pod 30mL,Blue Razz,30,4,31.36,no,15.68,7.84,23.52,94.08,33.99,,Order 1,
-STLTH,LOOP MAX 70K Pod 30mL,Green Apple Ice,30,4,37.65,no,15.68,9.41,25.09,100.37,35.99,,Order 1373225,also 23.52/unit on Order 1
+STLTH,LOOP MAX 70K Pod 30mL,Green Apple Ice,30,4,37.24,no,15.68,9.31,24.99,99.96,35.99,,Big Smoke 9160,also 25.09/unit on Order 1373225
 STLTH,LOOP MAX 70K Pod 30mL,Peach Berry,30,4,31.36,no,15.68,7.84,23.52,94.08,33.99,,Order 1,
 STLTH,LOOP MAX 70K Pod 30mL,Strawberry Kiwi,30,4,37.65,no,15.68,9.41,25.09,100.37,35.99,,Order 1373225,
-STLTH,x GEEK BAR 80K 30mL,Banana Burst Ice,30,4,131.32,yes,15.68,17.15,32.83,131.32,47.99,,Pinnacle 19583,
-STLTH,x GEEK BAR 80K 30mL,Blue Razz,30,4,131.32,yes,15.68,17.15,32.83,131.32,47.99,,Pinnacle 19583,
+STLTH,x GEEK BAR 80K 30mL,Banana Burst Ice,30,4,68.60,no,15.68,17.15,32.83,131.32,47.99,691584124789,Big Smoke 9007,
+STLTH,x GEEK BAR 80K 30mL,Blue Razz,30,4,68.60,no,15.68,17.15,32.83,131.32,47.99,691584124796,Big Smoke 9007,
+STLTH,x GEEK BAR 80K 30mL,Canada LE Strawberry Kiwi Ice,30,4,68.60,no,15.68,17.15,32.83,131.32,47.99,691584151600,Big Smoke 9007,
+STLTH,x GEEK BAR 80K 30mL,Juicy Peach,30,4,68.60,no,15.68,17.15,32.83,131.32,47.99,691584124864,Big Smoke 9007,
 STLTH,x GEEK BAR 80K 30mL,Mango Peach Ice,30,4,131.32,yes,15.68,17.15,32.83,131.32,47.99,,Pinnacle 19583,
 STLTH,x GEEK BAR 80K 30mL,Purple Grape Ice,30,4,131.32,yes,15.68,17.15,32.83,131.32,47.99,,Pinnacle 19583,
+STLTH,x GEEK BAR 80K 30mL,Wild Watermelon Ice,30,4,68.60,no,15.68,17.15,32.83,131.32,47.99,691584125496,Big Smoke 9007,

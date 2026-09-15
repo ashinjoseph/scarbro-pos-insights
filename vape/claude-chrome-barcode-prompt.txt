@@ -1,0 +1,139 @@
+I need the retail barcode (UPC/EAN) for 55 vape products I stock. Work through this completely on your own and give me one CSV at the end. Do not stop to ask questions — where something is uncertain, record it in the Notes column and keep going.
+
+HOW TO FIND THE BARCODES
+
+The official brand stores and most Canadian vape retailers run on Shopify. Every Shopify store publishes a plain JSON list of all its products, including a "barcode" field on each variant, at:
+
+    https://<store>/products.json?limit=250
+
+Open that URL directly in the browser and read the JSON. Each product has "title" and "variants"; each variant has "title" (usually the flavour), "sku", "barcode" and "price". If a store returns exactly 250 products, there is another page: add &page=2 (and &page=3, etc.) until a page returns fewer than 250.
+
+Use these sources, in this order of preference:
+
+1. https://stlthvape.com/products.json?limit=250          (STLTH — all lines)
+2. https://flavourbeast.com/products.json?limit=250        (Flavour Beast and Level X)
+3. https://shopelfbar.ca/products.json?limit=250           (Elf Bar FS70K, GH20K)
+4. https://www.allovapor.com/products.json?limit=250       (Allo)
+5. https://bayvape.ca/products.json?limit=250              (retailer — use for OVNS, Krave, Drip'n, and any gaps)
+6. https://hazetownvapes.com/products.json?limit=250       (second retailer — gaps only)
+7. https://www.canvape.com/products.json?limit=250         (third retailer — gaps only)
+
+Only fall back to ordinary product pages or search if the JSON route fails for a store. Do not use UPC-lookup websites; they are unreliable for these products.
+
+MATCHING RULES
+
+- Match on product line AND flavour. "Blue Razz" and "Blue Razz Ice" are different products. "Watermelon Ice" under ECO and "Watermelon Ice" under FS70K are different products.
+- These are Ontario-stamped products. If a store lists the same flavour with province variants (labelled ON, Ontario, [ON], AB, BC, MB, Federal, etc.), take the Ontario one. If only one variant exists with no province label, take it and note "no province label".
+- Prefer the official brand store's barcode over a retailer's. If two sources disagree, record both, official first, and note it.
+- A retail barcode should be 12 digits (UPC-A) or 13 digits (EAN-13). STLTH codes start 691584. Allo, Flavour Beast and Level X codes start 827152. If a code you find does not fit these patterns, still record it but flag it in Notes.
+- If a store's barcode field is empty or missing for a product, say so — do not substitute the SKU, the product ID, or a code from a different flavour.
+- Do not guess or invent a barcode under any circumstances. An empty cell is the correct answer when nothing is found.
+- Some sources list a separate carton/case barcode. If you see one, put it in the Carton Barcode column; otherwise leave that column empty.
+
+THE 55 PRODUCTS
+
+Use the "Product" text below exactly as the first column of your output so the rows can be matched back automatically. (22 other products already have barcodes from supplier invoices and are not listed — do not look those up.)
+
+Allo 2500 (8mL):
+  ALLO 2500 8mL Watermelon Ice
+
+Elf Bar FS70K / FS70000 disposable (20mL):
+  ELFBAR FS70K 20mL Kiwi Passion Fruit Guava Ice
+  ELFBAR FS70K 20mL Strawberry Banana Ice
+
+Elf Bar GH20K / GH20000 disposable (20mL):
+  ELFBAR GH20K 20mL Blue Razz Ice
+  ELFBAR GH20K 20mL Grape Ice
+  ELFBAR GH20K 20mL Sour Blueberry Lemon
+  ELFBAR GH20K 20mL Strawberry Kiwi Ice
+  ELFBAR GH20K 20mL Watermelon Ice
+
+Flavour Beast — Beast Mode Max 2 disposable (20mL):
+  FLAVOUR BEAST Beast Mode Max 2 20mL Gushin Watermelon Apple
+  FLAVOUR BEAST Beast Mode Max 2 20mL Mega Mango
+
+Krave Pulse X 60K disposable (20mL):
+  KRAVE Pulse X 60K 20mL Blue Razz Lemon Head
+  KRAVE Pulse X 60K 20mL Cool Mint
+
+Level X Boost pods (G2, 20mL, Flavour Beast flavours):
+  LEVEL X Boost Pod 20mL Mad Mango Peach
+  LEVEL X Boost Pod 20mL Strawberry Raspberry Blueberry Ice
+  LEVEL X Boost Pod 20mL Super Sour Apple Iced
+  LEVEL X Boost Pod 20mL Watermelon Strawberry Kiwi Ice
+
+Level X M Series (Flavour Beast):
+  LEVEL X M Series Device Kit Obsidian Black
+
+Level X M Series Starter Kit (30mL):
+  LEVEL X M Series Starter Kit 30mL Bomb Blue Razz
+  LEVEL X M Series Starter Kit 30mL Flippin' Fruit Flash
+  LEVEL X M Series Starter Kit 30mL Gusto Green Apple
+  LEVEL X M Series Starter Kit 30mL Trippin' Triple Berry
+  LEVEL X M Series Starter Kit 30mL Weekend Watermelon Iced
+
+OVNS 2500 (2mL):
+  OVNS 2500 2mL Dragon Fruit Blue Raspberry
+  OVNS 2500 2mL Mango Twist
+  OVNS 2500 2mL Mint Ice
+
+OVNS Max 3K (2mL):
+  OVNS Max 3K 2mL Blue Razz Ice
+  OVNS Max 3K 2mL Mexican Mango
+  OVNS Max 3K 2mL Peach Mango
+  OVNS Max 3K 2mL Strawberry Peach Mint
+  OVNS Max 3K 2mL White Grape Ice
+
+OVNS O2 2500 (2mL):
+  OVNS O2 2500 2mL   (flavour unknown — list every O2 2500 flavour you find as separate rows, one per flavour)
+
+STLTH 2% pod pack (original STLTH pods, 3 x 2mL per pack, 20 mg — sometimes listed as STLTH X pods or STLTH Pod Pack):
+  STLTH 2% Pod Pack (3 pods) Berry Blast
+  STLTH 2% Pod Pack (3 pods) Double Mint
+  STLTH 2% Pod Pack (3 pods) Frost Mint
+  STLTH 2% Pod Pack (3 pods) Honeydew Menthol
+  STLTH 2% Pod Pack (3 pods) Peach
+  STLTH 2% Pod Pack (3 pods) Tobacco Blend
+
+STLTH ECO 6mL disposable (20 mg):
+  STLTH ECO 6mL Cherry Lemon Ice
+  STLTH ECO 6mL Juicy Peach
+  STLTH ECO 6mL Peach Ice
+  STLTH ECO 6mL Polar Mint
+  STLTH ECO 6mL Razz Apple Ice
+  STLTH ECO 6mL Razzy Grape Ice
+  STLTH ECO 6mL Strawberry Banana
+  STLTH ECO 6mL Strawberry Kiwi Ice
+
+STLTH ECO MINI 2mL disposable:
+  STLTH ECO MINI 2mL Blue Razz Ice
+  STLTH ECO MINI 2mL Strawberry Kiwi Ice
+
+STLTH LOOP 25K pod pack (20mL, 1 pod per pack):
+  STLTH LOOP 25K Pod 20mL Rich Tobacco
+  STLTH LOOP 25K Pod 20mL Strawberry Lime Ice
+
+STLTH LOOP MAX 70K pod pack (30mL, 1 pod per pack):
+  STLTH LOOP MAX 70K Pod 30mL Blue Razz
+  STLTH LOOP MAX 70K Pod 30mL Green Apple Ice
+  STLTH LOOP MAX 70K Pod 30mL Peach Berry
+  STLTH LOOP MAX 70K Pod 30mL Strawberry Kiwi
+
+STLTH x GEEK BAR 80K disposable (30mL):
+  STLTH x GEEK BAR 80K 30mL Mango Peach Ice
+  STLTH x GEEK BAR 80K 30mL Purple Grape Ice
+
+OUTPUT
+
+When you have been through all 55, give me a single CSV code block and nothing after it. Header row exactly:
+
+Product,Barcode,Carton Barcode,Source,Store Product Title,Notes
+
+- Product: the exact text from the list above.
+- Barcode: digits only, no spaces. Empty if not found.
+- Carton Barcode: empty unless a separate case code was shown.
+- Source: the URL of the JSON page or product page the code came from.
+- Store Product Title: how the store named that product and variant, so I can check the match.
+- Notes: anything I should know — "not found on any source", "no province label", "official and retailer differ: 691584xxxxxx / 691584yyyyyy", "code does not match expected prefix", etc.
+
+One row per product, all 55 present even when the barcode is empty, in the same order as the list above. Then, above the CSV, give me a three-line summary: how many found, how many not found, and which stores you actually got data from.
