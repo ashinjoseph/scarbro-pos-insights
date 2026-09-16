@@ -84,3 +84,69 @@ different codes, and both lines in the Epos file want their own.
 
 Known manufacturer prefixes, for checking whatever comes back:
 STLTH `691584`, Allo / Flavour Beast / Level X `827152`.
+
+---
+
+# Website catalogue — products added 14–15 Sep 2026
+
+Source: `RetailPOS_DB_16-09-2026_10-28-27.bak` (16 Sep, 20,571 invoices,
+23,745 products — the container now runs this backup).
+
+**162 products were added on 14–15 Sep, every one of them VAPE & CIGAR.**
+`vape-web-catalog.csv` holds the 161 with a retail price, ready for a web
+product catalogue.
+
+| Column | Notes |
+|--------|-------|
+| Barcode | from the POS; all 161 present and distinct |
+| SKU | `YV-<PID>`, stable handle for the website |
+| Product Name | rebuilt from brand + line + flavour |
+| Brand / Product Line / Flavour / Type | parsed from the till name |
+| Nicotine, E-liquid (mL) | from the product line |
+| Price (ex tax) / Price (incl HST) | till price, and x1.13 |
+| Supplier Cost / Margin % | matched from the purchase invoices, 56 of 161 |
+| Data Flags | rows needing a human before they go live |
+
+## Names had to be rebuilt, not copied
+
+The till names are heavily abbreviated and carry typos — `STRBRY KIWI
+ICE`, `PMPDUP PINAPL`, `JUICT PEACH`, `SMOTTH TOBACCO`, `BEAST MODZ`,
+`PRACHY PEACE ICE`. None of that belongs on a website, so `Product Name`
+is rebuilt from the parsed brand, line and flavour with the
+abbreviations expanded and the obvious typos corrected. The original
+till name stays in the POS untouched.
+
+One correction worth noting: seven products are named `ALLO ULTRA 1K
+POD` in the till but are the 10K pod — the catalogue says 10K.
+
+## The POS barcode is not the invoice barcode
+
+None of the 22 barcodes read off the Big Smoke invoices appear among
+these 162, even for products that are clearly the same item. Where both
+are known the codes sit close together — the three STLTH ECO Mini
+flavours differ by exactly 99 — which is consistent with the invoice
+carrying the **carton** code and the POS the **unit** code. Three pairs
+is not enough to generalise, so no barcode was derived that way; the
+catalogue uses the POS code, which is the one that scans at the till.
+
+## Margin
+
+Where an invoice cost could be matched (56 products), margin runs 0% to
+45%, median 33%. The two ends are worth a look before publishing:
+`ALLO Ultra 10K Pod Watermelon Ice` sells at $18.99 against a $18.93
+cost — effectively zero — while the Krave Pulse X pair run at 45%.
+
+`PurchaseCost` is 0.00 on all 162 rows in the POS itself; the cost here
+comes entirely from the supplier invoices.
+
+## 12 rows to fix before going live
+
+- **1 row holds five barcodes in one field** (`OVNS 50K`) — it needs
+  splitting into five products, and a sixth `OVNS 50K` row duplicates
+  one of them.
+- **12 rows have no flavour in the name**: five `STLTH Loop 25K Pod`,
+  two `STLTH Loop Max 70K Pod`, two `Flavour Beast 60K`, two `OVNS 50K`,
+  one `Level X Boost G2`. They are distinct products with distinct
+  barcodes, so the flavour has to come from the box.
+- One product (`VAPE`, barcode 24586) is an open-price key, not a
+  product, and is excluded.
